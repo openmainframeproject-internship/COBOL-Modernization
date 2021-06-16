@@ -9,7 +9,7 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 |---|---|---|
 | Project Plan | Overall week by week plan of milestones |[project_plan.md](project_plan.md) |
 | Week 1 Status Report | Environment Setup |[week1_report.md](week1_report.md) | 
-| Week 2 Status Report | | |
+| Week 2 Status Report | Technical Training 1| [week2_report.md](week2_report.md) |
 | Week 3 Status Report | | |
 | Week 4 Status Report | | |
 | Week 5 Status Report | | |
