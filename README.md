@@ -18,6 +18,7 @@ a better understanding of the problems you encountered during the development of
 | src | Source code - create as many subdirectories as needed |
 
 ## Project Team
-- *Guy Sofer*  - *Micro Focus* - Mentor
-- *Misty Decker*  - *Micro Focus* - Mentor
-- *Sudhanshu Dubey* - *Guru Nanak Dev Engineering College, Ludhiana* - Mentee
+- [*Guy Sofer*](https://www.linkedin.com/in/guy-sofer-b5294b54/)  - *Micro Focus* - Mentor
+- [*Gary Evans*](https://www.linkedin.com/in/gary-evans-ba2735145/)  - *Micro Focus* - Mentor
+- [*Misty Decker*](https://www.linkedin.com/in/misty-decker/)  - *Micro Focus* - Mentor
+- [*Sudhanshu Dubey*](https://www.linkedin.com/in/sudhanshu-dubey-14hacksd/) - *Guru Nanak Dev Engineering College, Ludhiana* - Mentee
