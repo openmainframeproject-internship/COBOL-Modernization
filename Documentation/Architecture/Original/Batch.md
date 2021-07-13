@@ -33,4 +33,4 @@ The `MFIDEMO` job uses the `SORT` program in it's execution.
 
 A data set contains information that can be stored and retrieved. Data sets can contain many kinds of information – programs, numerical data, inventory records, memos, reports, and so on.
 
-In the [Job Executive Report](link) all of this can be easily seen and understood.
+In the [Job Executive Report](https://openmainframeproject-internship.github.io/COBOL-Modernization/ExecReportJob.html) all of this can be easily seen and understood.

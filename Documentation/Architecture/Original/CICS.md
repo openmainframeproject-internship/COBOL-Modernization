@@ -24,14 +24,14 @@ This application has [12 mapsets](link to folder). Each Mapset has 2 maps in it:
 
 The only exception is the `MBANK99` screen which has only the main screen as it is the exit screen.
 
-The information about Screens can be visualised using the [Screen Flow Diagram](link) which summarises the screens present and the programs that handle them.
+The information about Screens can be visualised using the [Screen Flow Diagram](https://openmainframeproject-internship.github.io/COBOL-Modernization/Screen%20Flow.html) which summarises the screens present and the programs that handle them.
 
 ### Screen Handling Programs
 
 Associated with each mapset is a screen handling program written in COBOL. As the name suggests, it's function is to handle the setup and input and output of the screen. The name of these programs start with 'S' and correspond to the mapset they handle.
 So, `MBANK10` is handled by `SBANK10P` and `MBANK35` is handled by `SBANK35P`.
 
-This is very evident after looking at the [CICS Flow Diagram](link to html file). 
+This is very evident after looking at the [CICS Flow Diagram](https://openmainframeproject-internship.github.io/COBOL-Modernization/CICSFlow.html). 
 But not all programs starting with 'S' are directly associated with a mapset and it will be discussed later.
 
 ### Business Layer Programs
@@ -41,7 +41,7 @@ Similar to screen handling programs, they also follow a naming convention. Their
 So, `BBANK10P` executes the business logic of `MBANK10` which is handled by `SBANK10P`.
 The flow is like this, the user gives the input to `SBANK10P` through `MBANK10` which sends it to `BBANK10P` for performing the computations. The result follows the reverse path from `BBANK10P` to `SBANK10P` and is shown to the user on `MBANK10`.
 
-These flow are very much visible in the [CICS Flow Diagram](link). But if we look at the [Detailed CICS Flow Diagram](link), we can also see the entry point to each program and which COBOL statement calls the other program.
+These flow are very much visible in the [CICS Flow Diagram](https://openmainframeproject-internship.github.io/COBOL-Modernization/CICSFlow.html). But if we look at the [Detailed CICS Flow Diagram](https://openmainframeproject-internship.github.io/COBOL-Modernization/CICS%20Flow%20Detailed.html), we can also see the entry point to each program and which COBOL statement calls the other program.
 
 ### Data Layer Programs
 
@@ -50,7 +50,7 @@ Unlike others, these don't strictly follow the naming conventions. The programs'
 This is possibly because they serve not only the CICS program but the batch jobs too. These are individual modules, written based more on the file they access, rather than the business logic they serve.
 This approach has the advantage of modularity, code reusability and data security.
 
-The connection between data layer programs and business layer programs can be seen in the [CICS Flow Diagram]() and the association between data layer programs and data files can be seen in the [Data Flow Diagram]()
+The connection between data layer programs and business layer programs can be seen in the [CICS Flow Diagram](https://openmainframeproject-internship.github.io/COBOL-Modernization/CICSFlow.html) and the association between data layer programs and data files can be seen in the [Data Flow Diagram](https://openmainframeproject-internship.github.io/COBOL-Modernization/Data%20Flow.html)
 
 ### Utility Programs
 
