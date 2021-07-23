@@ -14,7 +14,7 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 4 Status Report | Technical Training 3 | [week4_report.md](week4_report.md) |
 | Week 5 Status Report | Code Analysis and Understanding | [week5_report.md](week5_report.md) |
 | Week 6 Status Report | Business Rule creation | [week6_report.md](week6_report.md) |
-| Week 7 Status Report | | |
+| Week 7 Status Report | Sign-on service creation | [week7_report.md](week7_report.md) |
 | Week 8 Status Report | | |
 | Week 9 Status Report | | |
 | Week 10 Status Report | | |
