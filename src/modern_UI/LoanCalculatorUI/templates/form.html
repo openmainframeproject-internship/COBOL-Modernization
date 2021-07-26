@@ -1,0 +1,34 @@
+<title>Loan Calculator Service</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+   <h2>Loan Calculator Service</h2>
+   <form action="" method="post" role="form" enctype="multipart/form-data">
+       {{ form.csrf_token }}
+    <div class="form-group">
+        {% from "_formhelpers.html" import render_field %}
+        <form method=post>
+          <dl>
+            {{ render_field(form.amount) }}
+            {{ render_field(form.term) }}
+            {{ render_field(form.rate) }}
+          </dl>
+
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% if category == 'success' %}
+<div class="alert alert-success">{{ message }}</div>
+   {% endif %}
+
+   {% if category == 'error' %}
+   <div class="alert alert-warning">{{ message }}</div>
+   {% endif %}
+   {% endfor %}
+   {% endif %}
+   {% endwith %}
+
+</div>
+
