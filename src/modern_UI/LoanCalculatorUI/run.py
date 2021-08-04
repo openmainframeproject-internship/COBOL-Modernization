@@ -53,18 +53,18 @@ class LoanForm(Form):
             PAYMENT = create_string_buffer(9)
             ERROR = create_string_buffer(75)
 
-            cbl = cdll.LoadLibrary("CalcLoan.so")
-            cbl.cob_init(0, None)
-            ret = cbl.CalcLoan(byref(AMOUNT), byref(RATE), byref(TERM),
+            cbl = cdll.LoadLibrary("New_Configuration.bin\\LoanCalculator.dll")
+            # cbl.cob_init(0, None)
+            ret = cbl.CALCLOAN(byref(AMOUNT), byref(RATE), byref(TERM),
                                byref(PAYMENT), byref(ERROR))
             print(ret, PAYMENT.value, ERROR.value)
 
             pay = PAYMENT.value.decode()
             err = ERROR.value.decode()
-            cbl.cob_tidy()
+            # cbl.cob_tidy()
             print(pay, err)
             if pay != '':
-                flash("Monthly Payment Amount: " + pay, 'success')
+                flash("Monthly Payment Amount: $" + pay, 'success')
             elif err != '':
                 flash(err, 'error')
             return redirect('/')
