@@ -1,0 +1,15 @@
+#"C:\Program Files (x86)\Micro Focus\Enterprise Developer\bin\cobol.exe" C:\Users\Administrator\workspace\SIGNON\cbl\DRIVER.cbl DELINT USEC:\Users\Administrator\workspace\SIGNON\New_Configuration.bin\mfant7237936435767596647.dir ;
+^C:\Users\Administrator\workspace\SIGNON\cbl\DRIVER.cbl
+!C:\Users\Administrator\workspace\SIGNON\cbl\REQUEST.cpy
+?C:\Users\Administrator\workspace\SIGNON\cbl\REQUEST.cpy
+!C:\Users\Administrator\workspace\SIGNON\cbl\REQUEST.cbl
+?C:\Users\Administrator\workspace\SIGNON\cbl\REQUEST.cbl
+!$COBCPY\REQUEST.cpy
++C:\Users\Administrator\workspace\SIGNON\copybook\REQUEST.cpy
+-C:\Users\Administrator\workspace\SIGNON\copybook\REQUEST.cpy
+!C:\Users\Administrator\workspace\SIGNON\cbl\RESPONSE.cpy
+?C:\Users\Administrator\workspace\SIGNON\cbl\RESPONSE.cpy
+!C:\Users\Administrator\workspace\SIGNON\cbl\RESPONSE.cbl
+?C:\Users\Administrator\workspace\SIGNON\cbl\RESPONSE.cbl
+!$COBCPY\RESPONSE.cpy
++C:\Users\Administrator\workspace\SIGNON\copybook\RESPONSE.cpy

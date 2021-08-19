@@ -1,0 +1,54 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DRIVER.
+
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+
+       WORKING-STORAGE SECTION.
+       01 BRE-OUT-OUTPUT-STRUCTURE2.
+           02 BRE-O-WS-INPUT-FLAG PIC X(1).
+           02 BRE-0-WS-ERROR-MSG PIC X(75).
+           02 BRE-BANK-SIGNON-ID PIC X(5).
+           02 BRE-BANK-USERID PIC X(5).
+           02 BRE-BANK-USERID-NA PIC X(25).
+
+       01 HTTP-HEADER   PIC X(13) VALUE 'Authorisation'.
+       01 HTTP-HEADER-VALUE   PIC X(64) VALUE SPACES.
+       01 HEADER-ACAO.
+           02 FILLER      PIC X(16) VALUE 'Access-Control-A'.
+           02 FILLER      PIC X(11) VALUE 'llow-Origin'.
+       01 HEADER-ACAO-LENGTH PIC S9(08) COMP VALUE 27.
+       01 VALUE-ACAO PIC X(01) VALUE '*'.
+       01 VALUE-ACAO-LENGTH PIC S9(08) COMP VALUE 01.
+       
+       LINKAGE SECTION.
+
+       COPY 'REQUEST'.
+       COPY 'RESPONSE'.
+
+       PROCEDURE DIVISION.
+       000-START-PROCESSING.
+
+           SET ADDRESS OF BRE-INP-INPUT-STRUCTURE
+              TO ADDRESS OF DFHCOMMAREA
+           
+           CALL 'UserVal' USING DFHEIBLK
+                                DFHCOMMAREA
+                                BRE-INP-INPUT-STRUCTURE
+                                BRE-OUT-OUTPUT-STRUCTURE2 
+
+           SET ADDRESS OF BRE-OUT-OUTPUT-STRUCTURE
+              TO ADDRESS OF DFHCOMMAREA
+
+           MOVE BRE-OUT-OUTPUT-STRUCTURE2 TO BRE-OUT-OUTPUT-STRUCTURE
+
+           EXEC CICS WEB WRITE
+              HTTPHEADER (HEADER-ACAO)
+              NAMELENGTH (HEADER-ACAO-LENGTH)
+              VALUE      (VALUE-ACAO)
+              VALUELENGTH (VALUE-ACAO-LENGTH)
+              NOHANDLE
+           END-EXEC.
+           
+           EXEC CICS RETURN
+           END-EXEC.

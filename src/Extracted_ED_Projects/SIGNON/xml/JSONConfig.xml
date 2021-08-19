@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<provider_pipeline xmlns="http://sample/json/pipeline">
+  <service>
+    <terminal_handler>
+      <cics_json_handler_java>
+        <jvmserver>notUsed</jvmserver>
+        <repository>notUsed</repository>
+      </cics_json_handler_java>
+    </terminal_handler>
+  </service>
+  <apphandler_class>notUsed</apphandler_class>
+</provider_pipeline>

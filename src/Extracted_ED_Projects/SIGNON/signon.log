@@ -1,0 +1,1299 @@
+Log file from: LS2JS v6.0.00
+WSBIND file: C:\Users\Administrator\workspace\SIGNON\signon.wsbind
+Mode: Provider
+Created: Sat Aug  7 14:18:42 2021
+Product: Enterprise Developer v6.0.00
+-----------------------------
+
+Parameter "BINDING" has value "null".
+Parameter "BUNDLE" has value "null".
+Parameter "CCSID" has value "null".
+Parameter "CHAR-MULTIPLIER" has value "1".
+Parameter "CHAR-OCCURS" has value "ARRAY".
+Parameter "CHAR-USAGE" has value "NATIONAL".
+Parameter "CHAR-VARYING" has value "NO".
+Parameter "CHAR-WHITESPACE" has value "COLLAPSE".
+Parameter "CONTID" has value "null".
+Parameter "DATA-TRUNCATION" has value "DISABLED".
+Parameter "DATETIME" has value "UNUSED".
+Parameter "DEFAULT-CHAR-MAXLENGTH" has value "255".
+Parameter "HTTPMETHODS" has value "null".
+Parameter "HTTPPROXY" has value "null".
+Parameter "HTTPPROXY-USERNAME" has value "null".
+Parameter "HTTPPROXY-PASSWORD" has value "null".
+Parameter "INLINE-MAXOCCURS-LIMIT" has value "1".
+Parameter "JSON-SCHEMA" has value "null".
+Parameter "JSON-SCHEMA-REQUEST" has value "C:\Users\Administrator\workspace\SIGNON\request.json".
+Parameter "JSON-SCHEMA-RESPONSE" has value "C:\Users\Administrator\workspace\SIGNON\response.json".
+Parameter "JSON-SCHEMA-RESTFUL" has value "null".
+Parameter "JSONTRANSFRM" has value "null".
+Parameter "LANG" has value "COBOL".
+Parameter "LOGFILE" has value "C:\Users\Administrator\workspace\SIGNON\signon.log".
+Parameter "MAPPING-LEVEL" has value "3.0".
+Parameter "MAPPING-OVERRIDES" has value "null".
+Parameter "NAME-TRUNCATION" has value "RIGHT".
+Parameter "OPERATIONS" has value "null".
+Parameter "OPERATION-NAME" has value "DRIVEROperation".
+Parameter "PDSMEM" has value "null".
+Parameter "PGMINT" has value "COMMAREA".
+Parameter "PGMNAME" has value "DRIVER".
+Parameter "REQMEM" has value "C:\Users\Administrator\workspace\SIGNON\copybook\REQUEST.cpy".
+Parameter "REQUEST-CHANNEL" has value "null".
+Parameter "REQUEST-NAMESPACE" has value "null".
+Parameter "RESPMEM" has value "C:\Users\Administrator\workspace\SIGNON\copybook\RESPONSE.cpy".
+Parameter "RESPONSE-CHANNEL" has value "null".
+Parameter "RESPONSE-NAMESPACE" has value "null".
+Parameter "SERVICE" has value "null".
+Parameter "SOAPVER" has value "1.1".
+Parameter "SYNCONRETURN" has value "NO".
+Parameter "TRANSACTION" has value "null".
+Parameter "URI" has value "http://localhost:5482/cics/signon".
+Parameter "USERID" has value "null".
+Parameter "VENDOR-CONVERTER-NAME" has value "null".
+Parameter "VENDOR-APP-INTERFACE-LENGTH" has value "null".
+Parameter "VENDOR-META-DATA" has value "null".
+Parameter "WSBIND" has value "C:\Users\Administrator\workspace\SIGNON\signon.wsbind".
+Parameter "WSDL" has value "null".
+Parameter "WSDLCP" has value "UTF-8".
+Parameter "WSDL-NAMESPACE" has value "".
+Parameter "WSDL-SERVICE" has value "null".
+Parameter "WSDL_1.1" has value "null".
+Parameter "WSDL_2.0" has value "null".
+Parameter "XML-ONLY" has value "false".
+Parameter "SSL-TRUSTSTORE" has value "null".
+Parameter "SSL-TRUSTPWD" has value "null".
+Parameter "SSL-KEYSTORE" has value "null".
+Parameter "SSL-KEYPWD" has value "null".
+Parameter "WSRR-SERVER" has value "null".
+Parameter "WSRR-NAME" has value "null".
+Parameter "WSRR-NAMESPACE" has value "null".
+Parameter "WSRR-VERSION" has value "null".
+Parameter "WSRR-USERNAME" has value "null".
+Parameter "WSRR-PASSWORD" has value "null".
+Parameter "WSRR-DESCRIPTION" has value "null".
+Parameter "WSRR-ENCODING" has value "null".
+Parameter "WSRR-LOCATION" has value "null".
+Parameter "WIDE-COMP3" has value "NO".
+
+
+Creating ICM: RequestICM(Request)
+-------------
+
+ style: WRAPPED_DOCUMENT
+ wsdlOperationNS: http://www.signon.com
+ wsdlOperationName: DRIVEROperation
+ message type: Request Message
+
+ICM as text: RequestICM(Request)
+------------
+
+ICM Header Section:
+
+  EYECATCHER = >DFHICM<
+  MAPPING LEVEL = 7
+  ICM LENGTH =  0x00000000000004df (1247)
+  ICM NAME = RequestICM(Request)
+  SIZE OF STRUCTURE = 0x0000000000000012 (18)
+  XML TEMPLATE
+    OFFSET = 0x00000000000004bd (1213)
+    LENGTH = 0x0000000000000022 (34)
+    VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+  DATA OFFSET = 0x0000000000000218 (536)
+
+
+ICM Index Section: Offset of Start of Index Section = 0x0000000000000058 (88)
+
+  NUMBER OF INDEX ENTRIES = 5
+
+  OPTIMIZED INDEX OFFSET = 0x00000000000001b8 (440)
+  DATA TRUNCATION SUPPORTED =  false
+  XSI TYPE IN FIRST TAG =  false
+  OPTIMIZED INDEX AVAILABLE =  true
+  XOP ELIGIBLE =  false
+  RESPONSE MESSAGE =  false
+  REQUEST MESSAGE =  true
+  ATTRIBUTES SIGNIFICANT =  false
+  NAMESPACE SIGNIFICANT =  false
+
+  Index Offset: 0x0000000000000070 (112)
+  Index Offset: 0x0000000000000090 (144)
+  Index Offset: 0x00000000000000c8 (200)
+  Index Offset: 0x0000000000000118 (280)
+  Index Offset: 0x0000000000000168 (360)
+
+  Index Entry (Offset within ICM = 0x0000000000000070 (112))
+   POSITION NUMBER = 1
+   XPATH (TEXT = /signon)
+    XPATH PARTS = 1
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'signon'
+      offset '0x000000000000048c (1164)'
+      length '6'
+
+   DATA OFFSET = 0x0000000000000218 (536)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000090 (144)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000090 (144))
+   POSITION NUMBER = 2
+   XPATH (TEXT = /signon/BRE_INP_INPUT_STRUCTURE)
+    XPATH PARTS = 2
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'signon'
+      offset '0x000000000000048c (1164)'
+      length '6'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x00000000000003d9 (985)'
+      length '23'
+
+   DATA OFFSET = 0x0000000000000268 (616)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000118 (280)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000c8 (200))
+   POSITION NUMBER = 3
+   XPATH (TEXT = /signon/BRE_INP_INPUT_STRUCTURE/BRE_I_BANK_PSWD)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'signon'
+      offset '0x000000000000048c (1164)'
+      length '6'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x00000000000003d9 (985)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_I_BANK_PSWD'
+      offset '0x000000000000044c (1100)'
+      length '15'
+
+   DATA OFFSET = 0x0000000000000368 (872)
+   PROBABLE NEXT INDEX ENTRY = unknown
+
+
+  Index Entry (Offset within ICM = 0x0000000000000118 (280))
+   POSITION NUMBER = 4
+   XPATH (TEXT = /signon/BRE_INP_INPUT_STRUCTURE/BRE_I_BANK_SIGNON_ID)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'signon'
+      offset '0x000000000000048c (1164)'
+      length '6'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x00000000000003d9 (985)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_I_BANK_SIGNON_ID'
+      offset '0x00000000000003f2 (1010)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000002b8 (696)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000168 (360)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000168 (360))
+   POSITION NUMBER = 5
+   XPATH (TEXT = /signon/BRE_INP_INPUT_STRUCTURE/BRE_I_BANK_USERID)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'signon'
+      offset '0x000000000000048c (1164)'
+      length '6'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x00000000000003d9 (985)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x000000000000049a (1178)'
+      length '21'
+     ELEMENT
+      value 'BRE_I_BANK_USERID'
+      offset '0x0000000000000422 (1058)'
+      length '17'
+
+   DATA OFFSET = 0x0000000000000310 (784)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000c8 (200)
+
+
+  ICM OPTIMIZED INDEX:
+
+   ENTRY NUMBER: 1
+     FIRST CHILD POS = 2
+     LAST CHILD POS = 2
+     NESTING LEVEL = 1
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000070 (112)
+
+   ENTRY NUMBER: 2
+     FIRST CHILD POS = 3
+     LAST CHILD POS = 5
+     NESTING LEVEL = 2
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000090 (144)
+
+   ENTRY NUMBER: 3
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000c8 (200)
+
+   ENTRY NUMBER: 4
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000118 (280)
+
+   ENTRY NUMBER: 5
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000168 (360)
+
+ICM Data Section:
+Offset Of Start of Data Section = 0x0000000000000218 (536)
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000218 (536))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000268 (616)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000000003c8 (968)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000230 (560))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x00000000000004cc (1228)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x000000000000048c (1164)
+         LENGTH = 0x0000000000000006 (6)
+         VALUE = signon
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x0000000000000012 (18)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x000000000000048b (1163)
+         LENGTH = 0x0000000000000032 (50)
+         VALUE = <signon xmlns="http://www.signon.com">&A;</signon>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000268 (616))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000002b8 (696)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000000003c0 (960)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000280 (640))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x00000000000004b1 (1201)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x00000000000003d9 (985)
+         LENGTH = 0x0000000000000017 (23)
+         VALUE = BRE_INP_INPUT_STRUCTURE
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x0000000000000012 (18)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x00000000000003d8 (984)
+         LENGTH = 0x00000000000000b3 (179)
+         VALUE = <BRE_INP_INPUT_STRUCTURE><BRE_I_BANK_SIGNON_ID>&A;</BRE_I_BANK_SIGNON_ID><BRE_I_BANK_USERID>&B;</BRE_I_BANK_USERID><BRE_I_BANK_PSWD>&C;</BRE_I_BANK_PSWD></BRE_INP_INPUT_STRUCTURE>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000002b8 (696))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000310 (784)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000002d0 (720))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x000000000000049a (1178)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x00000000000003f2 (1010)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_BANK_SIGNON_ID
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000407 (1031)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000310 (784))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000368 (872)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000328 (808))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x000000000000049a (1178)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000422 (1058)
+         LENGTH = 0x0000000000000011 (17)
+         VALUE = BRE_I_BANK_USERID
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000434 (1076)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000368 (872))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000003c0 (960)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000380 (896))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 8
+       EXTENDED LAR = 0 (TOTAL LAR = 8)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x000000000000049a (1178)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x000000000000044c (1100)
+         LENGTH = 0x000000000000000f (15)
+         VALUE = BRE_I_BANK_PSWD
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000045c (1116)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &C;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000000a (10)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000000a (10)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x00000000000003c0 (960))
+    RECORD TYPE = 4
+
+  End Repeat (Offset within ICM = 0x00000000000003c8 (968))
+    RECORD TYPE = 4
+
+  End Data Section (Offset within ICM = 0x00000000000003d0 (976))
+    RECORD TYPE = 5
+
+
+ICM Constants Section:
+Offset Of Start of Constants Section = 0x00000000000003d8 (984)
+
+      OFFSET = 0x00000000000003d8 (984)
+      LENGTH = 0x00000000000000b3 (179)
+      VALUE = <BRE_INP_INPUT_STRUCTURE><BRE_I_BANK_SIGNON_ID>&A;</BRE_I_BANK_SIGNON_ID><BRE_I_BANK_USERID>&B;</BRE_I_BANK_USERID><BRE_I_BANK_PSWD>&C;</BRE_I_BANK_PSWD></BRE_INP_INPUT_STRUCTURE>
+
+      OFFSET = 0x000000000000048b (1163)
+      LENGTH = 0x0000000000000032 (50)
+      VALUE = <signon xmlns="http://www.signon.com">&A;</signon>
+
+      OFFSET = 0x00000000000004bd (1213)
+      LENGTH = 0x0000000000000022 (34)
+      VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+
+
+ICM as data: RequestICM(Request)
+------------
+
+
+Offset: 0x0000000000000000 (0)
+ 6ec4c6c8 c9c3d44c 00000007 00000000   00000000 000004df d98598a4 85a2a3c9         *>DFHICM<...............ÿRequestI*
+ c3d44dd9 8598a485 a2a35d00 00000000   00000000 00000000 00000000 00000012         *CM(Request).....................*
+ 00000000 000004bd 00000000 00000022   00000000 00000218 00000005 0001b824         *.......¨......................½.*
+ 00700090 00c80118 01680000 00000000   00010090 00000218 15060000 00000000         *.ø.°.H...Ç.........°............*
+ 00000000 0000049a 00000000 0000048c   00020118 00000268 15060000 00000000         *.......ª.......ð.......Ç........*
+ 00000000 0000049a 00000000 0000048c   15170000 00000000 00000000 0000049a         *.......ª.......ð...............ª*
+ 00000000 000003d9 0003ffff 00000368   15060000 00000000 00000000 0000049a         *.......R..??...Ç...............ª*
+ 00000000 0000048c 15170000 00000000   00000000 0000049a 00000000 000003d9         *.......ð...............ª.......R*
+
+Offset: 0x0000000000000100 (256)
+ 150f0000 00000000 00000000 0000049a   00000000 0000044c 00030168 000002b8         *...............ª.......<...Ç...½*
+ 15060000 00000000 00000000 0000049a   00000000 0000048c 15170000 00000000         *...............ª.......ð........*
+ 00000000 0000049a 00000000 000003d9   15140000 00000000 00000000 0000049a         *.......ª.......R...............ª*
+ 00000000 000003f2 000300c8 00000310   15060000 00000000 00000000 0000049a         *.......2...H...................ª*
+ 00000000 0000048c 15170000 00000000   00000000 0000049a 00000000 000003d9         *.......ð...............ª.......R*
+ 15110000 00000000 00000000 0000049a   00000000 00000422 00000001 00000001         *...............ª................*
+ 00000000 ffffffff 00000002 00000002   00000001 00000070 00000003 00000005         *....????...............ø........*
+ 00000002 00000090 00007fff 00000000   00000003 000000c8 00007fff 00000000         *.......°.."?...........H.."?....*
+
+Offset: 0x0000000000000200 (512)
+ 00000003 00000118 00007fff 00000000   00000003 00000168 07000050 00000268         *.........."?...........Ç...&...Ç*
+ ffffffff 000003c8 00000000 00000000   02010001 00000306 00000000 00000012         *????...H........................*
+ 00000000 00000000 00000000 000004cc   00000000 0000048c 00000000 00000032         *...............ö.......ð........*
+ 00000000 0000048b 07000050 000002b8   ffffffff 000003c0 00000000 00000000         *.......»...&...½????...{........*
+ 02010001 00000317 00000000 00000012   00000000 00000000 00000000 000004b1         *...............................£*
+ 00000000 000003d9 00000000 000000b3   00000000 000003d8 06000058 00000310         *.......R.......·.......Q...ì....*
+ ffffffff ffffffff 00000000 00000000   01010005 ff000015 00140003 00000000         *????????............?...........*
+ 00000000 00000000 00000000 0000049a   00000000 000003f2 00000000 00000407         *...............ª.......2........*
+
+Offset: 0x0000000000000300 (768)
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000368 ffffffff ffffffff         *????????????????...ì...Ç????????*
+ 00000000 00000000 01010005 ff000015   00110003 00000000 00000000 00000005         *............?...................*
+ 00000000 0000049a 00000000 00000422   00000000 00000434 ffffffff ffffffff         *.......ª................????????*
+ ffffffff ffffffff 06000058 000003c0   ffffffff ffffffff 00000000 00000000         *????????...ì...{????????........*
+ 01010008 ff000015 000f0003 00000000   00000000 0000000a 00000000 0000049a         *....?..........................ª*
+ 00000000 0000044c 00000000 0000045c   ffffffff ffffffff ffffffff ffffffff         *.......<.......*????????????????*
+ 04000000 00000000 04000000 00000000   05000000 00000000 4cc2d9c5 6dc9d5d7         *........................<BRE_INP*
+ 6dc9d5d7 e4e36de2 e3d9e4c3 e3e4d9c5   6e4cc2d9 c56dc96d c2c1d5d2 6de2c9c7         *_INPUT_STRUCTURE><BRE_I_BANK_SIG*
+
+Offset: 0x0000000000000400 (1024)
+ d5d6d56d c9c46e50 c15e4c61 c2d9c56d   c96dc2c1 d5d26de2 c9c7d5d6 d56dc9c4         *NON_ID>&A;</BRE_I_BANK_SIGNON_ID*
+ 6e4cc2d9 c56dc96d c2c1d5d2 6de4e2c5   d9c9c46e 50c25e4c 61c2d9c5 6dc96dc2         *><BRE_I_BANK_USERID>&B;</BRE_I_B*
+ c1d5d26d e4e2c5d9 c9c46e4c c2d9c56d   c96dc2c1 d5d26dd7 e2e6c46e 50c35e4c         *ANK_USERID><BRE_I_BANK_PSWD>&C;<*
+ 61c2d9c5 6dc96dc2 c1d5d26d d7e2e6c4   6e4c61c2 d9c56dc9 d5d76dc9 d5d7e4e3         */BRE_I_BANK_PSWD></BRE_INP_INPUT*
+ 6de2e3d9 e4c3e3e4 d9c56e4c a2898795   969540a7 949395a2 7e7f88a3 a3977a61         *_STRUCTURE><signon xmlns="http:/*
+ 61a6a6a6 4ba28987 9596954b 8396947f   6e50c15e 4c61a289 87959695 6e4ce2d6         */www.signon.com">&A;</signon><SO*
+ c1d760c5 d5e57ac2 9684a86e 50c15e4c   61e2d6c1 d760c5d5 e57ac296 84a86e      *AP-ENV:Body>&A;</SOAP-ENV:Body>*
+
+
+Total length of binary data is: 0x00000000000004df (1247)
+
+Creating ICM: ResponseICM(Response)
+-------------
+
+ style: WRAPPED_DOCUMENT
+ wsdlOperationNS: http://www.signon.com
+ wsdlOperationName: DRIVEROperation
+ message type: Response Message
+
+ICM as text: ResponseICM(Response)
+------------
+
+ICM Header Section:
+
+  EYECATCHER = >DFHICM<
+  MAPPING LEVEL = 7
+  ICM LENGTH =  0x00000000000006c5 (1733)
+  ICM NAME = ResponseICM(Response)
+  SIZE OF STRUCTURE = 0x000000000000006f (111)
+  XML TEMPLATE
+    OFFSET = 0x00000000000006a3 (1699)
+    LENGTH = 0x0000000000000022 (34)
+    VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+  DATA OFFSET = 0x00000000000002d8 (728)
+
+
+ICM Index Section: Offset of Start of Index Section = 0x0000000000000058 (88)
+
+  NUMBER OF INDEX ENTRIES = 7
+
+  OPTIMIZED INDEX OFFSET = 0x0000000000000258 (600)
+  DATA TRUNCATION SUPPORTED =  false
+  XSI TYPE IN FIRST TAG =  false
+  OPTIMIZED INDEX AVAILABLE =  true
+  XOP ELIGIBLE =  false
+  RESPONSE MESSAGE =  true
+  REQUEST MESSAGE =  false
+  ATTRIBUTES SIGNIFICANT =  false
+  NAMESPACE SIGNIFICANT =  false
+
+  Index Offset: 0x0000000000000070 (112)
+  Index Offset: 0x0000000000000090 (144)
+  Index Offset: 0x00000000000000c8 (200)
+  Index Offset: 0x0000000000000118 (280)
+  Index Offset: 0x0000000000000168 (360)
+  Index Offset: 0x00000000000001b8 (440)
+  Index Offset: 0x0000000000000208 (520)
+
+  Index Entry (Offset within ICM = 0x0000000000000070 (112))
+   POSITION NUMBER = 1
+   XPATH (TEXT = /signonResponse)
+    XPATH PARTS = 1
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+   DATA OFFSET = 0x00000000000002d8 (728)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000090 (144)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000090 (144))
+   POSITION NUMBER = 2
+   XPATH (TEXT = /signonResponse/BRE_OUT_OUTPUT_STRUCTURE)
+    XPATH PARTS = 2
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000549 (1353)'
+      length '24'
+
+   DATA OFFSET = 0x0000000000000328 (808)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000208 (520)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000c8 (200))
+   POSITION NUMBER = 3
+   XPATH (TEXT = /signonResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_BANK_SIGNON_ID)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000549 (1353)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_O_BANK_SIGNON_ID'
+      offset '0x00000000000005bd (1469)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000428 (1064)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000118 (280)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000118 (280))
+   POSITION NUMBER = 4
+   XPATH (TEXT = /signonResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_BANK_USERID)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000549 (1353)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_O_BANK_USERID'
+      offset '0x00000000000005ed (1517)'
+      length '17'
+
+   DATA OFFSET = 0x0000000000000480 (1152)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000168 (360)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000168 (360))
+   POSITION NUMBER = 5
+   XPATH (TEXT = /signonResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_BANK_USERID_NA)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000549 (1353)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_O_BANK_USERID_NA'
+      offset '0x0000000000000617 (1559)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000004d8 (1240)
+   PROBABLE NEXT INDEX ENTRY = unknown
+
+
+  Index Entry (Offset within ICM = 0x00000000000001b8 (440))
+   POSITION NUMBER = 6
+   XPATH (TEXT = /signonResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_WS_ERROR_MSG)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000549 (1353)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_O_WS_ERROR_MSG'
+      offset '0x0000000000000591 (1425)'
+      length '18'
+
+   DATA OFFSET = 0x00000000000003d0 (976)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000c8 (200)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000208 (520))
+   POSITION NUMBER = 7
+   XPATH (TEXT = /signonResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_WS_INPUT_FLAG)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'signonResponse'
+      offset '0x0000000000000662 (1634)'
+      length '14'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000549 (1353)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.signon.com'
+      offset '0x0000000000000678 (1656)'
+      length '21'
+     ELEMENT
+      value 'BRE_O_WS_INPUT_FLAG'
+      offset '0x0000000000000563 (1379)'
+      length '19'
+
+   DATA OFFSET = 0x0000000000000378 (888)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000001b8 (440)
+
+
+  ICM OPTIMIZED INDEX:
+
+   ENTRY NUMBER: 1
+     FIRST CHILD POS = 2
+     LAST CHILD POS = 2
+     NESTING LEVEL = 1
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000070 (112)
+
+   ENTRY NUMBER: 2
+     FIRST CHILD POS = 3
+     LAST CHILD POS = 7
+     NESTING LEVEL = 2
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000090 (144)
+
+   ENTRY NUMBER: 3
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000c8 (200)
+
+   ENTRY NUMBER: 4
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000118 (280)
+
+   ENTRY NUMBER: 5
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000168 (360)
+
+   ENTRY NUMBER: 6
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000001b8 (440)
+
+   ENTRY NUMBER: 7
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000208 (520)
+
+ICM Data Section:
+Offset Of Start of Data Section = 0x00000000000002d8 (728)
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x00000000000002d8 (728))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000328 (808)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000538 (1336)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x00000000000002f0 (752))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x00000000000006b2 (1714)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000662 (1634)
+         LENGTH = 0x000000000000000e (14)
+         VALUE = signonResponse
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000006f (111)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000661 (1633)
+         LENGTH = 0x0000000000000042 (66)
+         VALUE = <signonResponse xmlns="http://www.signon.com">&A;</signonResponse>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000328 (808))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000378 (888)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000530 (1328)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000340 (832))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x000000000000068f (1679)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000549 (1353)
+         LENGTH = 0x0000000000000018 (24)
+         VALUE = BRE_OUT_OUTPUT_STRUCTURE
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000006f (111)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000548 (1352)
+         LENGTH = 0x0000000000000119 (281)
+         VALUE = <BRE_OUT_OUTPUT_STRUCTURE><BRE_O_WS_INPUT_FLAG>&A;</BRE_O_WS_INPUT_FLAG><BRE_O_WS_ERROR_MSG>&B;</BRE_O_WS_ERROR_MSG><BRE_O_BANK_SIGNON_ID>&C;</BRE_O_BANK_SIGNON_ID><BRE_O_BANK_USERID>&D;</BRE_O_BANK_USERID><BRE_O_BANK_USERID_NA>&E;</BRE_O_BANK_USERID_NA></BRE_OUT_OUTPUT_STRUCTURE>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000378 (888))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000003d0 (976)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000390 (912))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000678 (1656)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000563 (1379)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = BRE_O_WS_INPUT_FLAG
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000577 (1399)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000003d0 (976))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000428 (1064)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000003e8 (1000))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 75
+       EXTENDED LAR = 0 (TOTAL LAR = 75)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000678 (1656)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000591 (1425)
+         LENGTH = 0x0000000000000012 (18)
+         VALUE = BRE_O_WS_ERROR_MSG
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000005a4 (1444)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000001 (1)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000001 (1)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000428 (1064))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000480 (1152)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000440 (1088))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000678 (1656)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x00000000000005bd (1469)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_BANK_SIGNON_ID
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000005d2 (1490)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &C;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000004c (76)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000004c (76)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000480 (1152))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000004d8 (1240)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000498 (1176))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000678 (1656)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x00000000000005ed (1517)
+         LENGTH = 0x0000000000000011 (17)
+         VALUE = BRE_O_BANK_USERID
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000005ff (1535)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &D;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000051 (81)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000051 (81)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000004d8 (1240))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000530 (1328)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000004f0 (1264))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000678 (1656)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = http://www.signon.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000617 (1559)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_BANK_USERID_NA
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000062c (1580)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &E;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000056 (86)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000056 (86)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000530 (1328))
+    RECORD TYPE = 4
+
+  End Repeat (Offset within ICM = 0x0000000000000538 (1336))
+    RECORD TYPE = 4
+
+  End Data Section (Offset within ICM = 0x0000000000000540 (1344))
+    RECORD TYPE = 5
+
+
+ICM Constants Section:
+Offset Of Start of Constants Section = 0x0000000000000548 (1352)
+
+      OFFSET = 0x0000000000000548 (1352)
+      LENGTH = 0x0000000000000119 (281)
+      VALUE = <BRE_OUT_OUTPUT_STRUCTURE><BRE_O_WS_INPUT_FLAG>&A;</BRE_O_WS_INPUT_FLAG><BRE_O_WS_ERROR_MSG>&B;</BRE_O_WS_ERROR_MSG><BRE_O_BANK_SIGNON_ID>&C;</BRE_O_BANK_SIGNON_ID><BRE_O_BANK_USERID>&D;</BRE_O_BANK_USERID><BRE_O_BANK_USERID_NA>&E;</BRE_O_BANK_USERID_NA></BRE_OUT_OUTPUT_STRUCTURE>
+
+      OFFSET = 0x0000000000000661 (1633)
+      LENGTH = 0x0000000000000042 (66)
+      VALUE = <signonResponse xmlns="http://www.signon.com">&A;</signonResponse>
+
+      OFFSET = 0x00000000000006a3 (1699)
+      LENGTH = 0x0000000000000022 (34)
+      VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+
+
+ICM as data: ResponseICM(Response)
+------------
+
+
+Offset: 0x0000000000000000 (0)
+ 6ec4c6c8 c9c3d44c 00000007 00000000   00000000 000006c5 d985a297 9695a285         *>DFHICM<...............EResponse*
+ c9c3d44d d985a297 9695a285 5d000000   00000000 00000000 00000000 0000006f         *ICM(Response)..................?*
+ 00000000 000006a3 00000000 00000022   00000000 000002d8 00000007 00025828         *.......t...............Q......ì.*
+ 00700090 00c80118 016801b8 02080000   00010090 000002d8 150e0000 00000000         *.ø.°.H...Ç.½.......°...Q........*
+ 00000000 00000678 00000000 00000662   00020208 00000328 150e0000 00000000         *.......Ì.......Â................*
+ 00000000 00000678 00000000 00000662   15180000 00000000 00000000 00000678         *.......Ì.......Â...............Ì*
+ 00000000 00000549 00030118 00000428   150e0000 00000000 00000000 00000678         *.......ñ.......................Ì*
+ 00000000 00000662 15180000 00000000   00000000 00000678 00000000 00000549         *.......Â...............Ì.......ñ*
+
+Offset: 0x0000000000000100 (256)
+ 15140000 00000000 00000000 00000678   00000000 000005bd 00030168 00000480         *...............Ì.......¨...Ç...Ø*
+ 150e0000 00000000 00000000 00000678   00000000 00000662 15180000 00000000         *...............Ì.......Â........*
+ 00000000 00000678 00000000 00000549   15110000 00000000 00000000 00000678         *.......Ì.......ñ...............Ì*
+ 00000000 000005ed 0003ffff 000004d8   150e0000 00000000 00000000 00000678         *.......Ò..??...Q...............Ì*
+ 00000000 00000662 15180000 00000000   00000000 00000678 00000000 00000549         *.......Â...............Ì.......ñ*
+ 15140000 00000000 00000000 00000678   00000000 00000617 000300c8 000003d0         *...............Ì...........H...}*
+ 150e0000 00000000 00000000 00000678   00000000 00000662 15180000 00000000         *...............Ì.......Â........*
+ 00000000 00000678 00000000 00000549   15120000 00000000 00000000 00000678         *.......Ì.......ñ...............Ì*
+
+Offset: 0x0000000000000200 (512)
+ 00000000 00000591 000301b8 00000378   150e0000 00000000 00000000 00000678         *.......j...½...Ì...............Ì*
+ 00000000 00000662 15180000 00000000   00000000 00000678 00000000 00000549         *.......Â...............Ì.......ñ*
+ 15130000 00000000 00000000 00000678   00000000 00000563 00000001 00000001         *...............Ì.......Ä........*
+ 00000000 ffffffff 00000002 00000002   00000001 00000070 00000003 00000007         *....????...............ø........*
+ 00000002 00000090 00007fff 00000000   00000003 000000c8 00007fff 00000000         *.......°.."?...........H.."?....*
+ 00000003 00000118 00007fff 00000000   00000003 00000168 00007fff 00000000         *.........."?...........Ç.."?....*
+ 00000003 000001b8 00007fff 00000000   00000003 00000208 07000050 00000328         *.......½.."?...............&....*
+ ffffffff 00000538 00000000 00000000   02010001 0000030e 00000000 0000006f         *????...........................?*
+
+Offset: 0x0000000000000300 (768)
+ 00000000 00000000 00000000 000006b2   00000000 00000662 00000000 00000042         *...............¥.......Â.......â*
+ 00000000 00000661 07000050 00000378   ffffffff 00000530 00000000 00000000         *......./...&...Ì????............*
+ 02010001 00000318 00000000 0000006f   00000000 00000000 00000000 0000068f         *...............?...............±*
+ 00000000 00000549 00000000 00000119   00000000 00000548 06000058 000003d0         *.......ñ...............ç...ì...}*
+ ffffffff ffffffff 00000000 00000000   01010001 ff000015 00130003 00000000         *????????............?...........*
+ 00000000 00000000 00000000 00000678   00000000 00000563 00000000 00000577         *...............Ì.......Ä.......Ï*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000428 ffffffff ffffffff         *????????????????...ì....????????*
+ 00000000 00000000 0101004b ff000015   00120003 00000000 00000000 00000001         *............?...................*
+
+Offset: 0x0000000000000400 (1024)
+ 00000000 00000678 00000000 00000591   00000000 000005a4 ffffffff ffffffff         *.......Ì.......j.......u????????*
+ ffffffff ffffffff 06000058 00000480   ffffffff ffffffff 00000000 00000000         *????????...ì...Ø????????........*
+ 01010005 ff000015 00140003 00000000   00000000 0000004c 00000000 00000678         *....?..................<.......Ì*
+ 00000000 000005bd 00000000 000005d2   ffffffff ffffffff ffffffff ffffffff         *.......¨.......K????????????????*
+ 06000058 000004d8 ffffffff ffffffff   00000000 00000000 01010005 ff000015         *...ì...Q????????............?...*
+ 00110003 00000000 00000000 00000051   00000000 00000678 00000000 000005ed         *...............é.......Ì.......Ò*
+ 00000000 000005ff ffffffff ffffffff   ffffffff ffffffff 06000058 00000530         *.......?????????????????...ì....*
+ ffffffff ffffffff 00000000 00000000   01010019 ff000015 00140003 00000000         *????????............?...........*
+
+Offset: 0x0000000000000500 (1280)
+ 00000000 00000056 00000000 00000678   00000000 00000617 00000000 0000062c         *.......î.......Ì................*
+ ffffffff ffffffff ffffffff ffffffff   04000000 00000000 04000000 00000000         *????????????????................*
+ 05000000 00000000 4cc2d9c5 6dd6e4e3   6dd6e4e3 d7e4e36d e2e3d9e4 c3e3e4d9         *........<BRE_OUT_OUTPUT_STRUCTUR*
+ c56e4cc2 d9c56dd6 6de6e26d c9d5d7e4   e36dc6d3 c1c76e50 c15e4c61 c2d9c56d         *E><BRE_O_WS_INPUT_FLAG>&A;</BRE_*
+ d66de6e2 6dc9d5d7 e4e36dc6 d3c1c76e   4cc2d9c5 6dd66de6 e26dc5d9 d9d6d96d         *O_WS_INPUT_FLAG><BRE_O_WS_ERROR_*
+ d4e2c76e 50c25e4c 61c2d9c5 6dd66de6   e26dc5d9 d9d6d96d d4e2c76e 4cc2d9c5         *MSG>&B;</BRE_O_WS_ERROR_MSG><BRE*
+ 6dd66dc2 c1d5d26d e2c9c7d5 d6d56dc9   c46e50c3 5e4c61c2 d9c56dd6 6dc2c1d5         *_O_BANK_SIGNON_ID>&C;</BRE_O_BAN*
+ d26de2c9 c7d5d6d5 6dc9c46e 4cc2d9c5   6dd66dc2 c1d5d26d e4e2c5d9 c9c46e50         *K_SIGNON_ID><BRE_O_BANK_USERID>&*
+
+Offset: 0x0000000000000600 (1536)
+ c45e4c61 c2d9c56d d66dc2c1 d5d26de4   e2c5d9c9 c46e4cc2 d9c56dd6 6dc2c1d5         *D;</BRE_O_BANK_USERID><BRE_O_BAN*
+ d26de4e2 c5d9c9c4 6dd5c16e 50c55e4c   61c2d9c5 6dd66dc2 c1d5d26d e4e2c5d9         *K_USERID_NA>&E;</BRE_O_BANK_USER*
+ c9c46dd5 c16e4c61 c2d9c56d d6e4e36d   d6e4e3d7 e4e36de2 e3d9e4c3 e3e4d9c5         *ID_NA></BRE_OUT_OUTPUT_STRUCTURE*
+ 6e4ca289 87959695 d985a297 9695a285   40a79493 95a27e7f 88a3a397 7a6161a6         *><signonResponse xmlns="http://w*
+ a6a64ba2 89879596 954b8396 947f6e50   c15e4c61 a2898795 9695d985 a2979695         *ww.signon.com">&A;</signonRespon*
+ a2856e4c e2d6c1d7 60c5d5e5 7ac29684   a86e50c1 5e4c61e2 d6c1d760 c5d5e57a         *se><SOAP-ENV:Body>&A;</SOAP-ENV:*
+ c29684a8 6e      *Body>*
+
+
+Total length of binary data is: 0x00000000000006c5 (1733)
+
+WSBIND generation completed successfully.

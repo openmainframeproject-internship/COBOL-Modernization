@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ImtkSi xmlns="http://xml.microfocus.com/schema/imtksi/v1.0/mfimtksi.xsd">
+  <cicsJsonWebServiceMapping mappingName="DRIVER" additionalParams="" kind="providerBottomUp">
+    <properties endpointUrl="http://localhost:5482/cics/signon" programPath="cbl/DRIVER.cbl" programName="DRIVER" containerName="DFHWS-DATA" requestFilePath="copybook/REQUEST.cpy" responseFilePath="copybook/RESPONSE.cpy" jsonSchemaRequest="C:\Users\Administrator\workspace\SIGNON\request.json" jsonSchemaResponse="C:\Users\Administrator\workspace\SIGNON\response.json" wsbindPath="C:\Users\Administrator\workspace\SIGNON\signon.wsbind"/>
+  </cicsJsonWebServiceMapping>
+  <cicsJsonWebServiceMapping mappingName="DRIVER" kind="providerBottomUp">
+    <properties endpointUrl="http://localhost:5482/cics/signon" programPath="cbl/DRIVER.cbl" programName="DRIVER" containerName="DFHWS-DATA" requestFilePath="copybook/REQUEST.cpy" responseFilePath="copybook/RESPONSE.cpy" jsonSchemaRequest="C:\Users\Administrator\workspace\SIGNON\request.json" jsonSchemaResponse="C:\Users\Administrator\workspace\SIGNON\response.json" wsbindPath="C:\Users\Administrator\workspace\SIGNON\signon.wsbind"/>
+  </cicsJsonWebServiceMapping>
+</ImtkSi>

@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbl:CobolComponent version="4.0.4" CompileTimeStamp="2021-07-19T20:18:23.13" xmlns:cbl="http://microfocus.com/Modernization/KenlyGen" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://microfocus.com/Modernization/KenlyGen cobol.xsd">
+ <Options>
+  <CompilerVersionInformation Product="600" MajorVersion="112" MinorVersion="000"/>
+  <SourceFormat Value="Fixed"/>
+  <CompileOption Option="ADV"/>
+  <CompileOption Option="ALIGN">
+   <Parameter Value="8"/>
+  </CompileOption>
+  <CompileOption Option="ALPHASTART">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="ALTER"/>
+  <CompileOption Option="ANS85"/>
+  <CompileOption Option="APOST"/>
+  <CompileOption Option="AREACHECK"/>
+  <CompileOption Option="ARITHMETIC">
+   <Parameter Value="ENTCOBOL"/>
+  </CompileOption>
+  <CompileOption Option="ASSIGN">
+   <Parameter Value="EXTERNAL"/>
+  </CompileOption>
+  <CompileOption Option="BINLIT">
+   <Parameter Value="BOOLEAN"/>
+  </CompileOption>
+  <CompileOption Option="BWZSTAR"/>
+  <CompileOption Option="BYTEMODEMOVE"/>
+  <CompileOption Option="CALLFH">
+   <Parameter Value="EXTFH"/>
+  </CompileOption>
+  <CompileOption Option="CALLSORT">
+   <Parameter Value="EXTSM"/>
+  </CompileOption>
+  <CompileOption Option="CANCELLBR"/>
+  <CompileOption Option="CHARSET">
+   <Parameter Value="EBCDIC"/>
+  </CompileOption>
+  <CompileOption Option="CHECKDIV">
+   <Parameter Value="ENTCOBOL"/>
+  </CompileOption>
+  <CompileOption Option="COBFSTATCONV"/>
+  <CompileOption Option="COMP1">
+   <Parameter Value="FLOAT"/>
+  </CompileOption>
+  <CompileOption Option="COMP2">
+   <Parameter Value="FLOAT"/>
+  </CompileOption>
+  <CompileOption Option="COMP5BYTEORDER">
+   <Parameter Value="NATIVE"/>
+  </CompileOption>
+  <CompileOption Option="COMP-5">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="COMP-6">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="CONVSPACE"/>
+  <CompileOption Option="COPYEXT">
+   <Parameter Value="cpy,cbl"/>
+  </CompileOption>
+  <CompileOption Option="COPYLBR"/>
+  <CompileOption Option="COPYLIST"/>
+  <CompileOption Option="COPYLISTCOMMENT">
+   <Parameter Value="7"/>
+  </CompileOption>
+  <CompileOption Option="COPYSEARCH">
+   <Parameter Value="MF"/>
+  </CompileOption>
+  <CompileOption Option="CSI"/>
+  <CompileOption Option="CURRENCY-SIGN">
+   <Parameter Value="36"/>
+  </CompileOption>
+  <CompileOption Option="CURRENT-DATE">
+   <Parameter Value="MMDDYY"/>
+  </CompileOption>
+  <CompileOption Option="DATA"/>
+  <CompileOption Option="DATE"/>
+  <CompileOption Option="DBCHECK"/>
+  <CompileOption Option="DBCS">
+   <Parameter Value="3"/>
+  </CompileOption>
+  <CompileOption Option="DBCSSOSI">
+   <Parameter Value="14"/>
+   <Parameter Value="15"/>
+  </CompileOption>
+  <CompileOption Option="DBSPACE"/>
+  <CompileOption Option="DE-EDIT"/>
+  <CompileOption Option="DEFAULTBYTE">
+   <Parameter Value="0"/>
+  </CompileOption>
+  <CompileOption Option="DETECTLOCK"/>
+  <CompileOption Option="DIALECT">
+   <Parameter Value="ENTCOBOL"/>
+  </CompileOption>
+  <CompileOption Option="DISPLAY">
+   <Parameter Value="CONSOLE"/>
+  </CompileOption>
+  <CompileOption Option="DPCINSUBSCRIPT"/>
+  <CompileOption Option="ENTCOBOL"/>
+  <CompileOption Option="ERRFORMAT">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="EOF1A">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="FASTSORT"/>
+  <CompileOption Option="FCD3"/>
+  <CompileOption Option="FDCLEAR">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="FILETYPE">
+   <Parameter Value="0"/>
+  </CompileOption>
+  <CompileOption Option="FLAGSINEDIT"/>
+  <CompileOption Option="FOLDCALLNAME">
+   <Parameter Value="UPPER"/>
+  </CompileOption>
+  <CompileOption Option="FOLDCOPYNAME">
+   <Parameter Value="UPPER"/>
+  </CompileOption>
+  <CompileOption Option="FP-ROUNDING">
+   <Parameter Value="ENTCOBOL"/>
+  </CompileOption>
+  <CompileOption Option="HOSTCONTZERO"/>
+  <CompileOption Option="HOSTFD"/>
+  <CompileOption Option="HOST-NUMCOMPARE">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="HOST-NUMMOVE">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="IBMCOMP"/>
+  <CompileOption Option="IDENTIFIERLEN">
+   <Parameter Value="30"/>
+  </CompileOption>
+  <CompileOption Option="IMPLICITSCOPE"/>
+  <CompileOption Option="INFORETURN">
+   <Parameter Value="0"/>
+  </CompileOption>
+  <CompileOption Option="INDD">
+   <Parameter Value="SYSIN 80 R"/>
+  </CompileOption>
+  <CompileOption Option="INTDATE">
+   <Parameter Value="ANSI"/>
+  </CompileOption>
+  <CompileOption Option="INTLEVEL">
+   <Parameter Value="8"/>
+  </CompileOption>
+  <CompileOption Option="IOCONV"/>
+  <CompileOption Option="KEYCHECK"/>
+  <CompileOption Option="LISTWIDTH">
+   <Parameter Value="80"/>
+  </CompileOption>
+  <CompileOption Option="LITVAL-SIZE">
+   <Parameter Value="4"/>
+  </CompileOption>
+  <CompileOption Option="MAPNAME"/>
+  <CompileOption Option="METHODDEFAULT">
+   <Parameter Value="REFERENCE"/>
+  </CompileOption>
+  <CompileOption Option="NATIVE">
+   <Parameter Value="EBCDIC"/>
+  </CompileOption>
+  <CompileOption Option="NSYMBOL">
+   <Parameter Value="NATIONAL"/>
+  </CompileOption>
+  <CompileOption Option="NULLESCAPE">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="ODOSLIDE"/>
+  <CompileOption Option="OOCTRL">
+   <Parameter Value="+A-C-E+F-G+L-P+Q+R-S-U+W"/>
+  </CompileOption>
+  <CompileOption Option="OSEXT">
+   <Parameter Value="cbl"/>
+  </CompileOption>
+  <CompileOption Option="OUTDD">
+   <Parameter Value="SYSOUT 121 R"/>
+  </CompileOption>
+  <CompileOption Option="PARAMCOUNTCHECK"/>
+  <CompileOption Option="PERFORM-TYPE">
+   <Parameter Value="ENTCOBOL"/>
+  </CompileOption>
+  <CompileOption Option="PRESERVECASE"/>
+  <CompileOption Option="PROTOTYPE">
+   <Parameter Value="RELAXED"/>
+  </CompileOption>
+  <CompileOption Option="QUAL"/>
+  <CompileOption Option="QUALPROC"/>
+  <CompileOption Option="RDW"/>
+  <CompileOption Option="RECMODE">
+   <Parameter Value="ENTCOBOL"/>
+  </CompileOption>
+  <CompileOption Option="REMAINDER">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="REPORT-LINE">
+   <Parameter Value="256"/>
+  </CompileOption>
+  <CompileOption Option="RESEQ"/>
+  <CompileOption Option="REWRITE-LS"/>
+  <CompileOption Option="RTNCODE-SIZE">
+   <Parameter Value="2"/>
+  </CompileOption>
+  <CompileOption Option="SEQUENTIAL">
+   <Parameter Value="RECORD"/>
+  </CompileOption>
+  <CompileOption Option="SIGN">
+   <Parameter Value="ibm"/>
+   <Parameter Value="trailing"/>
+  </CompileOption>
+  <CompileOption Option="SORTTYPE">
+   <Parameter Value="DFSORT"/>
+  </CompileOption>
+  <CompileOption Option="SOURCETABSTOP">
+   <Parameter Value="4"/>
+  </CompileOption>
+  <CompileOption Option="STDERR"/>
+  <CompileOption Option="STICKY-LINKAGE">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="SUPFF"/>
+  <CompileOption Option="SWITCHTYPE">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="SYMBSTART">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="SYSPUNCH">
+   <Parameter Value="80"/>
+  </CompileOption>
+  <CompileOption Option="TERMPAGE"/>
+  <CompileOption Option="TIME"/>
+  <CompileOption Option="TRUNCCALLNAME">
+   <Parameter Value="8"/>
+  </CompileOption>
+  <CompileOption Option="TRUNCCOPY">
+   <Parameter Value="8"/>
+  </CompileOption>
+  <CompileOption Option="TRUNCINC">
+   <Parameter Value="10"/>
+  </CompileOption>
+  <CompileOption Option="UNICODE">
+   <Parameter Value="PORTABLE"/>
+  </CompileOption>
+  <CompileOption Option="VERBOSE"/>
+  <CompileOption Option="WARNING">
+   <Parameter Value="1"/>
+  </CompileOption>
+  <CompileOption Option="WEBSERVER">
+   <Parameter Value="CGI"/>
+  </CompileOption>
+  <CompileOption Option="XMLPARSE">
+   <Parameter Value="XMLSS"/>
+  </CompileOption>
+  <CompileOption Option="ZEROLENGTHFALSE"/>
+  <CompileOption Option="ZWB"/>
+ </Options>
+ <CommentStats Comments="115" InlineComments="0" MeaningfulComments="65"/>
+ <Comments>
+  <Comment Text=" Generated on 7/9/2021 at 8:45:48 PM" Line="1" Column="8"/>
+  <Comment Text="" Line="2" Column="8"/>
+  <Comment Text="|COMPONENT INFO:" Line="3" Column="8"/>
+  <Comment Text="|Component type: Structure Based Slice: Range" Line="4" Column="8"/>
+  <Comment Text="|Original program: &quot;BBANK10P&quot;" Line="5" Column="8"/>
+  <Comment Text="|COBOL dialect: Cobol390" Line="6" Column="8"/>
+  <Comment Text="|COMPONENT TYPE SPECIFIC:" Line="8" Column="8"/>
+  <Comment Text="|Start Paragraph: VALIDATE-USER" Line="9" Column="8"/>
+  <Comment Text="|Last Paragraph: VALIDATE-USER" Line="10" Column="8"/>
+  <Comment Text="|THIS IS THE LAST LINE OF GENERATED HEADER" Line="12" Column="8"/>
+  <Comment Text="****************************************************************" Line="14" Column="8"/>
+  <Comment Text="                                                               *" Line="15" Column="8"/>
+  <Comment Text="   Copyright (C) 1998-2010 Micro Focus. All Rights Reserved.   *" Line="16" Column="8"/>
+  <Comment Text="   This demonstration program is provided for use by users     *" Line="17" Column="8"/>
+  <Comment Text="   of Micro Focus products and may be used, modified and       *" Line="18" Column="8"/>
+  <Comment Text="   distributed as part of your application provided that       *" Line="19" Column="8"/>
+  <Comment Text="   you properly acknowledge the copyright of Micro Focus       *" Line="20" Column="8"/>
+  <Comment Text="   in this material.                                           *" Line="21" Column="8"/>
+  <Comment Text="                                                               *" Line="22" Column="8"/>
+  <Comment Text="****************************************************************" Line="23" Column="8"/>
+  <Comment Text="****************************************************************" Line="25" Column="8"/>
+  <Comment Text=" Program:     BBANK10P.CBL                                     *" Line="26" Column="8"/>
+  <Comment Text=" Layer:       Business logic                                   *" Line="27" Column="8"/>
+  <Comment Text=" Function:    Signon to system to identify user                *" Line="28" Column="8"/>
+  <Comment Text="**************************************************************** " Line="29" Column="8"/>
+  <Comment Text="****************************************************************" Line="55" Column="8"/>
+  <Comment Text="                                                               *" Line="56" Column="8"/>
+  <Comment Text="  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     *" Line="57" Column="8"/>
+  <Comment Text="                                                               *" Line="58" Column="8"/>
+  <Comment Text="****************************************************************" Line="59" Column="8"/>
+  <Comment Text="    yes a another change" Line="60" Column="8"/>
+  <Comment Text="****************************************************************" Line="61" Column="8"/>
+  <Comment Text=" CBANKDAT.CPY                                                  *" Line="62" Column="8"/>
+  <Comment Text="---------------------------------------------------------------*" Line="63" Column="8"/>
+  <Comment Text=" Common data passed between the major components               *" Line="64" Column="8"/>
+  <Comment Text="**************************************************************** " Line="65" Column="8"/>
+  <Comment Text="    10  FILLER REDEFINES BANK-EVERYTHING.                        " Line="67" Column="8"/>
+  <Comment Text=" $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     " Line="442" Column="8"/>
+  <Comment Text="****************************************************************" Line="446" Column="8"/>
+  <Comment Text="                                                               *" Line="447" Column="8"/>
+  <Comment Text="  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     *" Line="448" Column="8"/>
+  <Comment Text="                                                               *" Line="449" Column="8"/>
+  <Comment Text="****************************************************************" Line="450" Column="8"/>
+  <Comment Text="" Line="451" Column="72"/>
+  <Comment Text="****************************************************************" Line="452" Column="8"/>
+  <Comment Text=" CBANKD01.CPY                                                  *" Line="453" Column="8"/>
+  <Comment Text="---------------------------------------------------------------*" Line="454" Column="8"/>
+  <Comment Text=" This area is used to pass data between a requesting program   *" Line="455" Column="8"/>
+  <Comment Text=" and the I/O program (DBANK01P) which retrieves the customer   *" Line="456" Column="8"/>
+  <Comment Text=" information.                                                  *" Line="457" Column="8"/>
+  <Comment Text="**************************************************************** " Line="458" Column="8"/>
+  <Comment Text=" $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     " Line="466" Column="8"/>
+  <Comment Text="****************************************************************" Line="470" Column="8"/>
+  <Comment Text="                                                               *" Line="471" Column="8"/>
+  <Comment Text="  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     *" Line="472" Column="8"/>
+  <Comment Text="                                                               *" Line="473" Column="8"/>
+  <Comment Text="****************************************************************" Line="474" Column="8"/>
+  <Comment Text="" Line="475" Column="72"/>
+  <Comment Text="****************************************************************" Line="476" Column="8"/>
+  <Comment Text=" CPSWDD01.CPY                                                  *" Line="477" Column="8"/>
+  <Comment Text="---------------------------------------------------------------*" Line="478" Column="8"/>
+  <Comment Text=" This area is used to pass data between a requesting program   *" Line="479" Column="8"/>
+  <Comment Text=" and the &quot;I/O&quot; program (SPSWD01P) which checks the supplied    *" Line="480" Column="8"/>
+  <Comment Text=" usewrid/password against the current security model           *" Line="481" Column="8"/>
+  <Comment Text="**************************************************************** " Line="482" Column="8"/>
+  <Comment Text=" $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     " Line="494" Column="8"/>
+  <Comment Text="****************************************************************" Line="509" Column="8"/>
+  <Comment Text="                                                               *" Line="510" Column="8"/>
+  <Comment Text="  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     *" Line="511" Column="8"/>
+  <Comment Text="                                                               *" Line="512" Column="8"/>
+  <Comment Text="****************************************************************" Line="513" Column="8"/>
+  <Comment Text="****************************************************************" Line="515" Column="8"/>
+  <Comment Text=" CENTRY.CPY (CICS Version)                                     *" Line="516" Column="8"/>
+  <Comment Text="---------------------------------------------------------------*" Line="517" Column="8"/>
+  <Comment Text=" This copybook is used to provide an entry point for modules   *" Line="518" Column="8"/>
+  <Comment Text=" so that they may be insensitive to their environment.         *" Line="519" Column="8"/>
+  <Comment Text=" There are different versions for CICS, IMS and INET.          *" Line="520" Column="8"/>
+  <Comment Text="**************************************************************** " Line="521" Column="8"/>
+  <Comment Text=" $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     " Line="524" Column="8"/>
+  <Comment Text=" We now make sure the user is valid.......                       " Line="552" Column="8"/>
+  <Comment Text=" If user starts with &quot;Z&quot; then treat as &quot;B&quot;                       " Line="558" Column="8"/>
+  <Comment Text="795" Line="564" Column="8"/>
+  <Comment Text="****************************************************************" Line="566" Column="8"/>
+  <Comment Text="                                                               *" Line="567" Column="8"/>
+  <Comment Text="  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     *" Line="568" Column="8"/>
+  <Comment Text="                                                               *" Line="569" Column="8"/>
+  <Comment Text="****************************************************************" Line="570" Column="8"/>
+  <Comment Text="" Line="571" Column="72"/>
+  <Comment Text="****************************************************************" Line="572" Column="8"/>
+  <Comment Text=" CPSWDX01.CPY (CICS Version)                                   *" Line="573" Column="8"/>
+  <Comment Text="---------------------------------------------------------------*" Line="574" Column="8"/>
+  <Comment Text=" This copybook is used to provide an common means of calling   *" Line="575" Column="8"/>
+  <Comment Text=" data module SPSWD01P so that the that module using            *" Line="576" Column="8"/>
+  <Comment Text=" this copy book is insensitive to it environment.              *" Line="577" Column="8"/>
+  <Comment Text=" There are different versions for CICS, IMS and INET.          *" Line="578" Column="8"/>
+  <Comment Text="****************************************************************" Line="579" Column="8"/>
+  <Comment Text=" by default use CICS commands to call the module                 " Line="580" Column="8"/>
+  <Comment Text="    CALL &apos;SPSWD01P&apos; USING CPSWDD01-DATA" Line="585" Column="8"/>
+  <Comment Text="" Line="586" Column="72"/>
+  <Comment Text=" $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     " Line="587" Column="8"/>
+  <Comment Text=" We now make sure the user is actually a customer......          " Line="593" Column="8"/>
+  <Comment Text=" If user starts with &quot;Z&quot; then treat as &quot;B&quot;                       " Line="598" Column="8"/>
+  <Comment Text="****************************************************************" Line="604" Column="8"/>
+  <Comment Text="                                                               *" Line="605" Column="8"/>
+  <Comment Text="  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     *" Line="606" Column="8"/>
+  <Comment Text="                                                               *" Line="607" Column="8"/>
+  <Comment Text="****************************************************************" Line="608" Column="8"/>
+  <Comment Text="" Line="609" Column="72"/>
+  <Comment Text="****************************************************************" Line="610" Column="8"/>
+  <Comment Text=" CBANKX01.CPY (CICS Version)                                   *" Line="611" Column="8"/>
+  <Comment Text="---------------------------------------------------------------*" Line="612" Column="8"/>
+  <Comment Text=" This copybook is used to provide an common means of calling   *" Line="613" Column="8"/>
+  <Comment Text=" data access module DBANK01P so that the that module using     *" Line="614" Column="8"/>
+  <Comment Text=" this copy book is insensitive to it environment.              *" Line="615" Column="8"/>
+  <Comment Text=" There are different versions for CICS, IMS and INET.          *" Line="616" Column="8"/>
+  <Comment Text="****************************************************************" Line="617" Column="8"/>
+  <Comment Text=" by default use CICS commands to call the module                 " Line="618" Column="8"/>
+  <Comment Text="    CALL &apos;DBANK01P&apos; USING CD01-DATA" Line="623" Column="8"/>
+  <Comment Text="" Line="624" Column="72"/>
+  <Comment Text=" $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     " Line="625" Column="8"/>
+  <Comment Text="                                                                 " Line="645" Column="8"/>
+ </Comments>
+ <SourceStructure Path="C:\Users\Administrator\workspace\SIGNON\cbl\UserVal.cbl" FirstLine="1" LastLine="658" CopyLine="0" LastWrite="2021-07-19T20:09:02" FileSize="11622">
+  <FileStats BlankLines="13" CommentLines="44" CopyLines="5" SourceLines="180"/>
+  <Copybooks Path="C:\Users\Administrator\workspace\SIGNON\copybook\CBANKDAT.cpy" FirstLine="55" LastLine="442" CopyLine="54" Line="54" Column="8" EndLine="54" EndColumn="22" LastWrite="2021-07-02T14:30:28" FileSize="31816">
+   <FileStats BlankLines="1" CommentLines="13" CopyLines="0" SourceLines="388"/>
+  </Copybooks>
+  <Copybooks Path="C:\Users\Administrator\workspace\SIGNON\copybook\CBANKD01.cpy" FirstLine="446" LastLine="466" CopyLine="57" Line="445" Column="8" EndLine="445" EndColumn="22" LastWrite="2021-07-02T14:30:28" FileSize="1722">
+   <FileStats BlankLines="2" CommentLines="13" CopyLines="0" SourceLines="21"/>
+  </Copybooks>
+  <Copybooks Path="C:\Users\Administrator\workspace\SIGNON\copybook\CPSWDD01.cpy" FirstLine="470" LastLine="494" CopyLine="60" Line="469" Column="8" EndLine="469" EndColumn="22" LastWrite="2021-07-02T14:30:29" FileSize="2050">
+   <FileStats BlankLines="2" CommentLines="13" CopyLines="0" SourceLines="25"/>
+  </Copybooks>
+  <Copybooks Path="C:\Users\Administrator\workspace\SIGNON\copybook\CPSWDX01.cpy" FirstLine="566" LastLine="587" CopyLine="131" Line="565" Column="12" EndLine="565" EndColumn="26" LastWrite="2021-07-02T14:30:29" FileSize="1804">
+   <FileStats BlankLines="2" CommentLines="16" CopyLines="0" SourceLines="22"/>
+  </Copybooks>
+  <Copybooks Path="C:\Users\Administrator\workspace\SIGNON\copybook\CBANKX01.cpy" FirstLine="604" LastLine="625" CopyLine="147" Line="603" Column="12" EndLine="603" EndColumn="26" LastWrite="2021-07-02T14:30:29" FileSize="1804">
+   <FileStats BlankLines="2" CommentLines="16" CopyLines="0" SourceLines="22"/>
+  </Copybooks>
+ </SourceStructure>
+ <Programs xsi:type="cbl:CobolProgramType" Name="USERVAL" Line="31" Column="20">
+  <IdDivision Line="30" Column="8" EndLine="31" EndColumn="28"/>
+  <EnvironmentDivision Line="33" Column="8" EndLine="33" EndColumn="29"/>
+  <DataDivision Line="35" Column="8" EndLine="507" EndColumn="44">
+   <WorkingStorage Line="36" Column="8" EndLine="492" EndColumn="62">
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C10587" Name="WS-MISC-STORAGE" Line="37" Column="8" EndLine="37" EndColumn="27" Modified="true" Length="161" Offset="2192" DataNameLine="37" DataNameColumn="11">
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C10703" Name="WS-PROGRAM-ID" Line="38" Column="10" EndLine="38" EndColumn="53" Length="8" Offset="2192" DataNameLine="38" DataNameColumn="13" SourcePicture="X(8)">
+      <Value xsi:type="cbl:LiteralOperandType" Value="BBANK10P" Type="ALPHA" Line="38" Column="42" EndLine="38" EndColumn="52" Access="SOURCE"/>
+     </SubItems>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C10793" Name="WS-INPUT-FLAG" Line="40" Column="10" EndLine="40" EndColumn="36" Referenced="true" Modified="true" Length="1" Offset="2200" DataNameLine="40" DataNameColumn="13" SourcePicture="X(1)">
+      <Conditions CID="C10879" Name="INPUT-OK" Line="41" Column="12" EndLine="41" EndColumn="34" DataNameLine="41" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="0" Type="ALPHA" Line="41" Column="30" EndLine="41" EndColumn="33" Access="SOURCE"/>
+       </Values>
+      </Conditions>
+      <Conditions CID="C10969" Name="INPUT-ERROR" Line="42" Column="12" EndLine="42" EndColumn="37" DataNameLine="42" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="42" Column="33" EndLine="42" EndColumn="36" Access="SOURCE"/>
+       </Values>
+      </Conditions>
+     </SubItems>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C11062" Name="WS-RETURN-FLAG" Line="43" Column="10" EndLine="43" EndColumn="37" Length="1" Offset="2201" DataNameLine="43" DataNameColumn="13" SourcePicture="X(1)">
+      <Conditions CID="C11149" Name="WS-RETURN-FLAG-OFF" Line="44" Column="12" EndLine="44" EndColumn="51" DataNameLine="44" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="44" Column="40" EndLine="44" EndColumn="50"/>
+       </Values>
+      </Conditions>
+      <Conditions CID="C11249" Name="WS-RETURN-FLAG-ON" Line="45" Column="12" EndLine="45" EndColumn="43" DataNameLine="45" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="45" Column="39" EndLine="45" EndColumn="42" Access="SOURCE"/>
+       </Values>
+      </Conditions>
+     </SubItems>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C11348" Name="WS-RETURN-MSG" Line="46" Column="10" EndLine="46" EndColumn="37" Length="75" Offset="2202" DataNameLine="46" DataNameColumn="13" SourcePicture="X(75)">
+      <Conditions CID="C11434" Name="WS-RETURN-MSG-OFF" Line="47" Column="12" EndLine="47" EndColumn="46" DataNameLine="47" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="space" Type="FIG" Line="47" Column="39" EndLine="47" EndColumn="45"/>
+       </Values>
+      </Conditions>
+     </SubItems>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C11533" Name="WS-PFK-FLAG" Line="48" Column="10" EndLine="48" EndColumn="34" Length="1" Offset="2277" DataNameLine="48" DataNameColumn="13" SourcePicture="X(1)">
+      <Conditions CID="C11617" Name="PFK-VALID" Line="49" Column="12" EndLine="49" EndColumn="35" DataNameLine="49" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="0" Type="ALPHA" Line="49" Column="31" EndLine="49" EndColumn="34" Access="SOURCE"/>
+       </Values>
+      </Conditions>
+      <Conditions CID="C11708" Name="PFK-INVALID" Line="50" Column="12" EndLine="50" EndColumn="37" DataNameLine="50" DataNameColumn="15">
+       <Values>
+        <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="50" Column="33" EndLine="50" EndColumn="36" Access="SOURCE"/>
+       </Values>
+      </Conditions>
+     </SubItems>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C11801" Name="WS-ERROR-MSG" Line="51" Column="10" EndLine="51" EndColumn="36" Referenced="true" Modified="true" Length="75" Offset="2278" DataNameLine="51" DataNameColumn="13" SourcePicture="X(75)"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C11886" Name="WS-BANK-DATA" Line="52" Column="8" EndLine="52" EndColumn="24" Modified="true" Length="6144" Offset="2368" DataNameLine="52" DataNameColumn="11">
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="10" CID="C11999" Name="BANK-EVERYTHING" Line="66" Column="12" EndLine="66" EndColumn="64" Modified="true" Length="6144" Offset="2368" DataNameLine="66" DataNameColumn="16" SourcePicture="X(6144)"/>
+     <SubItems xsi:type="cbl:GroupDataItemType" Level="10" CID="C12087" Name="BANK-EVERYTHING-R" Line="68" Column="12" EndLine="68" EndColumn="60" Redefines="C11999" Modified="true" Length="5658" Offset="2368" DataNameLine="68" DataNameColumn="16">
+      <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C12181" Name="BANK-PREFIX" Line="69" Column="14" EndLine="69" EndColumn="62" Length="22" Offset="2368" DataNameLine="69" DataNameColumn="18" SourcePicture="X(22)"/>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="15" CID="C12265" Name="BANK-IMS-PREFIX" Line="70" Column="14" EndLine="70" EndColumn="56" Redefines="C12181" Length="22" Offset="2368" DataNameLine="70" DataNameColumn="18">
+       <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="20" CID="C12357" Name="BANK-IMS-SPA-LL" Line="71" Column="16" EndLine="71" EndColumn="67" Length="4" Offset="2368" DecimalDigits="8" DecimalAlignment="0" Signed="true" DataNameLine="71" DataNameColumn="20" SourcePicture="S9(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C12449" Name="BANK-IMS-SPA-ZZ" Line="72" Column="16" EndLine="72" EndColumn="61" Length="2" Offset="2372" DataNameLine="72" DataNameColumn="20" SourcePicture="X(2)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C12537" Name="BANK-IMS-SPA-TRANCODE" Line="73" Column="16" EndLine="73" EndColumn="61" Length="8" Offset="2374" DataNameLine="73" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C12631" Name="BANK-IMS-SPA-PASSED-DATA" Line="74" Column="16" EndLine="74" EndColumn="61" Length="8" Offset="2382" DataNameLine="74" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C12728" Name="BANK-IMS-SPA-PASSED-DATA-R1" Line="75" Column="16" EndLine="76" EndColumn="45" Redefines="C12631" Length="8" Offset="2382" DataNameLine="75" DataNameColumn="20">
+        <SubItems xsi:type="cbl:NumericDataItemType" Usage="COMP_3" Level="25" CID="C12832" Name="BANK-IMS-IO-PCB-DATE" Line="77" Column="18" EndLine="77" EndColumn="69" Length="4" Offset="2382" DecimalDigits="7" DecimalAlignment="0" Signed="true" DataNameLine="77" DataNameColumn="22" SourcePicture="S9(7)"/>
+        <SubItems xsi:type="cbl:NumericDataItemType" Usage="COMP_3" Level="25" CID="C12929" Name="BANK-IMS-IO-PCB-TIME" Line="78" Column="18" EndLine="78" EndColumn="69" Length="4" Offset="2386" DecimalDigits="7" DecimalAlignment="0" Signed="true" DataNameLine="78" DataNameColumn="22" SourcePicture="S9(7)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C13026" Name="BANK-IMS-SPA-PASSED-DATA-R2" Line="79" Column="16" EndLine="80" EndColumn="45" Redefines="C12631" Length="8" Offset="2382" DataNameLine="79" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C13130" Name="BANK-IMS-SPA-PASSED-LITERAL" Line="81" Column="18" EndLine="81" EndColumn="61" Length="7" Offset="2382" DataNameLine="81" DataNameColumn="22" SourcePicture="X(7)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C13230" Name="BANK-IMS-SPA-PASSED-COLOUR" Line="82" Column="18" EndLine="82" EndColumn="61" Length="1" Offset="2389" DataNameLine="82" DataNameColumn="22" SourcePicture="X(1)"/>
+       </SubItems>
+      </SubItems>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="15" CID="C13329" Name="BANK-CICS-PREFIX" Line="83" Column="14" EndLine="83" EndColumn="57" Redefines="C12181" Length="14" Offset="2368" DataNameLine="83" DataNameColumn="18">
+       <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="20" CID="C13422" Name="BANK-CICS-LL" Line="84" Column="16" EndLine="84" EndColumn="67" Length="2" Offset="2368" DecimalDigits="4" DecimalAlignment="0" Signed="true" DataNameLine="84" DataNameColumn="20" SourcePicture="S9(4)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" Name="FILLER" Line="85" Column="16" EndLine="85" EndColumn="61" Length="4" Offset="2370" DataNameLine="85" DataNameColumn="52" SourcePicture="X(4)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C13585" Name="BANK-CICS-TRANCODE-PLUS4" Line="86" Column="16" EndLine="86" EndColumn="61" Length="8" Offset="2374" DataNameLine="86" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" Name="FILLER" Line="87" Column="16" EndLine="87" EndColumn="62" Redefines="C13585" Length="8" Offset="2374" DataNameLine="87" DataNameColumn="27">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C13760" Name="BANK-CICS-TRANCODE" Line="88" Column="18" EndLine="88" EndColumn="61" Length="4" Offset="2374" DataNameLine="88" DataNameColumn="22" SourcePicture="X(4)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" Name="FILLER" Line="89" Column="18" EndLine="89" EndColumn="61" Length="4" Offset="2378" DataNameLine="89" DataNameColumn="52" SourcePicture="X(4)"/>
+       </SubItems>
+      </SubItems>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="15" CID="C13925" Name="BANK-CONTROL-FIELDS" Line="90" Column="14" EndLine="90" EndColumn="38" Length="209" Offset="2390" DataNameLine="90" DataNameColumn="18">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C14017" Name="BANK-ENV" Line="91" Column="16" EndLine="91" EndColumn="61" Length="4" Offset="2390" DataNameLine="91" DataNameColumn="20" SourcePicture="X(4)">
+        <Conditions CID="C14098" Name="BANK-ENV-NULL" Line="92" Column="18" EndLine="92" EndColumn="69" DataNameLine="92" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="92" Column="58" EndLine="92" EndColumn="68"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C14193" Name="BANK-ENV-CICS" Line="93" Column="18" EndLine="93" EndColumn="65" DataNameLine="93" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="CICS" Type="ALPHA" Line="93" Column="58" EndLine="93" EndColumn="64" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C14288" Name="BANK-ENV-IMS" Line="94" Column="18" EndLine="94" EndColumn="65" DataNameLine="94" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="IMS " Type="ALPHA" Line="94" Column="58" EndLine="94" EndColumn="64" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C14382" Name="BANK-ENV-INET" Line="95" Column="18" EndLine="95" EndColumn="65" DataNameLine="95" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="INET" Type="ALPHA" Line="95" Column="58" EndLine="95" EndColumn="64" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C14477" Name="BANK-COLOUR-SETTING" Line="96" Column="16" EndLine="96" EndColumn="61" Length="1" Offset="2394" DataNameLine="96" DataNameColumn="20" SourcePicture="X(1)">
+        <Conditions CID="C14569" Name="COLOUR-ON" Line="97" Column="18" EndLine="97" EndColumn="62" DataNameLine="97" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="97" Column="58" EndLine="97" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C14660" Name="COLOUR-OFF" Line="98" Column="18" EndLine="98" EndColumn="62" DataNameLine="98" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="0" Type="ALPHA" Line="98" Column="58" EndLine="98" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C14752" Name="BANK-CONVERSATION" Line="99" Column="16" EndLine="99" EndColumn="61" Length="1" Offset="2395" DataNameLine="99" DataNameColumn="20" SourcePicture="X(1)">
+        <Conditions CID="C14842" Name="BANK-NO-CONV-IN-PROGRESS" Line="100" Column="18" EndLine="100" EndColumn="62" DataNameLine="100" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="0" Type="ALPHA" Line="100" Column="58" EndLine="100" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C14948" Name="BANK-CONV-IN-PROGRESS" Line="101" Column="18" EndLine="101" EndColumn="62" DataNameLine="101" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="101" Column="58" EndLine="101" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C15051" Name="BANK-TS-QUEUE-NAME" Line="102" Column="16" EndLine="102" EndColumn="61" Length="8" Offset="2396" DataNameLine="102" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C15142" Name="BANK-AID" Line="103" Column="16" EndLine="103" EndColumn="61" Length="5" Offset="2404" DataNameLine="103" DataNameColumn="20" SourcePicture="X(5)">
+        <Conditions CID="C15223" Name="BANK-AID-ENTER" Line="104" Column="18" EndLine="104" EndColumn="66" DataNameLine="104" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="ENTER" Type="ALPHA" Line="104" Column="58" EndLine="104" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15319" Name="BANK-AID-CLEAR" Line="105" Column="18" EndLine="105" EndColumn="66" DataNameLine="105" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="CLEAR" Type="ALPHA" Line="105" Column="58" EndLine="105" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15415" Name="BANK-AID-PA1" Line="106" Column="18" EndLine="106" EndColumn="66" DataNameLine="106" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PA1  " Type="ALPHA" Line="106" Column="58" EndLine="106" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15509" Name="BANK-AID-PA2" Line="107" Column="18" EndLine="107" EndColumn="66" DataNameLine="107" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PA2  " Type="ALPHA" Line="107" Column="58" EndLine="107" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15603" Name="BANK-AID-PFK01" Line="108" Column="18" EndLine="108" EndColumn="66" DataNameLine="108" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK01" Type="ALPHA" Line="108" Column="58" EndLine="108" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15699" Name="BANK-AID-PFK02" Line="109" Column="18" EndLine="109" EndColumn="66" DataNameLine="109" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK02" Type="ALPHA" Line="109" Column="58" EndLine="109" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15795" Name="BANK-AID-PFK03" Line="110" Column="18" EndLine="110" EndColumn="66" DataNameLine="110" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK03" Type="ALPHA" Line="110" Column="58" EndLine="110" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15891" Name="BANK-AID-PFK04" Line="111" Column="18" EndLine="111" EndColumn="66" DataNameLine="111" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK04" Type="ALPHA" Line="111" Column="58" EndLine="111" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C15987" Name="BANK-AID-PFK05" Line="112" Column="18" EndLine="112" EndColumn="66" DataNameLine="112" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK05" Type="ALPHA" Line="112" Column="58" EndLine="112" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16083" Name="BANK-AID-PFK06" Line="113" Column="18" EndLine="113" EndColumn="66" DataNameLine="113" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK06" Type="ALPHA" Line="113" Column="58" EndLine="113" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16179" Name="BANK-AID-PFK07" Line="114" Column="18" EndLine="114" EndColumn="66" DataNameLine="114" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK07" Type="ALPHA" Line="114" Column="58" EndLine="114" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16275" Name="BANK-AID-PFK08" Line="115" Column="18" EndLine="115" EndColumn="66" DataNameLine="115" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK08" Type="ALPHA" Line="115" Column="58" EndLine="115" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16371" Name="BANK-AID-PFK09" Line="116" Column="18" EndLine="116" EndColumn="66" DataNameLine="116" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK09" Type="ALPHA" Line="116" Column="58" EndLine="116" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16467" Name="BANK-AID-PFK10" Line="117" Column="18" EndLine="117" EndColumn="66" DataNameLine="117" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK10" Type="ALPHA" Line="117" Column="58" EndLine="117" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16563" Name="BANK-AID-PFK11" Line="118" Column="18" EndLine="118" EndColumn="66" DataNameLine="118" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK11" Type="ALPHA" Line="118" Column="58" EndLine="118" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C16659" Name="BANK-AID-PFK12" Line="119" Column="18" EndLine="119" EndColumn="66" DataNameLine="119" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PFK12" Type="ALPHA" Line="119" Column="58" EndLine="119" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C16755" Name="BANK-LAST-PROG" Line="120" Column="16" EndLine="120" EndColumn="61" Length="8" Offset="2409" DataNameLine="120" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C16842" Name="BANK-NEXT-PROG" Line="121" Column="16" EndLine="121" EndColumn="61" Length="8" Offset="2417" DataNameLine="121" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C16929" Name="BANK-RETURN-TO-PROG" Line="122" Column="16" EndLine="122" EndColumn="61" Length="8" Offset="2425" DataNameLine="122" DataNameColumn="20" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C17021" Name="BANK-LAST-MAPSET" Line="123" Column="16" EndLine="123" EndColumn="61" Length="7" Offset="2433" DataNameLine="123" DataNameColumn="20" SourcePicture="X(7)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C17110" Name="BANK-LAST-MAP" Line="124" Column="16" EndLine="124" EndColumn="61" Length="7" Offset="2440" DataNameLine="124" DataNameColumn="20" SourcePicture="X(7)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C17196" Name="BANK-NEXT-MAPSET" Line="125" Column="16" EndLine="125" EndColumn="61" Length="7" Offset="2447" DataNameLine="125" DataNameColumn="20" SourcePicture="X(7)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C17285" Name="BANK-NEXT-MAP" Line="126" Column="16" EndLine="126" EndColumn="61" Length="7" Offset="2454" DataNameLine="126" DataNameColumn="20" SourcePicture="X(7)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C17371" Name="BANK-MAP-FUNCTION" Line="127" Column="16" EndLine="127" EndColumn="61" Length="3" Offset="2461" DataNameLine="127" DataNameColumn="20" SourcePicture="X(3)">
+        <Conditions CID="C17461" Name="BANK-MAP-FUNCTION-GET" Line="128" Column="18" EndLine="128" EndColumn="64" DataNameLine="128" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="GET" Type="ALPHA" Line="128" Column="58" EndLine="128" EndColumn="63" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C17564" Name="BANK-MAP-FUNCTION-PUT" Line="129" Column="18" EndLine="129" EndColumn="64" DataNameLine="129" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="PUT" Type="ALPHA" Line="129" Column="58" EndLine="129" EndColumn="63" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C17667" Name="BANK-HELP-FIELDS" Line="130" Column="16" EndLine="130" EndColumn="37" Length="6" Offset="2464" DataNameLine="130" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C17756" Name="BANK-HELP-FLAG" Line="131" Column="18" EndLine="131" EndColumn="61" Length="4" Offset="2464" DataNameLine="131" DataNameColumn="22" SourcePicture="X(4)">
+         <Conditions CID="C17843" Name="BANK-HELP-ACTIVE" Line="132" Column="20" EndLine="132" EndColumn="65" DataNameLine="132" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="HELP" Type="ALPHA" Line="132" Column="58" EndLine="132" EndColumn="64" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C17941" Name="BANK-HELP-INACTIVE" Line="133" Column="20" EndLine="133" EndColumn="69" DataNameLine="133" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="133" Column="58" EndLine="133" EndColumn="68"/>
+          </Values>
+         </Conditions>
+        </SubItems>
+        <SubItems xsi:type="cbl:NumericDataItemType" Level="25" CID="C18041" Name="BANK-HELP-SCREEN" Line="134" Column="18" EndLine="134" EndColumn="61" Length="2" Offset="2468" DecimalDigits="2" DecimalAlignment="0" DataNameLine="134" DataNameColumn="22" SourcePicture="9(2)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C18134" Name="BANK-PAGING-FIELDS" Line="135" Column="16" EndLine="135" EndColumn="39" Length="53" Offset="2470" DataNameLine="135" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C18225" Name="BANK-PAGING-STATUS" Line="136" Column="18" EndLine="136" EndColumn="61" Length="1" Offset="2470" DataNameLine="136" DataNameColumn="22" SourcePicture="X(1)">
+         <Conditions CID="C18316" Name="BANK-PAGING-OFF" Line="137" Column="20" EndLine="137" EndColumn="69" DataNameLine="137" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="137" Column="58" EndLine="137" EndColumn="68"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C18413" Name="BANK-PAGING-FIRST" Line="138" Column="20" EndLine="138" EndColumn="62" DataNameLine="138" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="138" Column="58" EndLine="138" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C18512" Name="BANK-PAGING-MIDDLE" Line="139" Column="20" EndLine="139" EndColumn="62" DataNameLine="139" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="2" Type="ALPHA" Line="139" Column="58" EndLine="139" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C18612" Name="BANK-PAGING-LAST" Line="140" Column="20" EndLine="140" EndColumn="62" DataNameLine="140" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="3" Type="ALPHA" Line="140" Column="58" EndLine="140" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+        </SubItems>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C18710" Name="BANK-PAGING-FIRST-ENTRY" Line="141" Column="18" EndLine="141" EndColumn="62" Length="26" Offset="2471" DataNameLine="141" DataNameColumn="22" SourcePicture="X(26)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C18806" Name="BANK-PAGING-LAST-ENTRY" Line="142" Column="18" EndLine="142" EndColumn="62" Length="26" Offset="2497" DataNameLine="142" DataNameColumn="22" SourcePicture="X(26)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C18901" Name="BANK-RETURN-FLAG" Line="143" Column="16" EndLine="143" EndColumn="61" Length="1" Offset="2523" DataNameLine="143" DataNameColumn="20" SourcePicture="X(1)">
+        <Conditions CID="C18990" Name="BANK-RETURN-FLAG-OFF" Line="144" Column="18" EndLine="144" EndColumn="69" DataNameLine="144" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="144" Column="58" EndLine="144" EndColumn="68"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C19092" Name="BANK-RETURN-FLAG-ON" Line="145" Column="18" EndLine="145" EndColumn="62" DataNameLine="145" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="145" Column="58" EndLine="145" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C19193" Name="BANK-RETURN-MSG" Line="146" Column="16" EndLine="146" EndColumn="62" Length="75" Offset="2524" DataNameLine="146" DataNameColumn="20" SourcePicture="X(75)">
+        <Conditions CID="C19281" Name="BANK-RETURN-MSG-OFF" Line="147" Column="18" EndLine="147" EndColumn="69" DataNameLine="147" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="147" Column="58" EndLine="147" EndColumn="68"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+      </SubItems>
+      <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C19382" Name="BANK-ERROR-MSG" Line="148" Column="14" EndLine="148" EndColumn="62" Length="75" Offset="2599" DataNameLine="148" DataNameColumn="18" SourcePicture="X(75)"/>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="15" CID="C19469" Name="BANK-USER-DETAILS" Line="149" Column="14" EndLine="149" EndColumn="36" Modified="true" Length="43" Offset="2674" DataNameLine="149" DataNameColumn="18">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C19559" Name="BANK-SIGNON-ID" Line="150" Column="16" EndLine="150" EndColumn="61" Referenced="true" Modified="true" Length="5" Offset="2674" DataNameLine="150" DataNameColumn="20" SourcePicture="X(5)"/>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" Name="FILLER" Line="151" Column="16" EndLine="151" EndColumn="52" Redefines="C19559" Length="5" Offset="2674" DataNameLine="151" DataNameColumn="27">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C19724" Name="BANK-SIGNON-ID-1" Line="152" Column="18" EndLine="152" EndColumn="61" Length="1" Offset="2674" DataNameLine="152" DataNameColumn="22" SourcePicture="X(1)">
+         <Conditions CID="C19813" Name="PROBLEM-USER" Line="153" Column="20" EndLine="153" EndColumn="62" DataNameLine="153" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="Z" Type="ALPHA" Line="153" Column="58" EndLine="153" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+        </SubItems>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C19907" Name="BANK-SIGNON-ID-2-5" Line="154" Column="18" EndLine="154" EndColumn="61" Length="4" Offset="2675" DataNameLine="154" DataNameColumn="22" SourcePicture="X(4)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C19998" Name="BANK-USERID" Line="155" Column="16" EndLine="155" EndColumn="61" Referenced="true" Modified="true" Length="5" Offset="2679" DataNameLine="155" DataNameColumn="20" SourcePicture="X(5)">
+        <Conditions CID="C20082" Name="GUEST" Line="156" Column="18" EndLine="156" EndColumn="66" DataNameLine="156" DataNameColumn="22">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="GUEST" Type="ALPHA" Line="156" Column="58" EndLine="156" EndColumn="65" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C20169" Name="BANK-USERID-NAME" Line="157" Column="16" EndLine="157" EndColumn="62" Referenced="true" Modified="true" Length="25" Offset="2684" DataNameLine="157" DataNameColumn="20" SourcePicture="X(25)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C20258" Name="BANK-PSWD" Line="158" Column="16" EndLine="158" EndColumn="61" Referenced="true" Modified="true" Length="8" Offset="2709" DataNameLine="158" DataNameColumn="20" SourcePicture="X(8)"/>
+      </SubItems>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="15" CID="C20340" Name="BANK-HELP-DATA" Line="159" Column="14" EndLine="159" EndColumn="33" Length="1432" Offset="2717" DataNameLine="159" DataNameColumn="18">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C20427" Name="BANK-HELP-SCRN" Line="160" Column="16" EndLine="160" EndColumn="61" Length="6" Offset="2717" DataNameLine="160" DataNameColumn="20" SourcePicture="X(6)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C20514" Name="BANK-HELP-STATUS" Line="161" Column="16" EndLine="161" EndColumn="61" Length="1" Offset="2723" DataNameLine="161" DataNameColumn="20" SourcePicture="X(1)">
+        <Conditions CID="C20603" Name="BANK-HELP-FOUND" Line="162" Column="18" EndLine="162" EndColumn="62" DataNameLine="162" DataNameColumn="21">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="Y" Type="ALPHA" Line="162" Column="58" EndLine="162" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C20700" Name="BANK-HELP-NOT-FOUND" Line="163" Column="18" EndLine="163" EndColumn="62" DataNameLine="163" DataNameColumn="21">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="N" Type="ALPHA" Line="163" Column="58" EndLine="163" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="20" CID="C20801" Name="BANK-HELP-LINE" Line="164" Column="16" EndLine="165" EndColumn="36" Length="75" Offset="2724" DataNameLine="164" DataNameColumn="20" SourcePicture="X(75)">
+        <Occurs Dimensions="1" Stride="75">
+         <SubInfo Max="19"/>
+        </Occurs>
+       </SubItems>
+      </SubItems>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="15" CID="C20916" Name="BANK-SCREEN-DATA" Line="166" Column="14" EndLine="166" EndColumn="35" Length="3877" Offset="4149" DataNameLine="166" DataNameColumn="18">
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C21005" Name="BANK-SCREEN10-DATA" Line="167" Column="16" EndLine="167" EndColumn="39" Length="1" Offset="4149" DataNameLine="167" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" Name="FILLER" Line="168" Column="18" EndLine="168" EndColumn="61" Length="1" Offset="4149" DataNameLine="168" DataNameColumn="52" SourcePicture="X(1)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C21170" Name="BANK-SCREEN20-DATA" Line="169" Column="16" EndLine="169" EndColumn="39" Length="294" Offset="4150" DataNameLine="169" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21261" Name="BANK-SCR20-SEL1ID" Line="170" Column="18" EndLine="170" EndColumn="61" Length="1" Offset="4150" DataNameLine="170" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21351" Name="BANK-SCR20-SEL1IP" Line="171" Column="18" EndLine="171" EndColumn="61" Length="1" Offset="4151" DataNameLine="171" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21441" Name="BANK-SCR20-SEL1TX" Line="172" Column="18" EndLine="172" EndColumn="62" Length="40" Offset="4152" DataNameLine="172" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21531" Name="BANK-SCR20-SEL2ID" Line="173" Column="18" EndLine="173" EndColumn="61" Length="1" Offset="4192" DataNameLine="173" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21621" Name="BANK-SCR20-SEL2IP" Line="174" Column="18" EndLine="174" EndColumn="61" Length="1" Offset="4193" DataNameLine="174" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21711" Name="BANK-SCR20-SEL2TX" Line="175" Column="18" EndLine="175" EndColumn="62" Length="40" Offset="4194" DataNameLine="175" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21801" Name="BANK-SCR20-SEL3ID" Line="176" Column="18" EndLine="176" EndColumn="61" Length="1" Offset="4234" DataNameLine="176" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21891" Name="BANK-SCR20-SEL3IP" Line="177" Column="18" EndLine="177" EndColumn="61" Length="1" Offset="4235" DataNameLine="177" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C21981" Name="BANK-SCR20-SEL3TX" Line="178" Column="18" EndLine="178" EndColumn="62" Length="40" Offset="4236" DataNameLine="178" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22071" Name="BANK-SCR20-SEL4ID" Line="179" Column="18" EndLine="179" EndColumn="61" Length="1" Offset="4276" DataNameLine="179" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22161" Name="BANK-SCR20-SEL4IP" Line="180" Column="18" EndLine="180" EndColumn="61" Length="1" Offset="4277" DataNameLine="180" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22251" Name="BANK-SCR20-SEL4TX" Line="181" Column="18" EndLine="181" EndColumn="62" Length="40" Offset="4278" DataNameLine="181" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22341" Name="BANK-SCR20-SEL5ID" Line="182" Column="18" EndLine="182" EndColumn="61" Length="1" Offset="4318" DataNameLine="182" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22431" Name="BANK-SCR20-SEL5IP" Line="183" Column="18" EndLine="183" EndColumn="61" Length="1" Offset="4319" DataNameLine="183" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22521" Name="BANK-SCR20-SEL5TX" Line="184" Column="18" EndLine="184" EndColumn="62" Length="40" Offset="4320" DataNameLine="184" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22611" Name="BANK-SCR20-SEL6ID" Line="185" Column="18" EndLine="185" EndColumn="61" Length="1" Offset="4360" DataNameLine="185" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22701" Name="BANK-SCR20-SEL6IP" Line="186" Column="18" EndLine="186" EndColumn="61" Length="1" Offset="4361" DataNameLine="186" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22791" Name="BANK-SCR20-SEL6TX" Line="187" Column="18" EndLine="187" EndColumn="62" Length="40" Offset="4362" DataNameLine="187" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22881" Name="BANK-SCR20-SEL7ID" Line="188" Column="18" EndLine="188" EndColumn="61" Length="1" Offset="4402" DataNameLine="188" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C22971" Name="BANK-SCR20-SEL7IP" Line="189" Column="18" EndLine="189" EndColumn="61" Length="1" Offset="4403" DataNameLine="189" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C23061" Name="BANK-SCR20-SEL7TX" Line="190" Column="18" EndLine="190" EndColumn="62" Length="40" Offset="4404" DataNameLine="190" DataNameColumn="22" SourcePicture="X(40)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C23151" Name="BANK-SCREEN20-DATA-R" Line="191" Column="16" EndLine="191" EndColumn="70" Redefines="C21170" Length="294" Offset="4150" DataNameLine="191" DataNameColumn="20">
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C23248" Name="BANK-SCREEN20-FIELD" Line="192" Column="18" EndLine="192" EndColumn="67" Length="42" Offset="4150" DataNameLine="192" DataNameColumn="22">
+         <Occurs Dimensions="1" Stride="42">
+          <SubInfo Max="7"/>
+         </Occurs>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C23368" Name="BANK-SCR20-ID" Line="193" Column="20" EndLine="193" EndColumn="61" Length="1" Offset="4150" DataNameLine="193" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C23454" Name="BANK-SCR20-IP" Line="194" Column="20" EndLine="194" EndColumn="61" Length="1" Offset="4151" DataNameLine="194" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C23540" Name="BANK-SCR20-TX" Line="195" Column="20" EndLine="195" EndColumn="62" Length="40" Offset="4152" DataNameLine="195" DataNameColumn="24" SourcePicture="X(40)"/>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C23626" Name="BANK-SCREEN30-DATA" Line="196" Column="16" EndLine="196" EndColumn="39" Length="398" Offset="4444" DataNameLine="196" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C23717" Name="BANK-SCR30-DET1" Line="197" Column="18" EndLine="197" EndColumn="61" Length="1" Offset="4444" DataNameLine="197" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C23805" Name="BANK-SCR30-ACC1" Line="198" Column="18" EndLine="198" EndColumn="61" Length="9" Offset="4445" DataNameLine="198" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C23893" Name="BANK-SCR30-DSC1" Line="199" Column="18" EndLine="199" EndColumn="62" Length="15" Offset="4454" DataNameLine="199" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C23981" Name="BANK-SCR30-BAL1" Line="200" Column="18" EndLine="200" EndColumn="62" Length="13" Offset="4469" DataNameLine="200" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24069" Name="BANK-SCR30-SRV1" Line="201" Column="18" EndLine="201" EndColumn="61" Length="6" Offset="4482" DataNameLine="201" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24157" Name="BANK-SCR30-DTE1" Line="202" Column="18" EndLine="202" EndColumn="62" Length="11" Offset="4488" DataNameLine="202" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24245" Name="BANK-SCR30-TXN1" Line="203" Column="18" EndLine="203" EndColumn="61" Length="1" Offset="4499" DataNameLine="203" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24333" Name="BANK-SCR30-DET2" Line="204" Column="18" EndLine="204" EndColumn="61" Length="1" Offset="4500" DataNameLine="204" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24421" Name="BANK-SCR30-ACC2" Line="205" Column="18" EndLine="205" EndColumn="61" Length="9" Offset="4501" DataNameLine="205" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24509" Name="BANK-SCR30-DSC2" Line="206" Column="18" EndLine="206" EndColumn="62" Length="15" Offset="4510" DataNameLine="206" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24597" Name="BANK-SCR30-BAL2" Line="207" Column="18" EndLine="207" EndColumn="62" Length="13" Offset="4525" DataNameLine="207" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24685" Name="BANK-SCR30-SRV2" Line="208" Column="18" EndLine="208" EndColumn="61" Length="6" Offset="4538" DataNameLine="208" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24773" Name="BANK-SCR30-DTE2" Line="209" Column="18" EndLine="209" EndColumn="62" Length="11" Offset="4544" DataNameLine="209" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24861" Name="BANK-SCR30-TXN2" Line="210" Column="18" EndLine="210" EndColumn="61" Length="1" Offset="4555" DataNameLine="210" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C24949" Name="BANK-SCR30-DET3" Line="211" Column="18" EndLine="211" EndColumn="61" Length="1" Offset="4556" DataNameLine="211" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25037" Name="BANK-SCR30-ACC3" Line="212" Column="18" EndLine="212" EndColumn="61" Length="9" Offset="4557" DataNameLine="212" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25125" Name="BANK-SCR30-DSC3" Line="213" Column="18" EndLine="213" EndColumn="62" Length="15" Offset="4566" DataNameLine="213" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25213" Name="BANK-SCR30-BAL3" Line="214" Column="18" EndLine="214" EndColumn="62" Length="13" Offset="4581" DataNameLine="214" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25301" Name="BANK-SCR30-SRV3" Line="215" Column="18" EndLine="215" EndColumn="61" Length="6" Offset="4594" DataNameLine="215" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25389" Name="BANK-SCR30-DTE3" Line="216" Column="18" EndLine="216" EndColumn="62" Length="11" Offset="4600" DataNameLine="216" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25477" Name="BANK-SCR30-TXN3" Line="217" Column="18" EndLine="217" EndColumn="61" Length="1" Offset="4611" DataNameLine="217" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25565" Name="BANK-SCR30-DET4" Line="218" Column="18" EndLine="218" EndColumn="61" Length="1" Offset="4612" DataNameLine="218" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25653" Name="BANK-SCR30-ACC4" Line="219" Column="18" EndLine="219" EndColumn="61" Length="9" Offset="4613" DataNameLine="219" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25741" Name="BANK-SCR30-DSC4" Line="220" Column="18" EndLine="220" EndColumn="62" Length="15" Offset="4622" DataNameLine="220" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25829" Name="BANK-SCR30-BAL4" Line="221" Column="18" EndLine="221" EndColumn="62" Length="13" Offset="4637" DataNameLine="221" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C25917" Name="BANK-SCR30-SRV4" Line="222" Column="18" EndLine="222" EndColumn="61" Length="6" Offset="4650" DataNameLine="222" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26005" Name="BANK-SCR30-DTE4" Line="223" Column="18" EndLine="223" EndColumn="62" Length="11" Offset="4656" DataNameLine="223" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26093" Name="BANK-SCR30-TXN4" Line="224" Column="18" EndLine="224" EndColumn="61" Length="1" Offset="4667" DataNameLine="224" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26181" Name="BANK-SCR30-DET5" Line="225" Column="18" EndLine="225" EndColumn="61" Length="1" Offset="4668" DataNameLine="225" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26269" Name="BANK-SCR30-ACC5" Line="226" Column="18" EndLine="226" EndColumn="61" Length="9" Offset="4669" DataNameLine="226" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26357" Name="BANK-SCR30-DSC5" Line="227" Column="18" EndLine="227" EndColumn="62" Length="15" Offset="4678" DataNameLine="227" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26445" Name="BANK-SCR30-BAL5" Line="228" Column="18" EndLine="228" EndColumn="62" Length="13" Offset="4693" DataNameLine="228" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26533" Name="BANK-SCR30-SRV5" Line="229" Column="18" EndLine="229" EndColumn="61" Length="6" Offset="4706" DataNameLine="229" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26621" Name="BANK-SCR30-DTE5" Line="230" Column="18" EndLine="230" EndColumn="62" Length="11" Offset="4712" DataNameLine="230" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26709" Name="BANK-SCR30-TXN5" Line="231" Column="18" EndLine="231" EndColumn="61" Length="1" Offset="4723" DataNameLine="231" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26797" Name="BANK-SCR30-DET6" Line="232" Column="18" EndLine="232" EndColumn="61" Length="1" Offset="4724" DataNameLine="232" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26885" Name="BANK-SCR30-ACC6" Line="233" Column="18" EndLine="233" EndColumn="61" Length="9" Offset="4725" DataNameLine="233" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C26973" Name="BANK-SCR30-DSC6" Line="234" Column="18" EndLine="234" EndColumn="62" Length="15" Offset="4734" DataNameLine="234" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C27061" Name="BANK-SCR30-BAL6" Line="235" Column="18" EndLine="235" EndColumn="62" Length="13" Offset="4749" DataNameLine="235" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C27149" Name="BANK-SCR30-SRV6" Line="236" Column="18" EndLine="236" EndColumn="61" Length="6" Offset="4762" DataNameLine="236" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C27237" Name="BANK-SCR30-DTE6" Line="237" Column="18" EndLine="237" EndColumn="62" Length="11" Offset="4768" DataNameLine="237" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C27325" Name="BANK-SCR30-TXN6" Line="238" Column="18" EndLine="238" EndColumn="61" Length="1" Offset="4779" DataNameLine="238" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C27413" Name="BANK-SCR30-SRVMSG" Line="239" Column="18" EndLine="239" EndColumn="62" Length="62" Offset="4780" DataNameLine="239" DataNameColumn="22" SourcePicture="X(62)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C27503" Name="BANK-SCREEN30-DATA-R" Line="240" Column="16" EndLine="240" EndColumn="70" Redefines="C23626" Length="336" Offset="4444" DataNameLine="240" DataNameColumn="20">
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C27600" Name="BANK-SCREEN30-INPUT-DATA" Line="241" Column="18" EndLine="241" EndColumn="47" Length="336" Offset="4444" DataNameLine="241" DataNameColumn="22">
+         <SubItems xsi:type="cbl:GroupDataItemType" Level="30" CID="C27697" Name="BANK-SCREEN30-INPUT" Line="242" Column="20" EndLine="242" EndColumn="67" Length="56" Offset="4444" DataNameLine="242" DataNameColumn="24">
+          <Occurs Dimensions="1" Stride="56">
+           <SubInfo Max="6"/>
+          </Occurs>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C27817" Name="BANK-SCR30-DET" Line="243" Column="22" EndLine="243" EndColumn="61" Length="1" Offset="4444" DataNameLine="243" DataNameColumn="26" SourcePicture="X(1)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C27904" Name="BANK-SCR30-ACC" Line="244" Column="22" EndLine="244" EndColumn="61" Length="9" Offset="4445" DataNameLine="244" DataNameColumn="26" SourcePicture="X(9)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C27991" Name="BANK-SCR30-DSC" Line="245" Column="22" EndLine="245" EndColumn="62" Length="15" Offset="4454" DataNameLine="245" DataNameColumn="26" SourcePicture="X(15)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C28078" Name="BANK-SCR30-BAL" Line="246" Column="22" EndLine="246" EndColumn="62" Length="13" Offset="4469" DataNameLine="246" DataNameColumn="26" SourcePicture="X(13)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C28165" Name="BANK-SCR30-SRV" Line="247" Column="22" EndLine="247" EndColumn="61" Length="6" Offset="4482" DataNameLine="247" DataNameColumn="26" SourcePicture="X(6)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C28252" Name="BANK-SCR30-DTE" Line="248" Column="22" EndLine="248" EndColumn="62" Length="11" Offset="4488" DataNameLine="248" DataNameColumn="26" SourcePicture="X(11)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C28339" Name="BANK-SCR30-TXN" Line="249" Column="22" EndLine="249" EndColumn="61" Length="1" Offset="4499" DataNameLine="249" DataNameColumn="26" SourcePicture="X(1)">
+           <Conditions CID="C28426" Name="BANK-SCR30-TXN-PRESENT" Line="250" Column="24" EndLine="250" EndColumn="62" DataNameLine="250" DataNameColumn="28">
+            <Values>
+             <Lower xsi:type="cbl:LiteralOperandType" Value="*" Type="ALPHA" Line="250" Column="58" EndLine="250" EndColumn="61" Access="SOURCE"/>
+            </Values>
+           </Conditions>
+          </SubItems>
+         </SubItems>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C28530" Name="BANK-SCREEN35-DATA" Line="251" Column="16" EndLine="251" EndColumn="39" Length="182" Offset="4842" DataNameLine="251" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C28621" Name="BANK-SCR35-ACC" Line="252" Column="18" EndLine="252" EndColumn="61" Length="9" Offset="4842" DataNameLine="252" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C28708" Name="BANK-SCR35-DSC" Line="253" Column="18" EndLine="253" EndColumn="62" Length="15" Offset="4851" DataNameLine="253" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C28795" Name="BANK-SCR35-BAL" Line="254" Column="18" EndLine="254" EndColumn="62" Length="13" Offset="4866" DataNameLine="254" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C28882" Name="BANK-SCR35-DTE" Line="255" Column="18" EndLine="255" EndColumn="62" Length="11" Offset="4879" DataNameLine="255" DataNameColumn="22" SourcePicture="X(11)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C28969" Name="BANK-SCR35-TRANS" Line="256" Column="18" EndLine="256" EndColumn="61" Length="5" Offset="4890" DataNameLine="256" DataNameColumn="22" SourcePicture="X(5)"/>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C29058" Name="BANK-SCR35-ATM-FIELDS" Line="257" Column="18" EndLine="257" EndColumn="44" Length="18" Offset="4895" DataNameLine="257" DataNameColumn="22">
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C29152" Name="BANK-SCR35-ATM-ENABLED" Line="258" Column="20" EndLine="258" EndColumn="61" Length="1" Offset="4895" DataNameLine="258" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C29247" Name="BANK-SCR35-ATM-LIM" Line="259" Column="20" EndLine="259" EndColumn="61" Length="3" Offset="4896" DataNameLine="259" DataNameColumn="24" SourcePicture="X(3)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C29338" Name="BANK-SCR35-ATM-LDTE" Line="260" Column="20" EndLine="260" EndColumn="62" Length="11" Offset="4899" DataNameLine="260" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C29430" Name="BANK-SCR35-ATM-LAMT" Line="261" Column="20" EndLine="261" EndColumn="61" Length="3" Offset="4910" DataNameLine="261" DataNameColumn="24" SourcePicture="X(3)"/>
+        </SubItems>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C29522" Name="BANK-SCR35-RP-FIELDS" Line="262" Column="18" EndLine="262" EndColumn="43" Length="111" Offset="4913" DataNameLine="262" DataNameColumn="22">
+         <SubItems xsi:type="cbl:GroupDataItemType" Level="30" CID="C29615" Name="BANK-SCR35-RP1-FIELDS" Line="263" Column="20" EndLine="263" EndColumn="46" Length="37" Offset="4913" DataNameLine="263" DataNameColumn="24">
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C29709" Name="BANK-SCR35-RP1DAY" Line="264" Column="22" EndLine="264" EndColumn="61" Length="2" Offset="4913" DataNameLine="264" DataNameColumn="26" SourcePicture="X(2)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C29799" Name="BANK-SCR35-RP1AMT" Line="265" Column="22" EndLine="265" EndColumn="62" Length="10" Offset="4915" DataNameLine="265" DataNameColumn="26" SourcePicture="X(10)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C29889" Name="BANK-SCR35-RP1PID" Line="266" Column="22" EndLine="266" EndColumn="61" Length="5" Offset="4925" DataNameLine="266" DataNameColumn="26" SourcePicture="X(5)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C29979" Name="BANK-SCR35-RP1ACC" Line="267" Column="22" EndLine="267" EndColumn="61" Length="9" Offset="4930" DataNameLine="267" DataNameColumn="26" SourcePicture="X(9)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30069" Name="BANK-SCR35-RP1DTE" Line="268" Column="22" EndLine="268" EndColumn="62" Length="11" Offset="4939" DataNameLine="268" DataNameColumn="26" SourcePicture="X(11)"/>
+         </SubItems>
+         <SubItems xsi:type="cbl:GroupDataItemType" Level="30" CID="C30159" Name="BANK-SCR35-RP2-FIELDS" Line="269" Column="20" EndLine="269" EndColumn="46" Length="37" Offset="4950" DataNameLine="269" DataNameColumn="24">
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30253" Name="BANK-SCR35-RP2DAY" Line="270" Column="22" EndLine="270" EndColumn="61" Length="2" Offset="4950" DataNameLine="270" DataNameColumn="26" SourcePicture="X(2)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30343" Name="BANK-SCR35-RP2AMT" Line="271" Column="22" EndLine="271" EndColumn="62" Length="10" Offset="4952" DataNameLine="271" DataNameColumn="26" SourcePicture="X(10)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30433" Name="BANK-SCR35-RP2PID" Line="272" Column="22" EndLine="272" EndColumn="61" Length="5" Offset="4962" DataNameLine="272" DataNameColumn="26" SourcePicture="X(5)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30523" Name="BANK-SCR35-RP2ACC" Line="273" Column="22" EndLine="273" EndColumn="61" Length="9" Offset="4967" DataNameLine="273" DataNameColumn="26" SourcePicture="X(9)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30613" Name="BANK-SCR35-RP2DTE" Line="274" Column="22" EndLine="274" EndColumn="62" Length="11" Offset="4976" DataNameLine="274" DataNameColumn="26" SourcePicture="X(11)"/>
+         </SubItems>
+         <SubItems xsi:type="cbl:GroupDataItemType" Level="30" CID="C30703" Name="BANK-SCR35-RP3-FIELDS" Line="275" Column="20" EndLine="275" EndColumn="46" Length="37" Offset="4987" DataNameLine="275" DataNameColumn="24">
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30797" Name="BANK-SCR35-RP3DAY" Line="276" Column="22" EndLine="276" EndColumn="61" Length="2" Offset="4987" DataNameLine="276" DataNameColumn="26" SourcePicture="X(2)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30887" Name="BANK-SCR35-RP3AMT" Line="277" Column="22" EndLine="277" EndColumn="62" Length="10" Offset="4989" DataNameLine="277" DataNameColumn="26" SourcePicture="X(10)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C30977" Name="BANK-SCR35-RP3PID" Line="278" Column="22" EndLine="278" EndColumn="61" Length="5" Offset="4999" DataNameLine="278" DataNameColumn="26" SourcePicture="X(5)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C31067" Name="BANK-SCR35-RP3ACC" Line="279" Column="22" EndLine="279" EndColumn="61" Length="9" Offset="5004" DataNameLine="279" DataNameColumn="26" SourcePicture="X(9)"/>
+          <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="35" CID="C31157" Name="BANK-SCR35-RP3DTE" Line="280" Column="22" EndLine="280" EndColumn="62" Length="11" Offset="5013" DataNameLine="280" DataNameColumn="26" SourcePicture="X(11)"/>
+         </SubItems>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C31247" Name="BANK-SCREEN40-DATA" Line="281" Column="16" EndLine="281" EndColumn="39" Length="520" Offset="5024" DataNameLine="281" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C31338" Name="BANK-SCR40-ACC" Line="282" Column="18" EndLine="282" EndColumn="61" Length="9" Offset="5024" DataNameLine="282" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C31425" Name="BANK-SCR40-ACCTYPE" Line="283" Column="18" EndLine="283" EndColumn="62" Length="15" Offset="5033" DataNameLine="283" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C31516" Name="BANK-SCR40-TXN-FIELDS" Line="284" Column="18" EndLine="284" EndColumn="44" Length="496" Offset="5048" DataNameLine="284" DataNameColumn="22">
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C31610" Name="BANK-SCR40-DAT1" Line="285" Column="20" EndLine="285" EndColumn="62" Length="11" Offset="5048" DataNameLine="285" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C31698" Name="BANK-SCR40-TIM1" Line="286" Column="20" EndLine="286" EndColumn="61" Length="8" Offset="5059" DataNameLine="286" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C31786" Name="BANK-SCR40-AMT1" Line="287" Column="20" EndLine="287" EndColumn="62" Length="13" Offset="5067" DataNameLine="287" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C31874" Name="BANK-SCR40-DSC1" Line="288" Column="20" EndLine="288" EndColumn="62" Length="30" Offset="5080" DataNameLine="288" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C31962" Name="BANK-SCR40-DAT2" Line="289" Column="20" EndLine="289" EndColumn="62" Length="11" Offset="5110" DataNameLine="289" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32050" Name="BANK-SCR40-TIM2" Line="290" Column="20" EndLine="290" EndColumn="61" Length="8" Offset="5121" DataNameLine="290" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32138" Name="BANK-SCR40-AMT2" Line="291" Column="20" EndLine="291" EndColumn="62" Length="13" Offset="5129" DataNameLine="291" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32226" Name="BANK-SCR40-DSC2" Line="292" Column="20" EndLine="292" EndColumn="62" Length="30" Offset="5142" DataNameLine="292" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32314" Name="BANK-SCR40-DAT3" Line="293" Column="20" EndLine="293" EndColumn="62" Length="11" Offset="5172" DataNameLine="293" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32402" Name="BANK-SCR40-TIM3" Line="294" Column="20" EndLine="294" EndColumn="61" Length="8" Offset="5183" DataNameLine="294" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32490" Name="BANK-SCR40-AMT3" Line="295" Column="20" EndLine="295" EndColumn="62" Length="13" Offset="5191" DataNameLine="295" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32578" Name="BANK-SCR40-DSC3" Line="296" Column="20" EndLine="296" EndColumn="62" Length="30" Offset="5204" DataNameLine="296" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32666" Name="BANK-SCR40-DAT4" Line="297" Column="20" EndLine="297" EndColumn="62" Length="11" Offset="5234" DataNameLine="297" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32754" Name="BANK-SCR40-TIM4" Line="298" Column="20" EndLine="298" EndColumn="61" Length="8" Offset="5245" DataNameLine="298" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32842" Name="BANK-SCR40-AMT4" Line="299" Column="20" EndLine="299" EndColumn="62" Length="13" Offset="5253" DataNameLine="299" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C32930" Name="BANK-SCR40-DSC4" Line="300" Column="20" EndLine="300" EndColumn="62" Length="30" Offset="5266" DataNameLine="300" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33018" Name="BANK-SCR40-DAT5" Line="301" Column="20" EndLine="301" EndColumn="62" Length="11" Offset="5296" DataNameLine="301" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33106" Name="BANK-SCR40-TIM5" Line="302" Column="20" EndLine="302" EndColumn="61" Length="8" Offset="5307" DataNameLine="302" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33194" Name="BANK-SCR40-AMT5" Line="303" Column="20" EndLine="303" EndColumn="62" Length="13" Offset="5315" DataNameLine="303" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33282" Name="BANK-SCR40-DSC5" Line="304" Column="20" EndLine="304" EndColumn="62" Length="30" Offset="5328" DataNameLine="304" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33370" Name="BANK-SCR40-DAT6" Line="305" Column="20" EndLine="305" EndColumn="62" Length="11" Offset="5358" DataNameLine="305" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33458" Name="BANK-SCR40-TIM6" Line="306" Column="20" EndLine="306" EndColumn="61" Length="8" Offset="5369" DataNameLine="306" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33546" Name="BANK-SCR40-AMT6" Line="307" Column="20" EndLine="307" EndColumn="62" Length="13" Offset="5377" DataNameLine="307" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33634" Name="BANK-SCR40-DSC6" Line="308" Column="20" EndLine="308" EndColumn="62" Length="30" Offset="5390" DataNameLine="308" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33722" Name="BANK-SCR40-DAT7" Line="309" Column="20" EndLine="309" EndColumn="62" Length="11" Offset="5420" DataNameLine="309" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33810" Name="BANK-SCR40-TIM7" Line="310" Column="20" EndLine="310" EndColumn="61" Length="8" Offset="5431" DataNameLine="310" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33898" Name="BANK-SCR40-AMT7" Line="311" Column="20" EndLine="311" EndColumn="62" Length="13" Offset="5439" DataNameLine="311" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C33986" Name="BANK-SCR40-DSC7" Line="312" Column="20" EndLine="312" EndColumn="62" Length="30" Offset="5452" DataNameLine="312" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C34074" Name="BANK-SCR40-DAT8" Line="313" Column="20" EndLine="313" EndColumn="62" Length="11" Offset="5482" DataNameLine="313" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C34162" Name="BANK-SCR40-TIM8" Line="314" Column="20" EndLine="314" EndColumn="61" Length="8" Offset="5493" DataNameLine="314" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C34250" Name="BANK-SCR40-AMT8" Line="315" Column="20" EndLine="315" EndColumn="62" Length="13" Offset="5501" DataNameLine="315" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C34338" Name="BANK-SCR40-DSC8" Line="316" Column="20" EndLine="316" EndColumn="62" Length="30" Offset="5514" DataNameLine="316" DataNameColumn="24" SourcePicture="X(30)"/>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C34426" Name="BANK-SCREEN40-DATA-R" Line="317" Column="16" EndLine="317" EndColumn="70" Redefines="C31247" Length="520" Offset="5024" DataNameLine="317" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C34523" Name="BANK-SCR40-ACC-R" Line="318" Column="18" EndLine="318" EndColumn="61" Length="9" Offset="5024" DataNameLine="318" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C34612" Name="BANK-SCR40-ACCTYPE-R" Line="319" Column="18" EndLine="319" EndColumn="62" Length="15" Offset="5033" DataNameLine="319" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C34705" Name="BANK-SCREEN40-TXNS" Line="320" Column="18" EndLine="320" EndColumn="67" Length="62" Offset="5048" DataNameLine="320" DataNameColumn="22">
+         <Occurs Dimensions="1" Stride="62">
+          <SubInfo Max="8"/>
+         </Occurs>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C34824" Name="BANK-SCR40-DATE" Line="321" Column="20" EndLine="321" EndColumn="62" Length="11" Offset="5048" DataNameLine="321" DataNameColumn="24" SourcePicture="X(11)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C34912" Name="BANK-SCR40-TIME" Line="322" Column="20" EndLine="322" EndColumn="61" Length="8" Offset="5059" DataNameLine="322" DataNameColumn="24" SourcePicture="X(8)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C35000" Name="BANK-SCR40-AMNT" Line="323" Column="20" EndLine="323" EndColumn="62" Length="13" Offset="5067" DataNameLine="323" DataNameColumn="24" SourcePicture="X(13)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C35088" Name="BANK-SCR40-DESC" Line="324" Column="20" EndLine="324" EndColumn="62" Length="30" Offset="5080" DataNameLine="324" DataNameColumn="24" SourcePicture="X(30)"/>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C35176" Name="BANK-SCREEN50-DATA" Line="325" Column="16" EndLine="325" EndColumn="39" Length="304" Offset="5544" DataNameLine="325" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35267" Name="BANK-SCR50-XFER" Line="326" Column="18" EndLine="326" EndColumn="61" Length="8" Offset="5544" DataNameLine="326" DataNameColumn="22" SourcePicture="X(8)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35355" Name="BANK-SCR50-FRM1" Line="327" Column="18" EndLine="327" EndColumn="61" Length="1" Offset="5552" DataNameLine="327" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35443" Name="BANK-SCR50-TO1" Line="328" Column="18" EndLine="328" EndColumn="61" Length="1" Offset="5553" DataNameLine="328" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35530" Name="BANK-SCR50-ACC1" Line="329" Column="18" EndLine="329" EndColumn="61" Length="9" Offset="5554" DataNameLine="329" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35618" Name="BANK-SCR50-DSC1" Line="330" Column="18" EndLine="330" EndColumn="62" Length="15" Offset="5563" DataNameLine="330" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35706" Name="BANK-SCR50-BAL1" Line="331" Column="18" EndLine="331" EndColumn="62" Length="13" Offset="5578" DataNameLine="331" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35794" Name="BANK-SCR50-FRM2" Line="332" Column="18" EndLine="332" EndColumn="61" Length="1" Offset="5591" DataNameLine="332" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35882" Name="BANK-SCR50-TO2" Line="333" Column="18" EndLine="333" EndColumn="61" Length="1" Offset="5592" DataNameLine="333" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C35969" Name="BANK-SCR50-ACC2" Line="334" Column="18" EndLine="334" EndColumn="61" Length="9" Offset="5593" DataNameLine="334" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36057" Name="BANK-SCR50-DSC2" Line="335" Column="18" EndLine="335" EndColumn="62" Length="15" Offset="5602" DataNameLine="335" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36145" Name="BANK-SCR50-BAL2" Line="336" Column="18" EndLine="336" EndColumn="62" Length="13" Offset="5617" DataNameLine="336" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36233" Name="BANK-SCR50-FRM3" Line="337" Column="18" EndLine="337" EndColumn="61" Length="1" Offset="5630" DataNameLine="337" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36321" Name="BANK-SCR50-TO3" Line="338" Column="18" EndLine="338" EndColumn="61" Length="1" Offset="5631" DataNameLine="338" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36408" Name="BANK-SCR50-ACC3" Line="339" Column="18" EndLine="339" EndColumn="61" Length="9" Offset="5632" DataNameLine="339" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36496" Name="BANK-SCR50-DSC3" Line="340" Column="18" EndLine="340" EndColumn="62" Length="15" Offset="5641" DataNameLine="340" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36584" Name="BANK-SCR50-BAL3" Line="341" Column="18" EndLine="341" EndColumn="62" Length="13" Offset="5656" DataNameLine="341" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36672" Name="BANK-SCR50-FRM4" Line="342" Column="18" EndLine="342" EndColumn="61" Length="1" Offset="5669" DataNameLine="342" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36760" Name="BANK-SCR50-TO4" Line="343" Column="18" EndLine="343" EndColumn="61" Length="1" Offset="5670" DataNameLine="343" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36847" Name="BANK-SCR50-ACC4" Line="344" Column="18" EndLine="344" EndColumn="61" Length="9" Offset="5671" DataNameLine="344" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C36935" Name="BANK-SCR50-DSC4" Line="345" Column="18" EndLine="345" EndColumn="62" Length="15" Offset="5680" DataNameLine="345" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37023" Name="BANK-SCR50-BAL4" Line="346" Column="18" EndLine="346" EndColumn="62" Length="13" Offset="5695" DataNameLine="346" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37111" Name="BANK-SCR50-FRM5" Line="347" Column="18" EndLine="347" EndColumn="61" Length="1" Offset="5708" DataNameLine="347" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37199" Name="BANK-SCR50-TO5" Line="348" Column="18" EndLine="348" EndColumn="61" Length="1" Offset="5709" DataNameLine="348" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37286" Name="BANK-SCR50-ACC5" Line="349" Column="18" EndLine="349" EndColumn="61" Length="9" Offset="5710" DataNameLine="349" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37374" Name="BANK-SCR50-DSC5" Line="350" Column="18" EndLine="350" EndColumn="62" Length="15" Offset="5719" DataNameLine="350" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37462" Name="BANK-SCR50-BAL5" Line="351" Column="18" EndLine="351" EndColumn="62" Length="13" Offset="5734" DataNameLine="351" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37550" Name="BANK-SCR50-FRM6" Line="352" Column="18" EndLine="352" EndColumn="61" Length="1" Offset="5747" DataNameLine="352" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37638" Name="BANK-SCR50-TO6" Line="353" Column="18" EndLine="353" EndColumn="61" Length="1" Offset="5748" DataNameLine="353" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37725" Name="BANK-SCR50-ACC6" Line="354" Column="18" EndLine="354" EndColumn="61" Length="9" Offset="5749" DataNameLine="354" DataNameColumn="22" SourcePicture="X(9)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37813" Name="BANK-SCR50-DSC6" Line="355" Column="18" EndLine="355" EndColumn="62" Length="15" Offset="5758" DataNameLine="355" DataNameColumn="22" SourcePicture="X(15)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37901" Name="BANK-SCR50-BAL6" Line="356" Column="18" EndLine="356" EndColumn="62" Length="13" Offset="5773" DataNameLine="356" DataNameColumn="22" SourcePicture="X(13)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C37989" Name="BANK-SCR50-ERRMSG" Line="357" Column="18" EndLine="357" EndColumn="62" Length="62" Offset="5786" DataNameLine="357" DataNameColumn="22" SourcePicture="X(62)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C38079" Name="BANK-SCREEN60-DATA" Line="358" Column="16" EndLine="358" EndColumn="39" Length="255" Offset="5848" DataNameLine="358" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C38170" Name="BANK-SCR60-RETURN-TO" Line="359" Column="18" EndLine="359" EndColumn="61" Length="8" Offset="5848" DataNameLine="359" DataNameColumn="22" SourcePicture="X(8)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C38263" Name="BANK-SCR60-CONTACT-ID" Line="360" Column="18" EndLine="360" EndColumn="61" Length="5" Offset="5856" DataNameLine="360" DataNameColumn="22" SourcePicture="X(5)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C38357" Name="BANK-SCR60-CONTACT-NAME" Line="361" Column="18" EndLine="361" EndColumn="62" Length="25" Offset="5861" DataNameLine="361" DataNameColumn="22" SourcePicture="X(25)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C38453" Name="BANK-SCR60-CHANGE-ACTION" Line="362" Column="18" EndLine="362" EndColumn="61" Length="1" Offset="5886" DataNameLine="362" DataNameColumn="22" SourcePicture="X(1)">
+         <Conditions CID="C38550" Name="ADDR-CHANGE-REQUEST" Line="363" Column="20" EndLine="363" EndColumn="62" DataNameLine="363" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value=" " Type="ALPHA" Line="363" Column="58" EndLine="363" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C38651" Name="ADDR-CHANGE-VERIFY" Line="364" Column="20" EndLine="364" EndColumn="62" DataNameLine="364" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="V" Type="ALPHA" Line="364" Column="58" EndLine="364" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C38751" Name="ADDR-CHANGE-COMMIT" Line="365" Column="20" EndLine="365" EndColumn="62" DataNameLine="365" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="U" Type="ALPHA" Line="365" Column="58" EndLine="365" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+        </SubItems>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C38851" Name="BANK-SCR60-OLD-DETS" Line="366" Column="18" EndLine="366" EndColumn="42" Length="108" Offset="5887" DataNameLine="366" DataNameColumn="22">
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C38943" Name="BANK-SCR60-OLD-ADDR1" Line="367" Column="20" EndLine="367" EndColumn="62" Length="25" Offset="5887" DataNameLine="367" DataNameColumn="24" SourcePicture="X(25)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39036" Name="BANK-SCR60-OLD-ADDR2" Line="368" Column="20" EndLine="368" EndColumn="62" Length="25" Offset="5912" DataNameLine="368" DataNameColumn="24" SourcePicture="X(25)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39129" Name="BANK-SCR60-OLD-STATE" Line="369" Column="20" EndLine="369" EndColumn="61" Length="2" Offset="5937" DataNameLine="369" DataNameColumn="24" SourcePicture="X(2)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39222" Name="BANK-SCR60-OLD-CNTRY" Line="370" Column="20" EndLine="370" EndColumn="61" Length="6" Offset="5939" DataNameLine="370" DataNameColumn="24" SourcePicture="X(6)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39315" Name="BANK-SCR60-OLD-PSTCDE" Line="371" Column="20" EndLine="371" EndColumn="61" Length="6" Offset="5945" DataNameLine="371" DataNameColumn="24" SourcePicture="X(6)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39409" Name="BANK-SCR60-OLD-TELNO" Line="372" Column="20" EndLine="372" EndColumn="62" Length="12" Offset="5951" DataNameLine="372" DataNameColumn="24" SourcePicture="X(12)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39502" Name="BANK-SCR60-OLD-EMAIL" Line="373" Column="20" EndLine="373" EndColumn="62" Length="30" Offset="5963" DataNameLine="373" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39595" Name="BANK-SCR60-OLD-SEND-MAIL" Line="374" Column="20" EndLine="374" EndColumn="61" Length="1" Offset="5993" DataNameLine="374" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39692" Name="BANK-SCR60-OLD-SEND-EMAIL" Line="375" Column="20" EndLine="375" EndColumn="61" Length="1" Offset="5994" DataNameLine="375" DataNameColumn="24" SourcePicture="X(1)"/>
+        </SubItems>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C39790" Name="BANK-SCR60-NEW-DETS" Line="376" Column="18" EndLine="376" EndColumn="42" Length="108" Offset="5995" DataNameLine="376" DataNameColumn="22">
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39882" Name="BANK-SCR60-NEW-ADDR1" Line="377" Column="20" EndLine="377" EndColumn="62" Length="25" Offset="5995" DataNameLine="377" DataNameColumn="24" SourcePicture="X(25)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C39975" Name="BANK-SCR60-NEW-ADDR2" Line="378" Column="20" EndLine="378" EndColumn="62" Length="25" Offset="6020" DataNameLine="378" DataNameColumn="24" SourcePicture="X(25)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40068" Name="BANK-SCR60-NEW-STATE" Line="379" Column="20" EndLine="379" EndColumn="61" Length="2" Offset="6045" DataNameLine="379" DataNameColumn="24" SourcePicture="X(2)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40161" Name="BANK-SCR60-NEW-CNTRY" Line="380" Column="20" EndLine="380" EndColumn="61" Length="6" Offset="6047" DataNameLine="380" DataNameColumn="24" SourcePicture="X(6)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40254" Name="BANK-SCR60-NEW-PSTCDE" Line="381" Column="20" EndLine="381" EndColumn="61" Length="6" Offset="6053" DataNameLine="381" DataNameColumn="24" SourcePicture="X(6)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40348" Name="BANK-SCR60-NEW-TELNO" Line="382" Column="20" EndLine="382" EndColumn="62" Length="12" Offset="6059" DataNameLine="382" DataNameColumn="24" SourcePicture="X(12)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40441" Name="BANK-SCR60-NEW-EMAIL" Line="383" Column="20" EndLine="383" EndColumn="62" Length="30" Offset="6071" DataNameLine="383" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40534" Name="BANK-SCR60-NEW-SEND-MAIL" Line="384" Column="20" EndLine="384" EndColumn="61" Length="1" Offset="6101" DataNameLine="384" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C40631" Name="BANK-SCR60-NEW-SEND-EMAIL" Line="385" Column="20" EndLine="385" EndColumn="61" Length="1" Offset="6102" DataNameLine="385" DataNameColumn="24" SourcePicture="X(1)"/>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C40729" Name="BANK-SCREEN70-DATA" Line="386" Column="16" EndLine="386" EndColumn="39" Length="28" Offset="6103" DataNameLine="386" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C40820" Name="BANK-SCR70-AMOUNT" Line="387" Column="18" EndLine="387" EndColumn="61" Length="7" Offset="6103" DataNameLine="387" DataNameColumn="22" SourcePicture="X(7)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C40910" Name="BANK-SCR70-RATE" Line="388" Column="18" EndLine="388" EndColumn="61" Length="7" Offset="6110" DataNameLine="388" DataNameColumn="22" SourcePicture="X(7)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C40998" Name="BANK-SCR70-TERM" Line="389" Column="18" EndLine="389" EndColumn="61" Length="5" Offset="6117" DataNameLine="389" DataNameColumn="22" SourcePicture="X(5)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C41086" Name="BANK-SCR70-PAYMENT" Line="390" Column="18" EndLine="390" EndColumn="61" Length="9" Offset="6122" DataNameLine="390" DataNameColumn="22" SourcePicture="X(9)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C41177" Name="BANK-SCREEN80-DATA" Line="391" Column="16" EndLine="391" EndColumn="39" Length="127" Offset="6131" DataNameLine="391" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C41268" Name="BANK-SCR80-CONTACT-ID" Line="392" Column="18" EndLine="392" EndColumn="61" Length="5" Offset="6131" DataNameLine="392" DataNameColumn="22" SourcePicture="X(5)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C41362" Name="BANK-SCR80-CONTACT-NAME" Line="393" Column="18" EndLine="393" EndColumn="62" Length="25" Offset="6136" DataNameLine="393" DataNameColumn="22" SourcePicture="X(25)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C41458" Name="BANK-SCR80-PRINT-ACTION" Line="394" Column="18" EndLine="394" EndColumn="61" Length="1" Offset="6161" DataNameLine="394" DataNameColumn="22" SourcePicture="X(1)">
+         <Conditions CID="C41554" Name="PRINT-REQUEST" Line="395" Column="20" EndLine="395" EndColumn="62" DataNameLine="395" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value=" " Type="ALPHA" Line="395" Column="58" EndLine="395" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+         <Conditions CID="C41649" Name="PRINT-CONFIRM" Line="396" Column="20" EndLine="396" EndColumn="62" DataNameLine="396" DataNameColumn="24">
+          <Values>
+           <Lower xsi:type="cbl:LiteralOperandType" Value="C" Type="ALPHA" Line="396" Column="58" EndLine="396" EndColumn="61" Access="SOURCE"/>
+          </Values>
+         </Conditions>
+        </SubItems>
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C41744" Name="BANK-SCR80-DETS" Line="397" Column="18" EndLine="397" EndColumn="38" Length="96" Offset="6162" DataNameLine="397" DataNameColumn="22">
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C41832" Name="BANK-SCR80-ADDR1" Line="398" Column="20" EndLine="398" EndColumn="62" Length="25" Offset="6162" DataNameLine="398" DataNameColumn="24" SourcePicture="X(25)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C41921" Name="BANK-SCR80-ADDR2" Line="399" Column="20" EndLine="399" EndColumn="62" Length="25" Offset="6187" DataNameLine="399" DataNameColumn="24" SourcePicture="X(25)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C42010" Name="BANK-SCR80-STATE" Line="400" Column="20" EndLine="400" EndColumn="61" Length="2" Offset="6212" DataNameLine="400" DataNameColumn="24" SourcePicture="X(2)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C42099" Name="BANK-SCR80-CNTRY" Line="401" Column="20" EndLine="401" EndColumn="61" Length="6" Offset="6214" DataNameLine="401" DataNameColumn="24" SourcePicture="X(6)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C42188" Name="BANK-SCR80-PSTCDE" Line="402" Column="20" EndLine="402" EndColumn="61" Length="6" Offset="6220" DataNameLine="402" DataNameColumn="24" SourcePicture="X(6)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C42278" Name="BANK-SCR80-EMAIL" Line="403" Column="20" EndLine="403" EndColumn="62" Length="30" Offset="6226" DataNameLine="403" DataNameColumn="24" SourcePicture="X(30)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C42367" Name="BANK-SCR80-OPT1" Line="404" Column="20" EndLine="404" EndColumn="61" Length="1" Offset="6256" DataNameLine="404" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C42455" Name="BANK-SCR80-OPT2" Line="405" Column="20" EndLine="405" EndColumn="61" Length="1" Offset="6257" DataNameLine="405" DataNameColumn="24" SourcePicture="X(1)"/>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C42543" Name="BANK-SCREEN90-DATA" Line="406" Column="17" EndLine="406" EndColumn="40" Length="1432" Offset="6258" DataNameLine="406" DataNameColumn="21">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C42634" Name="BANK-SCR90-SCRN" Line="407" Column="18" EndLine="407" EndColumn="61" Length="6" Offset="6258" DataNameLine="407" DataNameColumn="22" SourcePicture="X(6)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C42722" Name="BANK-SCR90-SCRN-STATUS" Line="408" Column="18" EndLine="408" EndColumn="61" Length="1" Offset="6264" DataNameLine="408" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C42817" Name="BANK-SCR90-LINE" Line="409" Column="18" EndLine="410" EndColumn="38" Length="75" Offset="6265" DataNameLine="409" DataNameColumn="21" SourcePicture="X(75)">
+         <Occurs Dimensions="1" Stride="75">
+          <SubInfo Max="19"/>
+         </Occurs>
+        </SubItems>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C42933" Name="BANK-SCREENZZ-DATA" Line="411" Column="16" EndLine="411" EndColumn="39" Length="336" Offset="7690" DataNameLine="411" DataNameColumn="20">
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43024" Name="BANK-SCRZZ-SEL1ID" Line="412" Column="18" EndLine="412" EndColumn="61" Length="1" Offset="7690" DataNameLine="412" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43114" Name="BANK-SCRZZ-SEL1IP" Line="413" Column="18" EndLine="413" EndColumn="61" Length="1" Offset="7691" DataNameLine="413" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43204" Name="BANK-SCRZZ-SEL1TX" Line="414" Column="18" EndLine="414" EndColumn="62" Length="40" Offset="7692" DataNameLine="414" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43294" Name="BANK-SCRZZ-SEL2ID" Line="415" Column="18" EndLine="415" EndColumn="61" Length="1" Offset="7732" DataNameLine="415" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43384" Name="BANK-SCRZZ-SEL2IP" Line="416" Column="18" EndLine="416" EndColumn="61" Length="1" Offset="7733" DataNameLine="416" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43474" Name="BANK-SCRZZ-SEL2TX" Line="417" Column="18" EndLine="417" EndColumn="62" Length="40" Offset="7734" DataNameLine="417" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43564" Name="BANK-SCRZZ-SEL3ID" Line="418" Column="18" EndLine="418" EndColumn="61" Length="1" Offset="7774" DataNameLine="418" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43654" Name="BANK-SCRZZ-SEL3IP" Line="419" Column="18" EndLine="419" EndColumn="61" Length="1" Offset="7775" DataNameLine="419" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43744" Name="BANK-SCRZZ-SEL3TX" Line="420" Column="18" EndLine="420" EndColumn="62" Length="40" Offset="7776" DataNameLine="420" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43834" Name="BANK-SCRZZ-SEL4ID" Line="421" Column="18" EndLine="421" EndColumn="61" Length="1" Offset="7816" DataNameLine="421" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C43924" Name="BANK-SCRZZ-SEL4IP" Line="422" Column="18" EndLine="422" EndColumn="61" Length="1" Offset="7817" DataNameLine="422" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44014" Name="BANK-SCRZZ-SEL4TX" Line="423" Column="18" EndLine="423" EndColumn="62" Length="40" Offset="7818" DataNameLine="423" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44104" Name="BANK-SCRZZ-SEL5ID" Line="424" Column="18" EndLine="424" EndColumn="61" Length="1" Offset="7858" DataNameLine="424" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44194" Name="BANK-SCRZZ-SEL5IP" Line="425" Column="18" EndLine="425" EndColumn="61" Length="1" Offset="7859" DataNameLine="425" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44284" Name="BANK-SCRZZ-SEL5TX" Line="426" Column="18" EndLine="426" EndColumn="62" Length="40" Offset="7860" DataNameLine="426" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44374" Name="BANK-SCRZZ-SEL6ID" Line="427" Column="18" EndLine="427" EndColumn="61" Length="1" Offset="7900" DataNameLine="427" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44464" Name="BANK-SCRZZ-SEL6IP" Line="428" Column="18" EndLine="428" EndColumn="61" Length="1" Offset="7901" DataNameLine="428" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44554" Name="BANK-SCRZZ-SEL6TX" Line="429" Column="18" EndLine="429" EndColumn="62" Length="40" Offset="7902" DataNameLine="429" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44644" Name="BANK-SCRZZ-SEL7ID" Line="430" Column="18" EndLine="430" EndColumn="61" Length="1" Offset="7942" DataNameLine="430" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44734" Name="BANK-SCRZZ-SEL7IP" Line="431" Column="18" EndLine="431" EndColumn="61" Length="1" Offset="7943" DataNameLine="431" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44824" Name="BANK-SCRZZ-SEL7TX" Line="432" Column="18" EndLine="432" EndColumn="62" Length="40" Offset="7944" DataNameLine="432" DataNameColumn="22" SourcePicture="X(40)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C44914" Name="BANK-SCRZZ-SEL8ID" Line="433" Column="18" EndLine="433" EndColumn="61" Length="1" Offset="7984" DataNameLine="433" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C45004" Name="BANK-SCRZZ-SEL8IP" Line="434" Column="18" EndLine="434" EndColumn="61" Length="1" Offset="7985" DataNameLine="434" DataNameColumn="22" SourcePicture="X(1)"/>
+        <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="25" CID="C45094" Name="BANK-SCRZZ-SEL8TX" Line="435" Column="18" EndLine="435" EndColumn="62" Length="40" Offset="7986" DataNameLine="435" DataNameColumn="22" SourcePicture="X(40)"/>
+       </SubItems>
+       <SubItems xsi:type="cbl:GroupDataItemType" Level="20" CID="C45184" Name="BANK-SCREENZZ-DATA-R" Line="436" Column="16" EndLine="436" EndColumn="70" Redefines="C42933" Length="336" Offset="7690" DataNameLine="436" DataNameColumn="20">
+        <SubItems xsi:type="cbl:GroupDataItemType" Level="25" CID="C45281" Name="BANK-SCREENZZ-FIELD" Line="437" Column="18" EndLine="437" EndColumn="67" Length="42" Offset="7690" DataNameLine="437" DataNameColumn="22">
+         <Occurs Dimensions="1" Stride="42">
+          <SubInfo Max="8"/>
+         </Occurs>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C45401" Name="BANK-SCRZZ-ID" Line="438" Column="20" EndLine="438" EndColumn="61" Length="1" Offset="7690" DataNameLine="438" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C45487" Name="BANK-SCRZZ-IP" Line="439" Column="20" EndLine="439" EndColumn="61" Length="1" Offset="7691" DataNameLine="439" DataNameColumn="24" SourcePicture="X(1)"/>
+         <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="30" CID="C45573" Name="BANK-SCRZZ-TX" Line="440" Column="20" EndLine="440" EndColumn="62" Length="40" Offset="7692" DataNameLine="440" DataNameColumn="24" SourcePicture="X(40)"/>
+        </SubItems>
+       </SubItems>
+      </SubItems>
+     </SubItems>
+    </DataItems>
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C45659" Name="WS-PERSON" Line="443" Column="8" EndLine="443" EndColumn="21" Modified="true" Length="35" Offset="8512" DataNameLine="443" DataNameColumn="11">
+     <SubItems xsi:type="cbl:GroupDataItemType" Level="5" CID="C45769" Name="CD01-DATA" Line="459" Column="10" EndLine="459" EndColumn="24" Referenced="true" Modified="true" Length="35" Offset="8512" DataNameLine="459" DataNameColumn="14">
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="10" CID="C45851" Name="CD01I-DATA" Line="460" Column="12" EndLine="460" EndColumn="27" Modified="true" Length="5" Offset="8512" DataNameLine="460" DataNameColumn="16">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C45934" Name="CD01I-PERSON-PID" Line="461" Column="14" EndLine="461" EndColumn="61" Referenced="true" Modified="true" Length="5" Offset="8512" DataNameLine="461" DataNameColumn="18" SourcePicture="X(5)"/>
+      </SubItems>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="10" CID="C46023" Name="CD01O-DATA" Line="462" Column="12" EndLine="462" EndColumn="27" Length="30" Offset="8517" DataNameLine="462" DataNameColumn="16">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C46106" Name="CD01O-PERSON-PID" Line="463" Column="14" EndLine="463" EndColumn="61" Referenced="true" Length="5" Offset="8517" DataNameLine="463" DataNameColumn="18" SourcePicture="X(5)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C46195" Name="CD01O-PERSON-NAME" Line="464" Column="14" EndLine="464" EndColumn="62" Referenced="true" Length="25" Offset="8522" DataNameLine="464" DataNameColumn="18" SourcePicture="X(25)"/>
+      </SubItems>
+     </SubItems>
+    </DataItems>
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C46285" Name="WS-SECURITY" Line="467" Column="8" EndLine="467" EndColumn="23" Modified="true" Length="92" Offset="8560" DataNameLine="467" DataNameColumn="11">
+     <SubItems xsi:type="cbl:GroupDataItemType" Level="5" CID="C46397" Name="CPSWDD01-DATA" Line="483" Column="10" EndLine="483" EndColumn="28" Referenced="true" Modified="true" Length="92" Offset="8560" DataNameLine="483" DataNameColumn="14">
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="10" CID="C46483" Name="CPSWDD01I-DATA" Line="484" Column="12" EndLine="484" EndColumn="31" Modified="true" Length="17" Offset="8560" DataNameLine="484" DataNameColumn="16">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C46570" Name="CPSWDD01I-OPERATION" Line="485" Column="14" EndLine="485" EndColumn="61" Modified="true" Length="1" Offset="8560" DataNameLine="485" DataNameColumn="18" SourcePicture="X(1)">
+        <Conditions CID="C46662" Name="PSWD-NOOP" Line="486" Column="16" EndLine="486" EndColumn="62" DataNameLine="486" DataNameColumn="20">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="0" Type="ALPHA" Line="486" Column="58" EndLine="486" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C46753" Name="PSWD-SIGNON" Line="487" Column="16" EndLine="487" EndColumn="62" DataNameLine="487" DataNameColumn="20">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="1" Type="ALPHA" Line="487" Column="58" EndLine="487" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+        <Conditions CID="C46846" Name="PSWD-SIGNOFF" Line="488" Column="16" EndLine="488" EndColumn="62" DataNameLine="488" DataNameColumn="20">
+         <Values>
+          <Lower xsi:type="cbl:LiteralOperandType" Value="2" Type="ALPHA" Line="488" Column="58" EndLine="488" EndColumn="61" Access="SOURCE"/>
+         </Values>
+        </Conditions>
+       </SubItems>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C46940" Name="CPSWDD01I-USERID" Line="489" Column="14" EndLine="489" EndColumn="61" Referenced="true" Modified="true" Length="8" Offset="8561" DataNameLine="489" DataNameColumn="18" SourcePicture="X(8)"/>
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C47029" Name="CPSWDD01I-PASSWORD" Line="490" Column="14" EndLine="490" EndColumn="61" Referenced="true" Modified="true" Length="8" Offset="8569" DataNameLine="490" DataNameColumn="18" SourcePicture="X(8)"/>
+      </SubItems>
+      <SubItems xsi:type="cbl:GroupDataItemType" Level="10" CID="C47120" Name="CPSWDD01O-DATA" Line="491" Column="12" EndLine="491" EndColumn="31" Length="75" Offset="8577" DataNameLine="491" DataNameColumn="16">
+       <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="15" CID="C47207" Name="CPSWDD01O-MESSAGE" Line="492" Column="14" EndLine="492" EndColumn="62" Referenced="true" Length="75" Offset="8577" DataNameLine="492" DataNameColumn="18" SourcePicture="X(75)"/>
+      </SubItems>
+     </SubItems>
+    </DataItems>
+   </WorkingStorage>
+   <Linkage Line="495" Column="8" EndLine="507" EndColumn="44">
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C47392" Name="DFHEIBLK" Referenced="true" Modified="true" Length="85" Offset="0" Origin="EcmVisible">
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="COMP_3" Level="2" CID="C47481" Name="EIBTIME" Length="4" Offset="0" DecimalDigits="7" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="COMP_3" Level="2" CID="C47545" Name="EIBDATE" Length="4" Offset="4" DecimalDigits="7" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C47609" Name="EIBTRNID" Length="4" Offset="8" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="COMP_3" Level="2" CID="C47670" Name="EIBTASKN" Length="4" Offset="12" DecimalDigits="7" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C47735" Name="EIBTRMID" Length="4" Offset="16" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="2" CID="C47796" Name="EIBRSVD1" Length="2" Offset="20" DecimalDigits="4" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="2" CID="C47861" Name="DFHEIGDI" Redefines="C47796" Length="2" Offset="20" DecimalDigits="4" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="2" CID="C47930" Name="EIBCPOSN" Length="2" Offset="22" DecimalDigits="4" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="2" CID="C47995" Name="EIBCALEN" Length="2" Offset="24" DecimalDigits="4" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48060" Name="EIBAID" Length="1" Offset="26" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48119" Name="EIBFN" Length="2" Offset="27" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48177" Name="EIBRCODE" Length="6" Offset="29" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48238" Name="EIBDS" Length="8" Offset="35" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48296" Name="EIBREQID" Length="8" Offset="43" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48357" Name="EIBRSRCE" Length="8" Offset="51" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48418" Name="EIBSYNC" Length="1" Offset="59" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48478" Name="EIBFREE" Length="1" Offset="60" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48538" Name="EIBRECV" Length="1" Offset="61" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48598" Name="EIBSEND" Length="1" Offset="62" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48658" Name="EIBFIL01" Redefines="C48598" Length="1" Offset="62" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48723" Name="EIBATT" Length="1" Offset="63" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48782" Name="EIBEOC" Length="1" Offset="64" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48841" Name="EIBFMH" Length="1" Offset="65" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48900" Name="EIBCOMPL" Length="1" Offset="66" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C48961" Name="EIBSIG" Length="1" Offset="67" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49020" Name="EIBCONF" Length="1" Offset="68" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49080" Name="EIBERR" Length="1" Offset="69" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49139" Name="EIBERRCD" Length="4" Offset="70" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49200" Name="EIBSYNRB" Length="1" Offset="74" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49261" Name="EIBNODAT" Length="1" Offset="75" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="2" CID="C49322" Name="EIBRESP" Length="4" Offset="76" DecimalDigits="8" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="2" CID="C49386" Name="EIBRESP2" Length="4" Offset="80" DecimalDigits="8" DecimalAlignment="0" Signed="true" Origin="EcmVisible"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49451" Name="EIBRLDBK" Length="1" Offset="84" Origin="EcmVisible"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C49512" Name="DFHCOMMAREA" Line="496" Column="8" EndLine="496" EndColumn="23" Referenced="true" Modified="true" Length="6144" Offset="0" DataNameLine="496" DataNameColumn="11">
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="5" CID="C49624" Name="LK-COMMAREA" Line="497" Column="10" EndLine="497" EndColumn="37" Length="6144" Offset="0" DataNameLine="497" DataNameColumn="13" SourcePicture="X(6144)"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C49708" Name="BRE-INP-INPUT-STRUCTURE" Line="498" Column="8" EndLine="498" EndColumn="35" Referenced="true" Modified="true" Length="18" Offset="0" DataNameLine="498" DataNameColumn="11">
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49832" Name="BRE-I-BANK-SIGNON-ID" Line="499" Column="10" EndLine="499" EndColumn="43" Referenced="true" Length="5" Offset="0" DataNameLine="499" DataNameColumn="13" SourcePicture="X(5)"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C49925" Name="BRE-I-BANK-USERID" Line="500" Column="10" EndLine="500" EndColumn="40" Referenced="true" Length="5" Offset="5" DataNameLine="500" DataNameColumn="13" SourcePicture="X(5)"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C50015" Name="BRE-I-BANK-PSWD" Line="501" Column="10" EndLine="501" EndColumn="38" Referenced="true" Length="8" Offset="10" DataNameLine="501" DataNameColumn="13" SourcePicture="X(8)"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:GroupDataItemType" Level="1" CID="C50103" Name="BRE-OUT-OUTPUT-STRUCTURE" Line="502" Column="8" EndLine="502" EndColumn="36" Referenced="true" Modified="true" Length="111" Offset="0" DataNameLine="502" DataNameColumn="11">
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C50228" Name="BRE-O-WS-INPUT-FLAG" Line="503" Column="10" EndLine="503" EndColumn="42" Referenced="true" Modified="true" Length="1" Offset="0" DataNameLine="503" DataNameColumn="13" SourcePicture="X(1)"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C50320" Name="BRE-O-WS-ERROR-MSG" Line="504" Column="10" EndLine="504" EndColumn="42" Referenced="true" Modified="true" Length="75" Offset="1" DataNameLine="504" DataNameColumn="13" SourcePicture="X(75)"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C50411" Name="BRE-O-BANK-SIGNON-ID" Line="505" Column="10" EndLine="505" EndColumn="43" Referenced="true" Modified="true" Length="5" Offset="76" DataNameLine="505" DataNameColumn="13" SourcePicture="X(5)"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C50504" Name="BRE-O-BANK-USERID" Line="506" Column="10" EndLine="506" EndColumn="40" Referenced="true" Modified="true" Length="5" Offset="81" DataNameLine="506" DataNameColumn="13" SourcePicture="X(5)"/>
+     <SubItems xsi:type="cbl:AlphanumericDataItemType" Level="2" CID="C50594" Name="BRE-O-BANK-USERID-NA" Line="507" Column="10" EndLine="507" EndColumn="44" Length="25" Offset="86" DataNameLine="507" DataNameColumn="13" SourcePicture="X(25)"/>
+    </DataItems>
+   </Linkage>
+   <SpecialRegisters>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51270" Name="XML-CODE" Global="true" Length="4" Offset="8664" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51367" Name="XML-INFORMATION" Global="true" Length="4" Offset="8672" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C51471" Name="XML-EVENT" Global="true" Length="30" Offset="8688"/>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51561" Name="JSON-CODE" Global="true" Length="4" Offset="8720" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51659" Name="JSON-STATUS" Global="true" Length="4" Offset="8728" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51759" Name="RETURN-CODE" Global="true" Referenced="true" Modified="true" Length="2" Offset="8736" DecimalDigits="4" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51859" Name="SORT-RETURN" Global="true" Length="2" Offset="8744" DecimalDigits="4" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C51959" Name="TALLY" Global="true" Length="4" Offset="8752" DecimalDigits="5" DecimalAlignment="0">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C52053" Name="SORT-MESSAGE" Global="true" Length="8" Offset="8760"/>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C52146" Name="SORT-FILE-SIZE" Global="true" Length="4" Offset="8768" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C52249" Name="SORT-MODE-SIZE" Global="true" Length="4" Offset="8776" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:NumericDataItemType" Usage="BINARY" Level="1" CID="C52352" Name="SORT-CORE-SIZE" Global="true" Length="4" Offset="8784" DecimalDigits="9" DecimalAlignment="0" Signed="true">
+     <Value xsi:type="cbl:LiteralOperandType" Value="0" Type="INTEGER" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C52455" Name="SORT-CONTROL" Global="true" Length="8" Offset="8792">
+     <Value xsi:type="cbl:LiteralOperandType" Value="space" Type="FIG"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C52552" Name="SHIFT-OUT" Global="true" Length="1" Offset="8800">
+     <Value xsi:type="cbl:LiteralOperandType" Value="." Type="ALL" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C52646" Name="SHIFT-IN" Global="true" Length="1" Offset="8808">
+     <Value xsi:type="cbl:LiteralOperandType" Value="." Type="ALL" Access="SOURCE"/>
+    </DataItems>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C50687" Name="XML-TEXT" Global="true" AnyLength="true" Length="1" Offset="0"/>
+    <DataItems xsi:type="cbl:NationalDataItemType" Level="1" CID="C50778" Name="XML-NTEXT" Global="true" AnyLength="true" Length="2" Offset="0"/>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C50870" Name="XML-NAMESPACE" Global="true" AnyLength="true" Length="1" Offset="0"/>
+    <DataItems xsi:type="cbl:NationalDataItemType" Level="1" CID="C50966" Name="XML-NNAMESPACE" Global="true" AnyLength="true" Length="2" Offset="0"/>
+    <DataItems xsi:type="cbl:AlphanumericDataItemType" Level="1" CID="C51063" Name="XML-NAMESPACE-PREFIX" Global="true" AnyLength="true" Length="1" Offset="0"/>
+    <DataItems xsi:type="cbl:NationalDataItemType" Level="1" CID="C51166" Name="XML-NNAMESPACE-PREFIX" Global="true" AnyLength="true" Length="2" Offset="0"/>
+   </SpecialRegisters>
+  </DataDivision>
+  <ProcedureDivision Line="522" Column="8" EndLine="658" EndColumn="8">
+   <Parameters Type="REFERENCE" Origin="EcmSystem">
+    <Parameter xsi:type="cbl:DataOperandType" CIDRef="C47392" Access="MODIFY" Line="522" Column="33" EndLine="522" EndColumn="56"/>
+   </Parameters>
+   <Parameters Type="REFERENCE" Origin="EcmSystem">
+    <Parameter xsi:type="cbl:DataOperandType" CIDRef="C49512" Access="MODIFY" Line="522" Column="33" EndLine="522" EndColumn="56"/>
+   </Parameters>
+   <Parameters Type="REFERENCE">
+    <Parameter xsi:type="cbl:DataOperandType" CIDRef="C49708" Access="MODIFY" Line="522" Column="33" EndLine="522" EndColumn="56"/>
+   </Parameters>
+   <Parameters Type="REFERENCE">
+    <Parameter xsi:type="cbl:DataOperandType" CIDRef="C50103" Access="MODIFY" Line="523" Column="33" EndLine="523" EndColumn="57"/>
+   </Parameters>
+   <Sections Line="525" Column="255" EndLine="658" EndColumn="50" Name="#IMPLIED#">
+    <Paragraphs Line="525" Column="255" EndLine="528" EndColumn="13" Name="#IMPLIED#">
+     <Sentences>
+      <Statements xsi:type="cbl:PerformStatementType" Line="525" Column="12" EndLine="525" EndColumn="41" PeriodFollows="true" PLine="526" PColumn="12" PerformType="Simple">
+       <Start CIDRef="C54195"/>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:GoStatementType" Line="527" Column="12" EndLine="527" EndColumn="31" HasTransfer="true" PeriodFollows="true" PLine="528" PColumn="12">
+       <Targets CIDRef="C54276"/>
+      </Statements>
+     </Sentences>
+    </Paragraphs>
+    <Paragraphs Line="529" Column="8" EndLine="637" EndColumn="13" Name="VALIDATE-USER" CID="C54276">
+     <Sentences>
+      <Statements xsi:type="cbl:SetConditionStatementType" Line="530" Column="12" EndLine="530" EndColumn="32" PeriodFollows="true" PLine="531" PColumn="12">
+       <Targets TrueFalse="SETTRUE">
+        <Target xsi:type="cbl:DataOperandType" CIDRef="C10879" Access="TARGET" Line="530" Column="16" EndLine="530" EndColumn="24"/>
+       </Targets>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:InspectConvertingStatementType" Line="532" Column="12" EndLine="534" EndColumn="45" PeriodFollows="true" PLine="535" PColumn="12">
+       <Operands xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="MODIFY" Line="532" Column="20" EndLine="532" EndColumn="34"/>
+       <ConvertingClauses xsi:type="cbl:InspectClauseType" ClauseType="ALL">
+        <Operand xsi:type="cbl:LiteralOperandType" Value="abcdefghijklmnopqrstuvwxyz" Type="ALPHA" Line="533" Column="25" EndLine="533" EndColumn="53" Access="SOURCE"/>
+       </ConvertingClauses>
+       <ConvertingClauses xsi:type="cbl:InspectClauseType" ClauseType="BY">
+        <Operand xsi:type="cbl:LiteralOperandType" Value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" Type="ALPHA" Line="534" Column="17" EndLine="534" EndColumn="45" Access="SOURCE"/>
+       </ConvertingClauses>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:IfStatementType" Line="536" Column="12" EndLine="540" EndColumn="18" HasTransfer="true" HasChild="true" PeriodFollows="true" PLine="541" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="536" Column="15" EndLine="536" EndColumn="49">
+        <Left xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="SOURCE" Line="536" Column="15" EndLine="536" EndColumn="29"/>
+        <Right xsi:type="cbl:LiteralOperandType" Value="GUEST" Type="ALPHA" Line="536" Column="42" EndLine="536" EndColumn="49" Access="SOURCE"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="537" Column="16" EndLine="537" EndColumn="43" MoveType="SIMPLE">
+         <Source xsi:type="cbl:LiteralOperandType" Value="GUEST" Type="ALPHA" Line="537" Column="21" EndLine="537" EndColumn="28" Access="SOURCE"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C19998" Access="TARGET" Line="537" Column="32" EndLine="537" EndColumn="43"/>
+        </Statements>
+        <Statements xsi:type="cbl:MoveStatementType" Line="538" Column="16" EndLine="538" EndColumn="48" MoveType="SIMPLE">
+         <Source xsi:type="cbl:LiteralOperandType" Value="Guest" Type="ALPHA" Line="538" Column="21" EndLine="538" EndColumn="28" Access="SOURCE"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C20169" Access="TARGET" Line="538" Column="32" EndLine="538" EndColumn="48"/>
+        </Statements>
+        <Statements xsi:type="cbl:GoStatementType" Line="539" Column="16" EndLine="539" EndColumn="40" HasTransfer="true">
+         <Targets CIDRef="C54349"/>
+        </Statements>
+       </Then>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:IfStatementType" Line="542" Column="12" EndLine="545" EndColumn="18" HasTransfer="true" HasChild="true" PeriodFollows="true" PLine="546" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="542" Column="15" EndLine="542" EndColumn="52">
+        <Left xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="SOURCE" Line="542" Column="15" EndLine="542" EndColumn="29"/>
+        <Right xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="542" Column="42" EndLine="542" EndColumn="52"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="543" Column="16" EndLine="543" EndColumn="59" MoveType="SIMPLE">
+         <Source xsi:type="cbl:LiteralOperandType" Value="Please input user id" Type="ALPHA" Line="543" Column="21" EndLine="543" EndColumn="43" Access="SOURCE"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C11801" Access="TARGET" Line="543" Column="47" EndLine="543" EndColumn="59"/>
+        </Statements>
+        <Statements xsi:type="cbl:GoStatementType" Line="544" Column="16" EndLine="544" EndColumn="41" HasTransfer="true">
+         <Targets CIDRef="C54427"/>
+        </Statements>
+       </Then>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:IfStatementType" Line="547" Column="12" EndLine="550" EndColumn="18" HasTransfer="true" HasChild="true" PeriodFollows="true" PLine="551" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="547" Column="15" EndLine="547" EndColumn="47">
+        <Left xsi:type="cbl:DataOperandType" CIDRef="C20258" Access="SOURCE" Line="547" Column="15" EndLine="547" EndColumn="24"/>
+        <Right xsi:type="cbl:LiteralOperandType" Value="low-value" Type="FIG" Line="547" Column="37" EndLine="547" EndColumn="47"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="548" Column="16" EndLine="548" EndColumn="60" MoveType="SIMPLE">
+         <Source xsi:type="cbl:LiteralOperandType" Value="Please input password" Type="ALPHA" Line="548" Column="21" EndLine="548" EndColumn="44" Access="SOURCE"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C11801" Access="TARGET" Line="548" Column="48" EndLine="548" EndColumn="60"/>
+        </Statements>
+        <Statements xsi:type="cbl:GoStatementType" Line="549" Column="16" EndLine="549" EndColumn="41" HasTransfer="true">
+         <Targets CIDRef="C54427"/>
+        </Statements>
+       </Then>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="553" Column="12" EndLine="553" EndColumn="40" PeriodFollows="true" PLine="554" PColumn="12" MoveType="SIMPLE">
+       <Source xsi:type="cbl:LiteralOperandType" Value="space" Type="FIG" Line="553" Column="17" EndLine="553" EndColumn="23"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C46397" Access="TARGET" Line="553" Column="27" EndLine="553" EndColumn="40"/>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="555" Column="12" EndLine="555" EndColumn="51" PeriodFollows="true" PLine="556" PColumn="12" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="SOURCE" Line="555" Column="17" EndLine="555" EndColumn="31"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C46940" Access="TARGET" Line="555" Column="35" EndLine="555" EndColumn="51"/>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="557" Column="12" EndLine="557" EndColumn="48" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C20258" Access="SOURCE" Line="557" Column="17" EndLine="557" EndColumn="26"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C47029" Access="TARGET" Line="557" Column="30" EndLine="557" EndColumn="48"/>
+      </Statements>
+      <Statements xsi:type="cbl:IfStatementType" Line="559" Column="12" EndLine="561" EndColumn="18" HasChild="true" PeriodFollows="true" PLine="562" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="559" Column="15" EndLine="559" EndColumn="52">
+        <Left xsi:type="cbl:ReferenceModifiedOperandType" Access="SOURCE" Line="559" Column="15" EndLine="559" EndColumn="36">
+         <ModifiedOperand xsi:type="cbl:DataOperandType" CIDRef="C46940" Access="SOURCE" Line="559" Column="15" EndLine="559" EndColumn="31"/>
+         <StartPosition xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="559" Column="32" EndLine="559" EndColumn="33" Access="SOURCE"/>
+         <Length xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="559" Column="34" EndLine="559" EndColumn="35" Access="SOURCE"/>
+        </Left>
+        <Right xsi:type="cbl:LiteralOperandType" Value="Z" Type="ALPHA" Line="559" Column="49" EndLine="559" EndColumn="52" Access="SOURCE"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="560" Column="16" EndLine="560" EndColumn="49" MoveType="SIMPLE">
+         <Source xsi:type="cbl:LiteralOperandType" Value="B" Type="ALPHA" Line="560" Column="21" EndLine="560" EndColumn="24" Access="SOURCE"/>
+         <Targets xsi:type="cbl:ReferenceModifiedOperandType" Access="TARGET" Line="560" Column="28" EndLine="560" EndColumn="49">
+          <ModifiedOperand xsi:type="cbl:DataOperandType" CIDRef="C46940" Access="MODIFY" Line="560" Column="28" EndLine="560" EndColumn="44"/>
+          <StartPosition xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="560" Column="45" EndLine="560" EndColumn="46" Access="SOURCE"/>
+          <Length xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="560" Column="47" EndLine="560" EndColumn="48" Access="SOURCE"/>
+         </Targets>
+        </Statements>
+       </Then>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:SetConditionStatementType" Line="563" Column="12" EndLine="563" EndColumn="35">
+       <Targets TrueFalse="SETTRUE">
+        <Target xsi:type="cbl:DataOperandType" CIDRef="C46753" Access="TARGET" Line="563" Column="16" EndLine="563" EndColumn="27"/>
+       </Targets>
+      </Statements>
+      <Statements xsi:type="cbl:ExecStatementType" Line="581" Column="12" EndLine="584" EndColumn="20">
+       <EmbeddedFragment Name="CICS" Text="LINK PROGRAM(&apos;SPSWD01P&apos;) COMMAREA(CPSWDD01-DATA) LENGTH(LENGTH OF CPSWDD01-DATA) END-EXEC ">
+        <SourceMapping CharPosition="1" Line="581" Column="22"/>
+        <SourceMapping CharPosition="6" Line="581" Column="27"/>
+        <SourceMapping CharPosition="26" Line="582" Column="27"/>
+        <SourceMapping CharPosition="50" Line="583" Column="27"/>
+        <SourceMapping CharPosition="64" Line="583" Column="41"/>
+        <SourceMapping CharPosition="67" Line="583" Column="44"/>
+        <SourceMapping CharPosition="82" Line="584" Column="12"/>
+       </EmbeddedFragment>
+      </Statements>
+      <Statements xsi:type="cbl:IfStatementType" Line="588" Column="12" EndLine="591" EndColumn="18" HasTransfer="true" HasChild="true" PeriodFollows="true" PLine="592" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Negated="true" Relation="EQUAL" Line="588" Column="15" EndLine="588" EndColumn="55">
+        <Left xsi:type="cbl:DataOperandType" CIDRef="C47207" Access="SOURCE" Line="588" Column="15" EndLine="588" EndColumn="32"/>
+        <Right xsi:type="cbl:LiteralOperandType" Value="space" Type="FIG" Line="588" Column="49" EndLine="588" EndColumn="55"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="589" Column="16" EndLine="589" EndColumn="54" MoveType="SIMPLE">
+         <Source xsi:type="cbl:DataOperandType" CIDRef="C47207" Access="SOURCE" Line="589" Column="21" EndLine="589" EndColumn="38"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C11801" Access="TARGET" Line="589" Column="42" EndLine="589" EndColumn="54"/>
+        </Statements>
+        <Statements xsi:type="cbl:GoStatementType" Line="590" Column="16" EndLine="590" EndColumn="41" HasTransfer="true">
+         <Targets CIDRef="C54427"/>
+        </Statements>
+       </Then>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="594" Column="12" EndLine="594" EndColumn="36" PeriodFollows="true" PLine="595" PColumn="12" MoveType="SIMPLE">
+       <Source xsi:type="cbl:LiteralOperandType" Value="space" Type="FIG" Line="594" Column="17" EndLine="594" EndColumn="23"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C45769" Access="TARGET" Line="594" Column="27" EndLine="594" EndColumn="36"/>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="596" Column="12" EndLine="596" EndColumn="51" PeriodFollows="true" PLine="597" PColumn="12" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="SOURCE" Line="596" Column="17" EndLine="596" EndColumn="31"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C45934" Access="TARGET" Line="596" Column="35" EndLine="596" EndColumn="51"/>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:IfStatementType" Line="599" Column="12" EndLine="601" EndColumn="18" HasChild="true" PeriodFollows="true" PLine="602" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="599" Column="15" EndLine="599" EndColumn="52">
+        <Left xsi:type="cbl:ReferenceModifiedOperandType" Access="SOURCE" Line="599" Column="15" EndLine="599" EndColumn="36">
+         <ModifiedOperand xsi:type="cbl:DataOperandType" CIDRef="C45934" Access="SOURCE" Line="599" Column="15" EndLine="599" EndColumn="31"/>
+         <StartPosition xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="599" Column="32" EndLine="599" EndColumn="33" Access="SOURCE"/>
+         <Length xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="599" Column="34" EndLine="599" EndColumn="35" Access="SOURCE"/>
+        </Left>
+        <Right xsi:type="cbl:LiteralOperandType" Value="Z" Type="ALPHA" Line="599" Column="49" EndLine="599" EndColumn="52" Access="SOURCE"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="600" Column="16" EndLine="600" EndColumn="49" MoveType="SIMPLE">
+         <Source xsi:type="cbl:LiteralOperandType" Value="B" Type="ALPHA" Line="600" Column="21" EndLine="600" EndColumn="24" Access="SOURCE"/>
+         <Targets xsi:type="cbl:ReferenceModifiedOperandType" Access="TARGET" Line="600" Column="28" EndLine="600" EndColumn="49">
+          <ModifiedOperand xsi:type="cbl:DataOperandType" CIDRef="C45934" Access="MODIFY" Line="600" Column="28" EndLine="600" EndColumn="44"/>
+          <StartPosition xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="600" Column="45" EndLine="600" EndColumn="46" Access="SOURCE"/>
+          <Length xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="600" Column="47" EndLine="600" EndColumn="48" Access="SOURCE"/>
+         </Targets>
+        </Statements>
+       </Then>
+      </Statements>
+     </Sentences>
+     <Sentences>
+      <Statements xsi:type="cbl:ExecStatementType" Line="619" Column="12" EndLine="622" EndColumn="20">
+       <EmbeddedFragment Name="CICS" Text="LINK PROGRAM(&apos;DBANK01P&apos;) COMMAREA(CD01-DATA) LENGTH(LENGTH OF CD01-DATA) END-EXEC ">
+        <SourceMapping CharPosition="1" Line="619" Column="22"/>
+        <SourceMapping CharPosition="6" Line="619" Column="27"/>
+        <SourceMapping CharPosition="26" Line="620" Column="27"/>
+        <SourceMapping CharPosition="46" Line="621" Column="27"/>
+        <SourceMapping CharPosition="60" Line="621" Column="41"/>
+        <SourceMapping CharPosition="63" Line="621" Column="44"/>
+        <SourceMapping CharPosition="74" Line="622" Column="12"/>
+       </EmbeddedFragment>
+      </Statements>
+      <Statements xsi:type="cbl:IfStatementType" Line="626" Column="12" EndLine="636" EndColumn="18" HasTransfer="true" HasChild="true" PeriodFollows="true" PLine="637" PColumn="12" ExplicitScope="true">
+       <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="626" Column="15" EndLine="626" EndColumn="50">
+        <Left xsi:type="cbl:DataOperandType" CIDRef="C46106" Access="SOURCE" Line="626" Column="15" EndLine="626" EndColumn="31"/>
+        <Right xsi:type="cbl:LiteralOperandType" Value="space" Type="FIG" Line="626" Column="44" EndLine="626" EndColumn="50"/>
+       </Condition>
+       <Then>
+        <Statements xsi:type="cbl:MoveStatementType" Line="627" Column="16" EndLine="627" EndColumn="54" MoveType="SIMPLE">
+         <Source xsi:type="cbl:DataOperandType" CIDRef="C46195" Access="SOURCE" Line="627" Column="21" EndLine="627" EndColumn="38"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C11801" Access="TARGET" Line="627" Column="42" EndLine="627" EndColumn="54"/>
+        </Statements>
+        <Statements xsi:type="cbl:GoStatementType" Line="628" Column="16" EndLine="628" EndColumn="41" HasTransfer="true">
+         <Targets CIDRef="C54427"/>
+        </Statements>
+       </Then>
+       <Else>
+        <Statements xsi:type="cbl:MoveStatementType" Line="630" Column="16" EndLine="630" EndColumn="58" MoveType="SIMPLE">
+         <Source xsi:type="cbl:DataOperandType" CIDRef="C46195" Access="SOURCE" Line="630" Column="21" EndLine="630" EndColumn="38"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C20169" Access="TARGET" Line="630" Column="42" EndLine="630" EndColumn="58"/>
+        </Statements>
+        <Statements xsi:type="cbl:MoveStatementType" Line="631" Column="16" EndLine="631" EndColumn="50" MoveType="SIMPLE">
+         <Source xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="SOURCE" Line="631" Column="21" EndLine="631" EndColumn="35"/>
+         <Targets xsi:type="cbl:DataOperandType" CIDRef="C19998" Access="TARGET" Line="631" Column="39" EndLine="631" EndColumn="50"/>
+        </Statements>
+        <Statements xsi:type="cbl:IfStatementType" Line="632" Column="16" EndLine="634" EndColumn="22" HasChild="true" ExplicitScope="true">
+         <Condition xsi:type="cbl:RelationConditionType" Relation="EQUAL" Line="632" Column="19" EndLine="632" EndColumn="51">
+          <Left xsi:type="cbl:ReferenceModifiedOperandType" Access="SOURCE" Line="632" Column="19" EndLine="632" EndColumn="35">
+           <ModifiedOperand xsi:type="cbl:DataOperandType" CIDRef="C19998" Access="SOURCE" Line="632" Column="19" EndLine="632" EndColumn="30"/>
+           <StartPosition xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="632" Column="31" EndLine="632" EndColumn="32" Access="SOURCE"/>
+           <Length xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="632" Column="33" EndLine="632" EndColumn="34" Access="SOURCE"/>
+          </Left>
+          <Right xsi:type="cbl:LiteralOperandType" Value="Z" Type="ALPHA" Line="632" Column="48" EndLine="632" EndColumn="51" Access="SOURCE"/>
+         </Condition>
+         <Then>
+          <Statements xsi:type="cbl:MoveStatementType" Line="633" Column="20" EndLine="633" EndColumn="48" MoveType="SIMPLE">
+           <Source xsi:type="cbl:LiteralOperandType" Value="B" Type="ALPHA" Line="633" Column="25" EndLine="633" EndColumn="28" Access="SOURCE"/>
+           <Targets xsi:type="cbl:ReferenceModifiedOperandType" Access="TARGET" Line="633" Column="32" EndLine="633" EndColumn="48">
+            <ModifiedOperand xsi:type="cbl:DataOperandType" CIDRef="C19998" Access="MODIFY" Line="633" Column="32" EndLine="633" EndColumn="43"/>
+            <StartPosition xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="633" Column="44" EndLine="633" EndColumn="45" Access="SOURCE"/>
+            <Length xsi:type="cbl:LiteralOperandType" Value="1" Type="INTEGER" Line="633" Column="46" EndLine="633" EndColumn="47" Access="SOURCE"/>
+           </Targets>
+          </Statements>
+         </Then>
+        </Statements>
+        <Statements xsi:type="cbl:GoStatementType" Line="635" Column="16" EndLine="635" EndColumn="40" HasTransfer="true">
+         <Targets CIDRef="C54349"/>
+        </Statements>
+       </Else>
+      </Statements>
+     </Sentences>
+    </Paragraphs>
+    <Paragraphs Line="638" Column="8" EndLine="640" EndColumn="13" Name="VALIDATE-USER-ERROR" CID="C54427">
+     <Sentences>
+      <Statements xsi:type="cbl:SetConditionStatementType" Line="639" Column="12" EndLine="639" EndColumn="35" PeriodFollows="true" PLine="640" PColumn="12">
+       <Targets TrueFalse="SETTRUE">
+        <Target xsi:type="cbl:DataOperandType" CIDRef="C10969" Access="TARGET" Line="639" Column="16" EndLine="639" EndColumn="27"/>
+       </Targets>
+      </Statements>
+     </Sentences>
+    </Paragraphs>
+    <Paragraphs Line="641" Column="8" EndLine="643" EndColumn="13" Name="VALIDATE-USER-EXIT" CID="C54349">
+     <Sentences>
+      <Statements xsi:type="cbl:PerformStatementType" Line="642" Column="12" EndLine="642" EndColumn="40" PeriodFollows="true" PLine="643" PColumn="12" PerformType="Simple">
+       <Start CIDRef="C54506"/>
+      </Statements>
+     </Sentences>
+    </Paragraphs>
+    <Paragraphs Line="646" Column="8" EndLine="648" EndColumn="13" Name="BRE-EXIT-PROGRAM" CID="C54586">
+     <Sentences>
+      <Statements xsi:type="cbl:GobackStatementType" Line="647" Column="12" EndLine="647" EndColumn="18" HasGoback="true" PeriodFollows="true" PLine="648" PColumn="12"/>
+     </Sentences>
+    </Paragraphs>
+    <Paragraphs Line="649" Column="8" EndLine="653" EndColumn="13" Name="BRE-COPY-INPUT-DATA-0" CID="C54195">
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="650" Column="12" EndLine="650" EndColumn="55" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C49832" Access="SOURCE" Line="650" Column="17" EndLine="650" EndColumn="37"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="TARGET" Line="650" Column="41" EndLine="650" EndColumn="55"/>
+      </Statements>
+      <Statements xsi:type="cbl:MoveStatementType" Line="651" Column="12" EndLine="651" EndColumn="49" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C49925" Access="SOURCE" Line="651" Column="17" EndLine="651" EndColumn="34"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C19998" Access="TARGET" Line="651" Column="38" EndLine="651" EndColumn="49"/>
+      </Statements>
+      <Statements xsi:type="cbl:MoveStatementType" Line="652" Column="12" EndLine="652" EndColumn="45" PeriodFollows="true" PLine="653" PColumn="12" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C50015" Access="SOURCE" Line="652" Column="17" EndLine="652" EndColumn="32"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C20258" Access="TARGET" Line="652" Column="36" EndLine="652" EndColumn="45"/>
+      </Statements>
+     </Sentences>
+    </Paragraphs>
+    <Paragraphs Line="654" Column="8" EndLine="658" EndColumn="50" Name="BRE-COPY-OUTPUT-DATA" CID="C54506">
+     <Sentences>
+      <Statements xsi:type="cbl:MoveStatementType" Line="655" Column="12" EndLine="655" EndColumn="53" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C10793" Access="SOURCE" Line="655" Column="17" EndLine="655" EndColumn="30"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C50228" Access="TARGET" Line="655" Column="34" EndLine="655" EndColumn="53"/>
+      </Statements>
+      <Statements xsi:type="cbl:MoveStatementType" Line="656" Column="12" EndLine="656" EndColumn="51" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C11801" Access="SOURCE" Line="656" Column="17" EndLine="656" EndColumn="29"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C50320" Access="TARGET" Line="656" Column="33" EndLine="656" EndColumn="51"/>
+      </Statements>
+      <Statements xsi:type="cbl:MoveStatementType" Line="657" Column="12" EndLine="657" EndColumn="55" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C19559" Access="SOURCE" Line="657" Column="17" EndLine="657" EndColumn="31"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C50411" Access="TARGET" Line="657" Column="35" EndLine="657" EndColumn="55"/>
+      </Statements>
+      <Statements xsi:type="cbl:MoveStatementType" Line="658" Column="12" EndLine="658" EndColumn="49" PeriodFollows="true" PLine="658" PColumn="49" MoveType="SIMPLE">
+       <Source xsi:type="cbl:DataOperandType" CIDRef="C19998" Access="SOURCE" Line="658" Column="17" EndLine="658" EndColumn="28"/>
+       <Targets xsi:type="cbl:DataOperandType" CIDRef="C50504" Access="TARGET" Line="658" Column="32" EndLine="658" EndColumn="49"/>
+      </Statements>
+     </Sentences>
+    </Paragraphs>
+   </Sections>
+  </ProcedureDivision>
+ </Programs>
+</cbl:CobolComponent>

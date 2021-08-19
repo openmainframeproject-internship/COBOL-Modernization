@@ -1,0 +1,38 @@
+{
+  "$schema" : "http:\/\/json-schema.org\/draft-04\/schema#",
+  "title" : "signon",
+  "description" : "Micro Focus Enterprise Developer - This generated JSON schema document is provided 'as is' and without any warranties of any kind, and may be used by licensee solely for the purposes of describing a REST API. Micro Focus shall not be responsible for and hereby disclaims any liabilities that may result from licensee's use of or modifications to this generated JSON schema document.",
+  "type" : "object",
+  "properties" : 
+  {
+    "signon" : 
+    {
+      "type" : "object",
+      "properties" : 
+      {
+        "BRE_INP_INPUT_STRUCTURE" : 
+        {
+          "type" : "object",
+          "properties" : 
+          {
+            "BRE_I_BANK_SIGNON_ID" : 
+            {
+              "type" : "string",
+              "maxLength" : 5
+            },
+            "BRE_I_BANK_USERID" : 
+            {
+              "type" : "string",
+              "maxLength" : 5
+            },
+            "BRE_I_BANK_PSWD" : 
+            {
+              "type" : "string",
+              "maxLength" : 8
+            }
+          }
+        }
+      }
+    }
+  }
+}
