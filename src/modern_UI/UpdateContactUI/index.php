@@ -5,10 +5,10 @@ if(isset($_POST['but_submit'])){
     $uid = $_POST['txt_uid'];
     $password = $_POST['txt_pwd'];
 
-	$service_url = 'http://ec2-3-65-59-191.eu-central-1.compute.amazonaws.com:9876/cics/userValidation';
+	$service_url = 'http://ec2-3-65-59-191.eu-central-1.compute.amazonaws.com:9876/cics/signon';
 	$curl = curl_init($service_url);
 	$curl_post_data = json_encode(array(
-	 "UV" => array(
+	 "signon" => array(
 	  "BRE_INP_INPUT_STRUCTURE" => array(
 	   "BRE_I_BANK_SIGNON_ID" => $uid,
 	   "BRE_I_BANK_PSWD" => $password
@@ -29,13 +29,11 @@ if(isset($_POST['but_submit'])){
 	if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
 	    die('error occured: ' . $decoded->response->errormessage);
 	}
-
-	$flag = $decoded->UVResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_WS_INPUT_FLAG;
-
+	$flag = $decoded->signonResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_WS_INPUT_FLAG;
     if ($flag == 0){
 
-	$userid = $decoded->UVResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_BANK_USERID;
-	$username = $decoded->UVResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_BANK_USERID_NA;
+	$userid = $decoded->signonResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_BANK_USERID;
+	$username = $decoded->signonResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_BANK_USERID_NA;
         $_SESSION['uid'] = $userid;
 	$_SESSION['uname'] = $username;
         header('Location: home.php');
