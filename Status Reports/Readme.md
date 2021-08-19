@@ -17,7 +17,7 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 7 Status Report | Sign-on service creation | [week7_report.md](week7_report.md) |
 | Week 8 Status Report | Loan Calculator service creation | [week8_report.md](week8_report.md) |
 | Week 9 Status Report | Debugging and Other stuff | [week9_report.md](week9_report.md) |
-| Week 10 Status Report | | |
+| Week 10 Status Report | Creation of ACCOUNTS Project |[week10_report.md](week10_report.md) |
 | Week 11 Status Report | | |
 | Week 12 Status Report | | |
 | Week 13 Status Report | | |
