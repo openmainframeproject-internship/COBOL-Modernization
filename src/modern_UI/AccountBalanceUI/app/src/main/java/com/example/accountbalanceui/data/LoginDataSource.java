@@ -40,7 +40,7 @@ public class LoginDataSource {
             JSONObject inpStruct = new JSONObject();
             inpStruct.put("BRE_INP_INPUT_STRUCTURE", loginDetails);
             JSONObject request = new JSONObject();
-            request.put("UV", inpStruct);
+            request.put("signon", inpStruct);
             RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), (request.toString()));
             URL base_URL = new URL("http://ec2-3-65-59-191.eu-central-1.compute.amazonaws.com:9876");
             ApiInterface apiInterface = ApiClient.getClient(base_URL).create(ApiInterface.class);
@@ -54,7 +54,7 @@ public class LoginDataSource {
                             assert response.body() != null;
                             String res = response.body().string();
                             JSONObject json_response = new JSONObject(res);
-                            JSONObject resp = json_response.getJSONObject("UVResponse");
+                            JSONObject resp = json_response.getJSONObject("signonResponse");
                             JSONObject outputStruct = resp.getJSONObject("BRE_OUT_OUTPUT_STRUCTURE");
                             int inpFlag = outputStruct.getInt("BRE_O_WS_INPUT_FLAG");
                             if (inpFlag == 0) {

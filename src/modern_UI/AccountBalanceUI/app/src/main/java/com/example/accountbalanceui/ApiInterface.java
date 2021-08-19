@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 public interface ApiInterface {
 
     @Headers("Content-Type: application/json")
-    @POST("cics/userValidation")
+    @POST("cics/signon")
     Call<ResponseBody> getUsername(@Body RequestBody postparams);
 
     @POST("user/details")
