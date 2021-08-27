@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ImtkSi xmlns="http://xml.microfocus.com/schema/imtksi/v1.0/mfimtksi.xsd">
+  <cicsJsonWebServiceMapping mappingName="READDRVR" kind="providerBottomUp">
+    <properties endpointUrl="http://localhost:9879/cics/readaddr" programPath="cbl/READDRVR.cbl" programName="READDRVR" containerName="DFHWS-DATA" requestFilePath="copybook/READREQ.cpy" responseFilePath="copybook/READRESP.cpy" jsonSchemaRequest="C:\Users\Administrator\workspace\UPDATE\json\readreq.json" jsonSchemaResponse="C:\Users\Administrator\workspace\UPDATE\json\readresp.json" wsbindPath="C:\Users\Administrator\workspace\UPDATE\read.wsbind"/>
+  </cicsJsonWebServiceMapping>
+  <cicsJsonWebServiceMapping mappingName="UPDTDRVR" kind="providerBottomUp">
+    <properties endpointUrl="http://localhost:9879/cics/updateaddr" programPath="cbl/UPDTDRVR.cbl" programName="UPDTDRVR" containerName="DFHWS-DATA" requestFilePath="copybook/UPDTREQ.cpy" responseFilePath="copybook/UPDTRESP.cpy" jsonSchemaRequest="C:\Users\Administrator\workspace\UPDATE\json\updatereq.json" jsonSchemaResponse="C:\Users\Administrator\workspace\UPDATE\json\updateresp.json" wsbindPath="C:\Users\Administrator\workspace\UPDATE\updat.wsbind"/>
+  </cicsJsonWebServiceMapping>
+</ImtkSi>

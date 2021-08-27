@@ -1,0 +1,2 @@
+  SORT FIELDS=(6,5,CH,A,5,1,CH,A)                                       00000100
+  MODS E15=(ZBNKE15,8192,EXITLIB,C),E35=(ZBNKE35,8192,EXITLIB,C)        00000201

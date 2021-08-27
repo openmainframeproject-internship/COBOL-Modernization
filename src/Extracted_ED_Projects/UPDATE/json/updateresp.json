@@ -1,0 +1,93 @@
+{
+  "$schema" : "http:\/\/json-schema.org\/draft-04\/schema#",
+  "title" : "updat",
+  "description" : "Micro Focus Enterprise Developer - This generated JSON schema document is provided 'as is' and without any warranties of any kind, and may be used by licensee solely for the purposes of describing a REST API. Micro Focus shall not be responsible for and hereby disclaims any liabilities that may result from licensee's use of or modifications to this generated JSON schema document.",
+  "type" : "object",
+  "properties" : 
+  {
+    "updatResponse" : 
+    {
+      "type" : "object",
+      "properties" : 
+      {
+        "BRE_OUT_OUTPUT_STRUCTURE" : 
+        {
+          "type" : "object",
+          "properties" : 
+          {
+            "BRE_O_CD02O_DATA" : 
+            {
+              "type" : "object",
+              "properties" : 
+              {
+                "BRE_O_CD02O_CONTACT" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 5
+                },
+                "BRE_O_CD02O_CONTACT8" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 25
+                },
+                "BRE_O_CD02O_CONTACT9" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 25
+                },
+                "BRE_O_CD02O_CONTACT10" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 25
+                },
+                "BRE_O_CD02O_CONTACT11" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 2
+                },
+                "BRE_O_CD02O_CONTACT12" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 6
+                },
+                "BRE_O_CD02O_CONTACT13" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 6
+                },
+                "BRE_O_CD02O_CONTACT14" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 12
+                },
+                "BRE_O_CD02O_CONTACT15" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 30
+                },
+                "BRE_O_CD02O_CONTACT16" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 1
+                },
+                "BRE_O_CD02O_CONTACT17" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 1
+                }
+              }
+            },
+            "BRE_O_EIBRESP" : 
+            {
+              "type" : "integer"
+            },
+            "RW_GOBACK_FLAG" : 
+            {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}

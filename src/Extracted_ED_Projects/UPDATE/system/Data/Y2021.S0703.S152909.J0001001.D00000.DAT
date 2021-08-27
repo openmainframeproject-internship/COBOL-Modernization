@@ -1,0 +1,25 @@
+     *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+     *-*-*  Micro Focus ESJCL  EBCDIC JES2 Version ED6.0_PU9B                                  *-*-*
+     *-*-*  Copyright (C) Micro Focus 1997-2020. All rights reserved.                          *-*-*
+     *-*-*  Job: 0001001 Name: MFIDEMO  User: JESUSER  Date: 07/03/21 Time: 15:29:09           *-*-*
+     *-*-*  File: $TXRFDIR/T000000018.T                                                        *-*-*
+     *-*-*  DSN:                                                                               *-*-*
+     *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+   1 //MFIDEMO  JOB MFIDEMO,MFIDEMO,CLASS=A,MSGCLASS=A,MSGLEVEL=(2,0),       00000100
+   2 //  NOTIFY=MFIDEMO                                                      00000200
+   3 //EXTRACT  EXEC YBNKEXTV,REQUEST=B0004                                  00000300
+**** JCLCM0406E PROCEDURE NOT FOUND
+**** JCLCM0414E INVALID OR UNKNOWN OR UNEXPECTED OPERAND
+   4 //*XTRACT.SYSOUT DD DUMMY                                               00000400
+   5 //SORT     EXEC YBNKSRT1,GEN='+1'                                       00000500
+**** JCLCM0406E PROCEDURE NOT FOUND
+**** JCLCM0414E INVALID OR UNKNOWN OR UNEXPECTED OPERAND
+   6 //*ORT.SYSOUT DD DUMMY                                                  00000600
+   7 //PRINT    EXEC YBNKPRT1,GEN='+1',SOUT=A                                00000700
+**** JCLCM0406E PROCEDURE NOT FOUND
+**** JCLCM0414E INVALID OR UNKNOWN OR UNEXPECTED OPERAND
+**** JCLCM0414E INVALID OR UNKNOWN OR UNEXPECTED OPERAND
+   8 //*                                                                     00000800
+   9 //* *** $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     00000900
+**** JCLCM0172E JOB  FAILED  - JCL ERROR

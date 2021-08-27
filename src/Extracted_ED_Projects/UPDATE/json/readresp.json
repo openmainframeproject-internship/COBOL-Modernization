@@ -1,0 +1,89 @@
+{
+  "$schema" : "http:\/\/json-schema.org\/draft-04\/schema#",
+  "title" : "read",
+  "description" : "Micro Focus Enterprise Developer - This generated JSON schema document is provided 'as is' and without any warranties of any kind, and may be used by licensee solely for the purposes of describing a REST API. Micro Focus shall not be responsible for and hereby disclaims any liabilities that may result from licensee's use of or modifications to this generated JSON schema document.",
+  "type" : "object",
+  "properties" : 
+  {
+    "readResponse" : 
+    {
+      "type" : "object",
+      "properties" : 
+      {
+        "BRE_OUT_OUTPUT_STRUCTURE" : 
+        {
+          "type" : "object",
+          "properties" : 
+          {
+            "BRE_O_CD02O_DATA" : 
+            {
+              "type" : "object",
+              "properties" : 
+              {
+                "BRE_O_CD02O_CONTACT" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 5
+                },
+                "BRE_O_CD02O_CONTACT0" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 25
+                },
+                "BRE_O_CD02O_CONTACT1" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 25
+                },
+                "BRE_O_CD02O_CONTACT2" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 25
+                },
+                "BRE_O_CD02O_CONTACT3" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 2
+                },
+                "BRE_O_CD02O_CONTACT4" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 6
+                },
+                "BRE_O_CD02O_CONTACT5" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 6
+                },
+                "BRE_O_CD02O_CONTACT6" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 12
+                },
+                "BRE_O_CD02O_CONTACT7" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 30
+                },
+                "BRE_O_CD02O_CONTACT8" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 1
+                },
+                "BRE_O_CD02O_CONTACT9" : 
+                {
+                  "type" : "string",
+                  "maxLength" : 1
+                }
+              }
+            },
+            "BRE_O_EIBRESP" : 
+            {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}

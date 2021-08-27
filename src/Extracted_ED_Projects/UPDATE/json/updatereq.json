@@ -1,0 +1,68 @@
+{
+  "$schema" : "http:\/\/json-schema.org\/draft-04\/schema#",
+  "title" : "updat",
+  "description" : "Micro Focus Enterprise Developer - This generated JSON schema document is provided 'as is' and without any warranties of any kind, and may be used by licensee solely for the purposes of describing a REST API. Micro Focus shall not be responsible for and hereby disclaims any liabilities that may result from licensee's use of or modifications to this generated JSON schema document.",
+  "type" : "object",
+  "properties" : 
+  {
+    "updat" : 
+    {
+      "type" : "object",
+      "properties" : 
+      {
+        "BRE_INP_INPUT_STRUCTURE" : 
+        {
+          "type" : "object",
+          "properties" : 
+          {
+            "BRE_I_CD02I_CONTACT" : 
+            {
+              "type" : "string",
+              "maxLength" : 5
+            },
+            "BRE_I_CD02I_CONTACT0" : 
+            {
+              "type" : "string",
+              "maxLength" : 25
+            },
+            "BRE_I_CD02I_CONTACT1" : 
+            {
+              "type" : "string",
+              "maxLength" : 25
+            },
+            "BRE_I_CD02I_CONTACT2" : 
+            {
+              "type" : "string",
+              "maxLength" : 2
+            },
+            "BRE_I_CD02I_CONTACT3" : 
+            {
+              "type" : "string",
+              "maxLength" : 6
+            },
+            "BRE_I_CD02I_CONTACT4" : 
+            {
+              "type" : "string",
+              "maxLength" : 6
+            },
+            "BRE_I_CD02I_CONTACT5" : 
+            {
+              "type" : "string",
+              "maxLength" : 30
+            },
+            "BRE_I_CD02I_CONTACT6" : 
+            {
+              "type" : "string",
+              "maxLength" : 1
+            },
+            "BRE_I_CD02I_CONTACT7" : 
+            {
+              "type" : "string",
+              "maxLength" : 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

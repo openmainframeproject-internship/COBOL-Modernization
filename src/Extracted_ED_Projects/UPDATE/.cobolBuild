@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="UPDATE" default="combinedbuild" basedir="." xmlns:ac="antlib:net.sf.antcontrib">
+	<taskdef resource="com/microfocus/ant/antlib.xml"/>
+	<!--  ***********************************  -->
+	<!--  * General property initialisation *  -->
+	<!--  ***********************************  -->
+	<property name="mf.createCar" value="false"/>
+	<property name="pathVar.PROJECT_LOC" value="${basedir}"/>
+	<property name="pathVar.WORKSPACE_LOC" value="${env.WORKSPACE_LOC}"/>
+	<property name="pathVar.ECLIPSE_HOME" value="${env.ECLIPSE_HOME}"/>
+	<property name="pathVar.PARENT_LOC" value="${env.PARENT_LOC}"/>
+	<property environment="env"/>
+	<property name="mf.projectLocation.UPDATE" value="${basedir}"/>
+	<property name="mf.cfg" value="New_Configuration"/>
+	<property name="mf.cfgtarget" value="cfg.${mf.cfg}"/>
+	<property name="mf.forceCompile" value="true"/>
+	<property name="mf.buildThreadCount" value="1"/>
+	<property name="mf.useDirectiveSet" value="true"/>
+	<property name="mf.settingsDir" value=".settings"/>
+	<property name="mf.connectionName" value=""/>
+	<property name="mf.projectName" value=""/>
+	<property name="mf.failOnError" value="false"/>
+	<property name="mf.cobolFailOnError" value="${mf.failOnError}"/>
+	<property name="mf.cobollinkFailOnError" value="${mf.failOnError}"/>
+	<property name="mf.entryPoint.cfg.New_Configuration" value=""/>
+	<property name="mf.destDir.cfg.New_Configuration" value="${basedir}/New_Configuration.bin"/>
+	<property name="mf.entryPoint.file" value=""/>
+	<property name="mf.sdkLocation" value="c:\Program Files (x86)\Windows Kits\10\Bin\10.0.17763.0\"/>
+	<property name="mf.buildToolsLocation" value="c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\Host"/>
+	<target name="printLocations">
+		<echo message="Project Location: &apos;pathVar.PROJECT_LOC&apos;=${pathVar.PROJECT_LOC}"/>
+		<echo message="Project Location: &apos;pathVar.WORKSPACE_LOC&apos;=${pathVar.WORKSPACE_LOC}"/>
+		<echo message="Project Location: &apos;pathVar.ECLIPSE_HOME&apos;=${pathVar.ECLIPSE_HOME}"/>
+		<echo message="Project Location: &apos;pathVar.PARENT_LOC&apos;=${pathVar.PARENT_LOC}"/>
+		<echo message="Project Location: &apos;project.UPDATE&apos;=${mf.projectLocation.UPDATE}"/>
+	</target>
+	<!--  ******************************  -->
+	<!--  * OS-specific initialisation *  -->
+	<!--  ******************************  -->
+	<property name="carext" value=".car"/>
+	<condition property="windows">
+		<os family="windows"/>
+	</condition>
+	<condition property="unix">
+		<os family="unix"/>
+	</condition>
+	<ac:if>
+		<isset property="windows"/>
+		<then>
+			<property name="dllext" value=".dll"/>
+			<property name="exeext" value=".exe"/>
+			<property name="mf.objext" value=".obj"/>
+			<property name="mf.equalsInDir" value="="/>
+			<property name="pathVar.pS" value=";"/>
+			<property name="shell" value="cmd"/>
+			<property name="shell.ext" value=".bat"/>
+			<property name="shell.arg" value="/c"/>
+			<property name="script.header" value="@rem MS-DOS Batch File"/>
+		</then>
+	</ac:if>
+	<ac:if>
+		<isset property="unix"/>
+		<then>
+			<property name="dllext" value=".so"/>
+			<property name="exeext" value=""/>
+			<property name="mf.objext" value=".o"/>
+			<property name="mf.equalsInDir" value="="/>
+			<property name="pathVar.pS" value=":"/>
+			<property name="shell" value="sh"/>
+			<property name="shell.ext" value=".sh"/>
+			<property name="shell.arg" value="-c"/>
+			<property name="script.header" value="#!/bin/sh"/>
+		</then>
+	</ac:if>
+	<!-- Assembler Macro locations -->
+	<mffilelist id="assembler.macro.locations">
+		<path type="asmmacro" name="${mf.projectLocation.UPDATE}"/>
+	</mffilelist>
+	<!-- IMS Copy locations -->
+	<mffilelist id="ims.copy.locations">
+		<path type="imscpy" name="${mf.projectLocation.UPDATE}"/>
+	</mffilelist>
+	<!-- JCL include locations -->
+	<mffilelist id="jcl.include.locations">
+		<path type="jclinclude" name="${mf.projectLocation.UPDATE}"/>
+	</mffilelist>
+	<!-- Copypath enabled output locations -->
+	<mffilelist id="output.copybook.enabled.locations">
+		<path type="copybook" name="${mf.projectLocation.UPDATE}"/>
+	</mffilelist>
+	<!--  *****************************  -->
+	<!--  * COBOL compiler directives *  -->
+	<!--  *****************************  -->
+	<!-- cobol_directive_set_1 -->
+	<mfdirlist id="cobol_directive_set_1">
+		<directive name="SOURCETABSTOP" id="sourcetabstop" value="4"/>
+		<directive name="COPYEXT" id="copyext" value="cpy,cbl"/>
+		<directive name="COLLECTION" id="collection" value="UPDATE"/>
+		<directive name="NOCOBOLDIR" id="nocoboldir"/>
+	</mfdirlist>
+	<!--  **********************  -->
+	<!--  * COBOL source files *  -->
+	<!--  **********************  -->
+	<!-- cobol_file_set_1 -->
+	<mffilelist type="srcfile" id="cobol_file_set_1" srcdir="${basedir}">
+		<file name="READADDR.cbl" srcdir="cbl"/>
+		<file name="UPDTADDR.cbl" srcdir="cbl"/>
+		<file name="READDRVR.cbl" srcdir="cbl"/>
+		<file name="UPDTDRVR.cbl" srcdir="cbl"/>
+	</mffilelist>
+	<!-- COBOL copybook locations -->
+	<mffilelist id="cobol.copybook.locations">
+		<path type="copybook" name="${mf.projectLocation.UPDATE}/copybook"/>
+		<path type="copybook" name="${mf.projectLocation.UPDATE}"/>
+	</mffilelist>
+	<!--  ********************************  -->
+	<!--  * Source File Compile and Link *  -->
+	<!--  ********************************  -->
+	<!-- Configuration:New_Configuration -->
+	<target name="FileCompile.New_Configuration.cobol">
+		<cobol debug="true" configuration="New Configuration" analysisData="${analysisData}" threadCount="${mf.buildThreadCount}" settingsDir="${mf.settingsDir}" threadedRts="true" analysisDataDir="${analysisDataDir}" useDirectiveSet="${mf.useDirectiveSet}" srcfile="${fullFileName}" destdir="${basedir}/New_Configuration.bin" is64bit="false" failonerror="${mf.cobolFailOnError}" srcdir="${basedir}" forceCompile="${mf.forceCompile}" connectionName="${mf.connectionName}" projectName="${mf.projectName}" desttype="obj">
+			<mffilelist refid="cobol.copybook.locations"/>
+			<mfdirlist refid="cobol_directive_set_1"/>
+		</cobol>
+		<cobollink debug="true" destfile="${fileBaseName}" entrypoint="${mf.entryPoint.cfg.New_Configuration}" sharedRts="true" destdir="${mf.destDir.cfg.New_Configuration}" is64bit="false" objectdir="${basedir}/New_Configuration.bin" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
+			<mffilelist srcdir="${basedir}/New_Configuration.bin">
+				<file name="${fileBaseName}${mf.objext}"/>
+			</mffilelist>
+			<mffilelist refid="cobol.mfunit.entry.point.files"/>
+		</cobollink>
+	</target>
+	<!--  ****************  -->
+	<!--  * Object files *  -->
+	<!--  ****************  -->
+	<!-- Default -->
+	<mffilelist id="cobol.default.object.files.New Configuration" srcdir="${basedir}/New_Configuration.bin" type="objfile">
+		<file name="READADDR${mf.objext}"/>
+		<file name="UPDTADDR${mf.objext}"/>
+		<file name="READDRVR${mf.objext}"/>
+		<file name="UPDTDRVR${mf.objext}"/>
+	</mffilelist>
+	<!--  ********************************  -->
+	<!--  * MFUnit entry point file list *  -->
+	<!--  ********************************  -->
+	<mffilelist type="linkfile" id="cobol.mfunit.entry.point.files">
+		<file name="${mf.entryPoint.file}"/>
+	</mffilelist>
+	<target name="cobol.createcar.cfg.New_Configuration.property">
+		<condition property="mf.createCar.isTrue">
+			<istrue value="${mf.createCar}"/>
+		</condition>
+	</target>
+	<target name="cobol.createcar.cfg.New_Configuration" depends="cobol.createcar.cfg.New_Configuration.property" if="mf.createCar.isTrue">
+	</target>
+	<!-- cfg.New_Configuration -->
+	<target name="combinedbuild.cfg.New_Configuration" depends="printLocations,pre.build.cfg.New_Configuration,bms.cfg.New_Configuration,asm.cfg.New_Configuration,ims.cfg.New_Configuration,nature.specific.build.cfg.New_Configuration,post.build.cfg.New_Configuration,deploy.cfg.New_Configuration">
+	</target>
+	<target name="imscobbuild.cfg.New_Configuration" depends="printLocations,pre.build.cfg.New_Configuration,ims.cfg.New_Configuration,nature.specific.build.cfg.New_Configuration,post.build.cfg.New_Configuration,deploy.cfg.New_Configuration">
+	</target>
+	<target name="bmsbuild.cfg.New_Configuration" depends="printLocations,bms.cfg.New_Configuration">
+	</target>
+	<target name="asm.cfg.New_Configuration">
+		<echo message="No Assembler programs to compile"/>
+		<echo message="No Assembler Linker files to compile"/>
+	</target>
+	<target name="bms.cfg.New_Configuration">
+		<echo message="No BMS files to compile"/>
+	</target>
+	<target name="ims.cfg.New_Configuration">
+		<echo message="No DBD files to compile"/>
+		<echo message="No MFS files to compile"/>
+		<echo message="No PSB files to compile"/>
+	</target>
+	<!--  *************************  -->
+	<!--  * Configuration targets *  -->
+	<!--  *************************  -->
+	<!-- cfg.New_Configuration -->
+	<target name="cobolbuild.cfg.New_Configuration" depends="printLocations,pre.build.cfg.New_Configuration,nature.specific.build.cfg.New_Configuration,post.build.cfg.New_Configuration,deploy.cfg.New_Configuration"/>
+	<target name="nature.specific.build.cfg.New_Configuration" depends="cobol.cfg.New_Configuration"/>
+	<target name="cobol.cfg.New_Configuration" depends="cobol.compile.cfg.New_Configuration,cobol.link.cfg.New_Configuration"/>
+	<target name="New_Configuration.FileCompile">
+		<property name="fileextn.cbl" value="cobol"/>
+		<property name="fileextn.cob" value="cobol"/>
+		<property name="fileextn.pco" value="cobol"/>
+		<property name="fileextn.sqb" value="cobol"/>
+		<property name="fileextn.eco" value="cobol"/>
+		<property name="fileextn.bms" value="bms"/>
+		<property name="fileextn.mlc" value="asm"/>
+		<property name="fileextn.asm" value="asm"/>
+		<property name="fileextn.cap" value="asm"/>
+		<property name="fileextn.lin" value="lin"/>
+		<property name="fileextn.mac" value="macro"/>
+		<property name="fileextn.cpy" value="macro"/>
+		<property name="fileextn.jcl" value="jcl"/>
+		<property name="fileextn.vse" value="jcl"/>
+		<property name="fileextn.dbd" value="dbd"/>
+		<property name="fileextn.psb" value="psb"/>
+		<property name="fileextn.mfs" value="mfs"/>
+		<property name="fileextn.rex" value="rexx"/>
+		<property name="fileextn.rxf" value="rexx"/>
+		<property name="fileextn.tso" value="clist"/>
+		<property name="fileextn.ezt" value="easytrieve"/>
+		<property name="fileextn.pli" value="pli"/>
+		<property name="fileextn.pl1" value="pli"/>
+		<ac:for list="${filesList}" param="filename" keepgoing="true" trim="true">
+			<sequential>
+				<ac:if>
+					<not>
+						<isset property="isCancelled"/>
+					</not>
+					<then>
+						<propertyregex input="@{filename}" regexp="((.*[\\/])*)([^\.]*)\..*" select="\3" property="basename" casesensitive="false" override="true"/>
+						<propertyregex input="@{filename}" regexp="((.*[\\/])*)([^\.]*)(\..*)" select="\4" property="filesuffix" casesensitive="false" override="true"/>
+						<script classpath="${java.home}/lib/ext/nashorn.jar" language="javascript">project.setProperty("lowerFileSuffix", project.getProperty("filesuffix").toLowerCase());</script>
+						<propertycopy name="targetSuffix" from="fileextn${lowerFileSuffix}" override="true"/>
+						<ac:if>
+							<equals arg2="lin" arg1="${targetSuffix}"/>
+							<then>
+								<ac:antcallback target="FileCompile.New_Configuration.${basename}${filesuffix}" inheritAll="true" return="isCancelled">
+									<param name="fileBaseName" value="${basename}"/>
+									<param name="fullFileName" value="@{filename}"/>
+								</ac:antcallback>
+							</then>
+							<else>
+								<ac:antcallback target="FileCompile.New_Configuration.${targetSuffix}" inheritAll="true" return="isCancelled">
+									<param name="fileBaseName" value="${basename}"/>
+									<param name="fullFileName" value="@{filename}"/>
+								</ac:antcallback>
+							</else>
+						</ac:if>
+					</then>
+				</ac:if>
+			</sequential>
+		</ac:for>
+	</target>
+	<target name="cobol.compile.cfg.New_Configuration">
+		<cobol debug="true" configuration="New Configuration" analysisData="${analysisData}" threadCount="${mf.buildThreadCount}" settingsDir="${mf.settingsDir}" threadedRts="true" analysisDataDir="${analysisDataDir}" useDirectiveSet="${mf.useDirectiveSet}" destdir="${basedir}/New_Configuration.bin" is64bit="false" failonerror="${mf.cobolFailOnError}" forceCompile="${mf.forceCompile}" connectionName="${mf.connectionName}" projectName="${mf.projectName}" desttype="obj">
+			<mffilelist refid="cobol.copybook.locations"/>
+			<mfdirlist refid="cobol_directive_set_1"/>
+			<mffilelist refid="cobol_file_set_1"/>
+		</cobol>
+	</target>
+	<target name="cobol.link.cfg.New_Configuration">
+		<parallel threadCount="${mf.buildThreadCount}">
+			<cobollink debug="true" destfile="READADDR" entrypoint="${mf.entryPoint.cfg.New_Configuration}" sharedRts="true" destdir="${mf.destDir.cfg.New_Configuration}" is64bit="false" objectdir="${basedir}/New_Configuration.bin" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
+				<mffilelist srcdir="${basedir}/New_Configuration.bin">
+					<file name="READADDR${mf.objext}"/>
+				</mffilelist>
+				<mffilelist refid="cobol.mfunit.entry.point.files"/>
+			</cobollink>
+			<cobollink debug="true" destfile="UPDTADDR" entrypoint="${mf.entryPoint.cfg.New_Configuration}" sharedRts="true" destdir="${mf.destDir.cfg.New_Configuration}" is64bit="false" objectdir="${basedir}/New_Configuration.bin" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
+				<mffilelist srcdir="${basedir}/New_Configuration.bin">
+					<file name="UPDTADDR${mf.objext}"/>
+				</mffilelist>
+				<mffilelist refid="cobol.mfunit.entry.point.files"/>
+			</cobollink>
+			<cobollink debug="true" destfile="READDRVR" entrypoint="${mf.entryPoint.cfg.New_Configuration}" sharedRts="true" destdir="${mf.destDir.cfg.New_Configuration}" is64bit="false" objectdir="${basedir}/New_Configuration.bin" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
+				<mffilelist srcdir="${basedir}/New_Configuration.bin">
+					<file name="READDRVR${mf.objext}"/>
+				</mffilelist>
+				<mffilelist refid="cobol.mfunit.entry.point.files"/>
+			</cobollink>
+			<cobollink debug="true" destfile="UPDTDRVR" entrypoint="${mf.entryPoint.cfg.New_Configuration}" sharedRts="true" destdir="${mf.destDir.cfg.New_Configuration}" is64bit="false" objectdir="${basedir}/New_Configuration.bin" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
+				<mffilelist srcdir="${basedir}/New_Configuration.bin">
+					<file name="UPDTDRVR${mf.objext}"/>
+				</mffilelist>
+				<mffilelist refid="cobol.mfunit.entry.point.files"/>
+			</cobollink>
+		</parallel>
+	</target>
+	<target name="pre.build.cfg.New_Configuration">
+	</target>
+	<target name="post.build.cfg.New_Configuration" depends="cobol.createcar.cfg.New_Configuration">
+	</target>
+	<target name="deploy.cfg.New_Configuration">
+	</target>
+	<target name="clean.cfg.New_Configuration">
+		<cobolclean debug="true" destdir="${basedir}/New_Configuration.bin" desttype="dll">
+			<mffilelist refid="cobol_file_set_1"/>
+		</cobolclean>
+	</target>
+	<!--  *******************  -->
+	<!--  * General targets *  -->
+	<!--  *******************  -->
+	<target name="clean">
+		<antcall target="clean.${mf.cfgtarget}" inheritAll="true"/>
+	</target>
+	<target name="compileSource">
+		<antcall target="${mf.cfg}.FileCompile" inheritAll="true"/>
+	</target>
+	<target name="cobollink">
+		<antcall target="cobol.link.${mf.cfgtarget}" inheritAll="true"/>
+	</target>
+	<target name="compile" depends="compileSource">
+	</target>
+	<target name="combinedbuild">
+		<antcall target="combinedbuild.${mf.cfgtarget}" inheritAll="true"/>
+	</target>
+	<target name="imscobbuild">
+		<antcall target="imscobbuild.${mf.cfgtarget}" inheritAll="true"/>
+	</target>
+	<target name="bmsbuild">
+		<antcall target="bmsbuild.${mf.cfgtarget}" inheritAll="true"/>
+	</target>
+	<target name="cobolbuild">
+		<antcall target="cobolbuild.${mf.cfgtarget}" inheritAll="true"/>
+	</target>
+</project>

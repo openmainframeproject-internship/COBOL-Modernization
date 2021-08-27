@@ -1,0 +1,1978 @@
+Log file from: LS2JS v6.0.00
+WSBIND file: C:\Users\Administrator\workspace\UPDATE\read.wsbind
+Mode: Provider
+Created: Fri Aug 27 14:53:09 2021
+Product: Enterprise Developer v6.0.00
+-----------------------------
+
+Parameter "BINDING" has value "null".
+Parameter "BUNDLE" has value "null".
+Parameter "CCSID" has value "null".
+Parameter "CHAR-MULTIPLIER" has value "1".
+Parameter "CHAR-OCCURS" has value "ARRAY".
+Parameter "CHAR-USAGE" has value "NATIONAL".
+Parameter "CHAR-VARYING" has value "NO".
+Parameter "CHAR-WHITESPACE" has value "COLLAPSE".
+Parameter "CONTID" has value "null".
+Parameter "DATA-TRUNCATION" has value "DISABLED".
+Parameter "DATETIME" has value "UNUSED".
+Parameter "DEFAULT-CHAR-MAXLENGTH" has value "255".
+Parameter "HTTPMETHODS" has value "null".
+Parameter "HTTPPROXY" has value "null".
+Parameter "HTTPPROXY-USERNAME" has value "null".
+Parameter "HTTPPROXY-PASSWORD" has value "null".
+Parameter "INLINE-MAXOCCURS-LIMIT" has value "1".
+Parameter "JSON-SCHEMA" has value "null".
+Parameter "JSON-SCHEMA-REQUEST" has value "C:\Users\Administrator\workspace\UPDATE\json\readreq.json".
+Parameter "JSON-SCHEMA-RESPONSE" has value "C:\Users\Administrator\workspace\UPDATE\json\readresp.json".
+Parameter "JSON-SCHEMA-RESTFUL" has value "null".
+Parameter "JSONTRANSFRM" has value "null".
+Parameter "LANG" has value "COBOL".
+Parameter "LOGFILE" has value "C:\Users\Administrator\workspace\UPDATE\read.log".
+Parameter "MAPPING-LEVEL" has value "3.0".
+Parameter "MAPPING-OVERRIDES" has value "null".
+Parameter "NAME-TRUNCATION" has value "RIGHT".
+Parameter "OPERATIONS" has value "null".
+Parameter "OPERATION-NAME" has value "READDRVROperation".
+Parameter "PDSMEM" has value "null".
+Parameter "PGMINT" has value "COMMAREA".
+Parameter "PGMNAME" has value "READDRVR".
+Parameter "REQMEM" has value "C:\Users\Administrator\workspace\UPDATE\copybook\READREQ.cpy".
+Parameter "REQUEST-CHANNEL" has value "null".
+Parameter "REQUEST-NAMESPACE" has value "null".
+Parameter "RESPMEM" has value "C:\Users\Administrator\workspace\UPDATE\copybook\READRESP.cpy".
+Parameter "RESPONSE-CHANNEL" has value "null".
+Parameter "RESPONSE-NAMESPACE" has value "null".
+Parameter "SERVICE" has value "null".
+Parameter "SOAPVER" has value "1.1".
+Parameter "SYNCONRETURN" has value "NO".
+Parameter "TRANSACTION" has value "null".
+Parameter "URI" has value "http://localhost:9879/cics/readaddr".
+Parameter "USERID" has value "null".
+Parameter "VENDOR-CONVERTER-NAME" has value "null".
+Parameter "VENDOR-APP-INTERFACE-LENGTH" has value "null".
+Parameter "VENDOR-META-DATA" has value "null".
+Parameter "WSBIND" has value "C:\Users\Administrator\workspace\UPDATE\read.wsbind".
+Parameter "WSDL" has value "null".
+Parameter "WSDLCP" has value "UTF-8".
+Parameter "WSDL-NAMESPACE" has value "".
+Parameter "WSDL-SERVICE" has value "null".
+Parameter "WSDL_1.1" has value "null".
+Parameter "WSDL_2.0" has value "null".
+Parameter "XML-ONLY" has value "false".
+Parameter "SSL-TRUSTSTORE" has value "null".
+Parameter "SSL-TRUSTPWD" has value "null".
+Parameter "SSL-KEYSTORE" has value "null".
+Parameter "SSL-KEYPWD" has value "null".
+Parameter "WSRR-SERVER" has value "null".
+Parameter "WSRR-NAME" has value "null".
+Parameter "WSRR-NAMESPACE" has value "null".
+Parameter "WSRR-VERSION" has value "null".
+Parameter "WSRR-USERNAME" has value "null".
+Parameter "WSRR-PASSWORD" has value "null".
+Parameter "WSRR-DESCRIPTION" has value "null".
+Parameter "WSRR-ENCODING" has value "null".
+Parameter "WSRR-LOCATION" has value "null".
+Parameter "WIDE-COMP3" has value "NO".
+
+
+Creating ICM: RequestICM(Request)
+-------------
+
+ style: WRAPPED_DOCUMENT
+ wsdlOperationNS: http://www.read.com
+ wsdlOperationName: READDRVROperation
+ message type: Request Message
+
+ICM as text: RequestICM(Request)
+------------
+
+ICM Header Section:
+
+  EYECATCHER = >DFHICM<
+  MAPPING LEVEL = 7
+  ICM LENGTH =  0x000000000000030f (783)
+  ICM NAME = RequestICM(Request)
+  SIZE OF STRUCTURE = 0x0000000000000005 (5)
+  XML TEMPLATE
+    OFFSET = 0x00000000000002ed (749)
+    LENGTH = 0x0000000000000022 (34)
+    VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+  DATA OFFSET = 0x0000000000000150 (336)
+
+
+ICM Index Section: Offset of Start of Index Section = 0x0000000000000058 (88)
+
+  NUMBER OF INDEX ENTRIES = 3
+
+  OPTIMIZED INDEX OFFSET = 0x0000000000000110 (272)
+  DATA TRUNCATION SUPPORTED =  false
+  XSI TYPE IN FIRST TAG =  false
+  OPTIMIZED INDEX AVAILABLE =  true
+  XOP ELIGIBLE =  false
+  RESPONSE MESSAGE =  false
+  REQUEST MESSAGE =  true
+  ATTRIBUTES SIGNIFICANT =  false
+  NAMESPACE SIGNIFICANT =  false
+
+  Index Offset: 0x0000000000000068 (104)
+  Index Offset: 0x0000000000000088 (136)
+  Index Offset: 0x00000000000000c0 (192)
+
+  Index Entry (Offset within ICM = 0x0000000000000068 (104))
+   POSITION NUMBER = 1
+   XPATH (TEXT = /read)
+    XPATH PARTS = 1
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x00000000000002ce (718)'
+      length '19'
+     ELEMENT
+      value 'read'
+      offset '0x00000000000002c2 (706)'
+      length '4'
+
+   DATA OFFSET = 0x0000000000000150 (336)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000088 (136)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000088 (136))
+   POSITION NUMBER = 2
+   XPATH (TEXT = /read/BRE_INP_INPUT_STRUCTURE)
+    XPATH PARTS = 2
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x00000000000002ce (718)'
+      length '19'
+     ELEMENT
+      value 'read'
+      offset '0x00000000000002c2 (706)'
+      length '4'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x00000000000002ce (718)'
+      length '19'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000261 (609)'
+      length '23'
+
+   DATA OFFSET = 0x00000000000001a0 (416)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000c0 (192)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000c0 (192))
+   POSITION NUMBER = 3
+   XPATH (TEXT = /read/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x00000000000002ce (718)'
+      length '19'
+     ELEMENT
+      value 'read'
+      offset '0x00000000000002c2 (706)'
+      length '4'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x00000000000002ce (718)'
+      length '19'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000261 (609)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x00000000000002ce (718)'
+      length '19'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT'
+      offset '0x000000000000027a (634)'
+      length '19'
+
+   DATA OFFSET = 0x00000000000001f0 (496)
+   PROBABLE NEXT INDEX ENTRY = unknown
+
+
+  ICM OPTIMIZED INDEX:
+
+   ENTRY NUMBER: 1
+     FIRST CHILD POS = 2
+     LAST CHILD POS = 2
+     NESTING LEVEL = 1
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000068 (104)
+
+   ENTRY NUMBER: 2
+     FIRST CHILD POS = 3
+     LAST CHILD POS = 3
+     NESTING LEVEL = 2
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000088 (136)
+
+   ENTRY NUMBER: 3
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000c0 (192)
+
+ICM Data Section:
+Offset Of Start of Data Section = 0x0000000000000150 (336)
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000150 (336))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000001a0 (416)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000250 (592)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000168 (360))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x00000000000002fc (764)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x00000000000002c2 (706)
+         LENGTH = 0x0000000000000004 (4)
+         VALUE = read
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x0000000000000005 (5)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x00000000000002c1 (705)
+         LENGTH = 0x000000000000002c (44)
+         VALUE = <read xmlns="http://www.read.com">&A;</read>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x00000000000001a0 (416))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000001f0 (496)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000248 (584)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x00000000000001b8 (440))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x00000000000002e3 (739)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000261 (609)
+         LENGTH = 0x0000000000000017 (23)
+         VALUE = BRE_INP_INPUT_STRUCTURE
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x0000000000000005 (5)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000260 (608)
+         LENGTH = 0x0000000000000061 (97)
+         VALUE = <BRE_INP_INPUT_STRUCTURE><BRE_I_CD02I_CONTACT>&A;</BRE_I_CD02I_CONTACT></BRE_INP_INPUT_STRUCTURE>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000001f0 (496))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000248 (584)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000208 (520))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x00000000000002ce (718)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x000000000000027a (634)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = BRE_I_CD02I_CONTACT
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000028e (654)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000248 (584))
+    RECORD TYPE = 4
+
+  End Repeat (Offset within ICM = 0x0000000000000250 (592))
+    RECORD TYPE = 4
+
+  End Data Section (Offset within ICM = 0x0000000000000258 (600))
+    RECORD TYPE = 5
+
+
+ICM Constants Section:
+Offset Of Start of Constants Section = 0x0000000000000260 (608)
+
+      OFFSET = 0x0000000000000260 (608)
+      LENGTH = 0x0000000000000061 (97)
+      VALUE = <BRE_INP_INPUT_STRUCTURE><BRE_I_CD02I_CONTACT>&A;</BRE_I_CD02I_CONTACT></BRE_INP_INPUT_STRUCTURE>
+
+      OFFSET = 0x00000000000002c1 (705)
+      LENGTH = 0x000000000000002c (44)
+      VALUE = <read xmlns="http://www.read.com">&A;</read>
+
+      OFFSET = 0x00000000000002ed (749)
+      LENGTH = 0x0000000000000022 (34)
+      VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+
+
+ICM as data: RequestICM(Request)
+------------
+
+
+Offset: 0x0000000000000000 (0)
+ 6ec4c6c8 c9c3d44c 00000007 00000000   00000000 0000030f d98598a4 85a2a3c9         *>DFHICM<................RequestI*
+ c3d44dd9 8598a485 a2a35d00 00000000   00000000 00000000 00000000 00000005         *CM(Request).....................*
+ 00000000 000002ed 00000000 00000022   00000000 00000150 00000003 00011024         *.......Ò...............&........*
+ 00680088 00c00000 00010088 00000150   13040000 00000000 00000000 000002ce         *.Ç.h.{.....h...&...............ó*
+ 00000000 000002c2 000200c0 000001a0   13040000 00000000 00000000 000002ce         *.......B...{...µ...............ó*
+ 00000000 000002c2 13170000 00000000   00000000 000002ce 00000000 00000261         *.......B...............ó......./*
+ 0003ffff 000001f0 13040000 00000000   00000000 000002ce 00000000 000002c2         *..??...0...............ó.......B*
+ 13170000 00000000 00000000 000002ce   00000000 00000261 13130000 00000000         *...............ó......./........*
+
+Offset: 0x0000000000000100 (256)
+ 00000000 000002ce 00000000 0000027a   00000001 00000001 00000000 ffffffff         *.......ó.......:............????*
+ 00000002 00000002 00000001 00000068   00000003 00000003 00000002 00000088         *...............Ç...............h*
+ 00007fff 00000000 00000003 000000c0   07000050 000001a0 ffffffff 00000250         *.."?...........{...&...µ????...&*
+ 00000000 00000000 02010001 00000304   00000000 00000005 00000000 00000000         *................................*
+ 00000000 000002fc 00000000 000002c2   00000000 0000002c 00000000 000002c1         *.......Ü.......B...............A*
+ 07000050 000001f0 ffffffff 00000248   00000000 00000000 02010001 00000317         *...&...0????...ç................*
+ 00000000 00000005 00000000 00000000   00000000 000002e3 00000000 00000261         *.......................T......./*
+ 00000000 00000061 00000000 00000260   06000058 00000248 ffffffff ffffffff         *......./.......-...ì...ç????????*
+
+Offset: 0x0000000000000200 (512)
+ 00000000 00000000 01010005 ff000013   00130003 00000000 00000000 00000000         *............?...................*
+ 00000000 000002ce 00000000 0000027a   00000000 0000028e ffffffff ffffffff         *.......ó.......:.......þ????????*
+ ffffffff ffffffff 04000000 00000000   04000000 00000000 05000000 00000000         *????????........................*
+ 4cc2d9c5 6dc9d5d7 6dc9d5d7 e4e36de2   e3d9e4c3 e3e4d9c5 6e4cc2d9 c56dc96d         *<BRE_INP_INPUT_STRUCTURE><BRE_I_*
+ c3c4f0f2 c96dc3d6 d5e3c1c3 e36e50c1   5e4c61c2 d9c56dc9 6dc3c4f0 f2c96dc3         *CD02I_CONTACT>&A;</BRE_I_CD02I_C*
+ d6d5e3c1 c3e36e4c 61c2d9c5 6dc9d5d7   6dc9d5d7 e4e36de2 e3d9e4c3 e3e4d9c5         *ONTACT></BRE_INP_INPUT_STRUCTURE*
+ 6e4c9985 818440a7 949395a2 7e7f88a3   a3977a61 61a6a6a6 4b998581 844b8396         *><read xmlns="http://www.read.co*
+ 947f6e50 c15e4c61 99858184 6e4ce2d6   c1d760c5 d5e57ac2 9684a86e 50c15e4c         *m">&A;</read><SOAP-ENV:Body>&A;<*
+
+Offset: 0x0000000000000300 (768)
+ 61e2d6c1 d760c5d5 e57ac296 84a86e      */SOAP-ENV:Body>*
+
+
+Total length of binary data is: 0x000000000000030f (783)
+
+Creating ICM: ResponseICM(Response)
+-------------
+
+ style: WRAPPED_DOCUMENT
+ wsdlOperationNS: http://www.read.com
+ wsdlOperationName: READDRVROperation
+ message type: Response Message
+
+ICM as text: ResponseICM(Response)
+------------
+
+ICM Header Section:
+
+  EYECATCHER = >DFHICM<
+  MAPPING LEVEL = 7
+  ICM LENGTH =  0x0000000000000f0b (3851)
+  ICM NAME = ResponseICM(Response)
+  SIZE OF STRUCTURE = 0x000000000000008e (142)
+  XML TEMPLATE
+    OFFSET = 0x0000000000000ee9 (3817)
+    LENGTH = 0x0000000000000022 (34)
+    VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+  DATA OFFSET = 0x00000000000006f0 (1776)
+
+
+ICM Index Section: Offset of Start of Index Section = 0x0000000000000058 (88)
+
+  NUMBER OF INDEX ENTRIES = 15
+
+  OPTIMIZED INDEX OFFSET = 0x00000000000005f0 (1520)
+  DATA TRUNCATION SUPPORTED =  false
+  XSI TYPE IN FIRST TAG =  false
+  OPTIMIZED INDEX AVAILABLE =  true
+  XOP ELIGIBLE =  false
+  RESPONSE MESSAGE =  true
+  REQUEST MESSAGE =  false
+  ATTRIBUTES SIGNIFICANT =  false
+  NAMESPACE SIGNIFICANT =  false
+
+  Index Offset: 0x0000000000000080 (128)
+  Index Offset: 0x00000000000000a0 (160)
+  Index Offset: 0x00000000000000d8 (216)
+  Index Offset: 0x0000000000000128 (296)
+  Index Offset: 0x0000000000000178 (376)
+  Index Offset: 0x00000000000001e0 (480)
+  Index Offset: 0x0000000000000248 (584)
+  Index Offset: 0x00000000000002b0 (688)
+  Index Offset: 0x0000000000000318 (792)
+  Index Offset: 0x0000000000000380 (896)
+  Index Offset: 0x00000000000003e8 (1000)
+  Index Offset: 0x0000000000000450 (1104)
+  Index Offset: 0x00000000000004b8 (1208)
+  Index Offset: 0x0000000000000520 (1312)
+  Index Offset: 0x0000000000000588 (1416)
+
+  Index Entry (Offset within ICM = 0x0000000000000080 (128))
+   POSITION NUMBER = 1
+   XPATH (TEXT = /readResponse)
+    XPATH PARTS = 1
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+   DATA OFFSET = 0x00000000000006f0 (1776)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000a0 (160)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000a0 (160))
+   POSITION NUMBER = 2
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE)
+    XPATH PARTS = 2
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+   DATA OFFSET = 0x0000000000000740 (1856)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000d8 (216)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000d8 (216))
+   POSITION NUMBER = 3
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+   DATA OFFSET = 0x0000000000000790 (1936)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000178 (376)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000128 (296))
+   POSITION NUMBER = 4
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_EIBRESP)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_EIBRESP'
+      offset '0x0000000000000e71 (3697)'
+      length '13'
+
+   DATA OFFSET = 0x0000000000000bb0 (2992)
+   PROBABLE NEXT INDEX ENTRY = unknown
+
+
+  Index Entry (Offset within ICM = 0x0000000000000178 (376))
+   POSITION NUMBER = 5
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT'
+      offset '0x0000000000000c33 (3123)'
+      length '19'
+
+   DATA OFFSET = 0x00000000000007e0 (2016)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000001e0 (480)
+
+
+  Index Entry (Offset within ICM = 0x00000000000001e0 (480))
+   POSITION NUMBER = 6
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT0)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT0'
+      offset '0x0000000000000c61 (3169)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000838 (2104)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000248 (584)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000248 (584))
+   POSITION NUMBER = 7
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT1)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT1'
+      offset '0x0000000000000c91 (3217)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000890 (2192)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000002b0 (688)
+
+
+  Index Entry (Offset within ICM = 0x00000000000002b0 (688))
+   POSITION NUMBER = 8
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT2)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT2'
+      offset '0x0000000000000cc1 (3265)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000008e8 (2280)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000318 (792)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000318 (792))
+   POSITION NUMBER = 9
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT3)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT3'
+      offset '0x0000000000000cf1 (3313)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000940 (2368)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000380 (896)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000380 (896))
+   POSITION NUMBER = 10
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT4)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT4'
+      offset '0x0000000000000d21 (3361)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000998 (2456)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000003e8 (1000)
+
+
+  Index Entry (Offset within ICM = 0x00000000000003e8 (1000))
+   POSITION NUMBER = 11
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT5)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT5'
+      offset '0x0000000000000d51 (3409)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000009f0 (2544)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000450 (1104)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000450 (1104))
+   POSITION NUMBER = 12
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT6)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT6'
+      offset '0x0000000000000d81 (3457)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000a48 (2632)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000004b8 (1208)
+
+
+  Index Entry (Offset within ICM = 0x00000000000004b8 (1208))
+   POSITION NUMBER = 13
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT7)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT7'
+      offset '0x0000000000000db1 (3505)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000aa0 (2720)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000520 (1312)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000520 (1312))
+   POSITION NUMBER = 14
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT8)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT8'
+      offset '0x0000000000000de1 (3553)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000af8 (2808)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000588 (1416)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000588 (1416))
+   POSITION NUMBER = 15
+   XPATH (TEXT = /readResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT9)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'readResponse'
+      offset '0x0000000000000eae (3758)'
+      length '12'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000e54 (3668)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000c21 (3105)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.read.com'
+      offset '0x0000000000000ec2 (3778)'
+      length '19'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT9'
+      offset '0x0000000000000e11 (3601)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000b50 (2896)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000128 (296)
+
+
+  ICM OPTIMIZED INDEX:
+
+   ENTRY NUMBER: 1
+     FIRST CHILD POS = 2
+     LAST CHILD POS = 2
+     NESTING LEVEL = 1
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000080 (128)
+
+   ENTRY NUMBER: 2
+     FIRST CHILD POS = 3
+     LAST CHILD POS = 4
+     NESTING LEVEL = 2
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000a0 (160)
+
+   ENTRY NUMBER: 3
+     FIRST CHILD POS = 5
+     LAST CHILD POS = 15
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000d8 (216)
+
+   ENTRY NUMBER: 4
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000128 (296)
+
+   ENTRY NUMBER: 5
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000178 (376)
+
+   ENTRY NUMBER: 6
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000001e0 (480)
+
+   ENTRY NUMBER: 7
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000248 (584)
+
+   ENTRY NUMBER: 8
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000002b0 (688)
+
+   ENTRY NUMBER: 9
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000318 (792)
+
+   ENTRY NUMBER: 10
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000380 (896)
+
+   ENTRY NUMBER: 11
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000003e8 (1000)
+
+   ENTRY NUMBER: 12
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000450 (1104)
+
+   ENTRY NUMBER: 13
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000004b8 (1208)
+
+   ENTRY NUMBER: 14
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000520 (1312)
+
+   ENTRY NUMBER: 15
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000588 (1416)
+
+ICM Data Section:
+Offset Of Start of Data Section = 0x00000000000006f0 (1776)
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x00000000000006f0 (1776))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000740 (1856)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000c10 (3088)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000708 (1800))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000ef8 (3832)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000eae (3758)
+         LENGTH = 0x000000000000000c (12)
+         VALUE = readResponse
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000008e (142)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000ead (3757)
+         LENGTH = 0x000000000000003c (60)
+         VALUE = <readResponse xmlns="http://www.read.com">&A;</readResponse>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000740 (1856))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000790 (1936)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000c08 (3080)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000758 (1880))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000ed7 (3799)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000e54 (3668)
+         LENGTH = 0x0000000000000018 (24)
+         VALUE = BRE_OUT_OUTPUT_STRUCTURE
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000008e (142)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000e53 (3667)
+         LENGTH = 0x000000000000005a (90)
+         VALUE = <BRE_OUT_OUTPUT_STRUCTURE>&A;<BRE_O_EIBRESP>&B;</BRE_O_EIBRESP></BRE_OUT_OUTPUT_STRUCTURE>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000790 (1936))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000007e0 (2016)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000ba8 (2984)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x00000000000007a8 (1960))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000e6d (3693)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000c21 (3105)
+         LENGTH = 0x0000000000000010 (16)
+         VALUE = BRE_O_CD02O_DATA
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000008a (138)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000c20 (3104)
+         LENGTH = 0x0000000000000233 (563)
+         VALUE = <BRE_O_CD02O_DATA><BRE_O_CD02O_CONTACT>&A;</BRE_O_CD02O_CONTACT><BRE_O_CD02O_CONTACT0>&B;</BRE_O_CD02O_CONTACT0><BRE_O_CD02O_CONTACT1>&C;</BRE_O_CD02O_CONTACT1><BRE_O_CD02O_CONTACT2>&D;</BRE_O_CD02O_CONTACT2><BRE_O_CD02O_CONTACT3>&E;</BRE_O_CD02O_CONTACT3><BRE_O_CD02O_CONTACT4>&F;</BRE_O_CD02O_CONTACT4><BRE_O_CD02O_CONTACT5>&G;</BRE_O_CD02O_CONTACT5><BRE_O_CD02O_CONTACT6>&H;</BRE_O_CD02O_CONTACT6><BRE_O_CD02O_CONTACT7>&I;</BRE_O_CD02O_CONTACT7><BRE_O_CD02O_CONTACT8>&J;</BRE_O_CD02O_CONTACT8><BRE_O_CD02O_CONTACT9>&K;</BRE_O_CD02O_CONTACT9></BRE_O_CD02O_DATA>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000007e0 (2016))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000838 (2104)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000007f8 (2040))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000c33 (3123)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = BRE_O_CD02O_CONTACT
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000c47 (3143)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000838 (2104))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000890 (2192)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000850 (2128))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000c61 (3169)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT0
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000c76 (3190)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000890 (2192))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000008e8 (2280)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000008a8 (2216))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000c91 (3217)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT1
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000ca6 (3238)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &C;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000001e (30)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000001e (30)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000008e8 (2280))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000940 (2368)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000900 (2304))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000cc1 (3265)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT2
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000cd6 (3286)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &D;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000037 (55)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000037 (55)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000940 (2368))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000998 (2456)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000958 (2392))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 2
+       EXTENDED LAR = 0 (TOTAL LAR = 2)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000cf1 (3313)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT3
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d06 (3334)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &E;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000050 (80)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000050 (80)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000998 (2456))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000009f0 (2544)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000009b0 (2480))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 6
+       EXTENDED LAR = 0 (TOTAL LAR = 6)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000d21 (3361)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT4
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d36 (3382)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &F;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000052 (82)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000052 (82)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000009f0 (2544))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000a48 (2632)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000a08 (2568))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 6
+       EXTENDED LAR = 0 (TOTAL LAR = 6)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000d51 (3409)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT5
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d66 (3430)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &G;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000058 (88)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000058 (88)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000a48 (2632))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000aa0 (2720)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000a60 (2656))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 12
+       EXTENDED LAR = 0 (TOTAL LAR = 12)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000d81 (3457)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT6
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d96 (3478)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &H;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000005e (94)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000005e (94)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000aa0 (2720))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000af8 (2808)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000ab8 (2744))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 30
+       EXTENDED LAR = 0 (TOTAL LAR = 30)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000db1 (3505)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT7
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000dc6 (3526)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &I;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000006a (106)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000006a (106)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000af8 (2808))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000b50 (2896)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000b10 (2832))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000de1 (3553)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT8
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000df6 (3574)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &J;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000088 (136)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000088 (136)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000b50 (2896))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000ba8 (2984)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000b68 (2920))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000e11 (3601)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT9
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000e26 (3622)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &K;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000089 (137)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000089 (137)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000ba8 (2984))
+    RECORD TYPE = 4
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000bb0 (2992))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000c08 (3080)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000bc8 (3016))
+       RECORD TYPE = 1
+       DATA TYPE = INT
+       LAR = 0
+       EXTENDED LAR = 0 (TOTAL LAR = 0)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000ec2 (3778)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = http://www.read.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000e71 (3697)
+         LENGTH = 0x000000000000000d (13)
+         VALUE = BRE_O_EIBRESP
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000e7f (3711)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000008a (138)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000008a (138)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000c08 (3080))
+    RECORD TYPE = 4
+
+  End Repeat (Offset within ICM = 0x0000000000000c10 (3088))
+    RECORD TYPE = 4
+
+  End Data Section (Offset within ICM = 0x0000000000000c18 (3096))
+    RECORD TYPE = 5
+
+
+ICM Constants Section:
+Offset Of Start of Constants Section = 0x0000000000000c20 (3104)
+
+      OFFSET = 0x0000000000000c20 (3104)
+      LENGTH = 0x0000000000000233 (563)
+      VALUE = <BRE_O_CD02O_DATA><BRE_O_CD02O_CONTACT>&A;</BRE_O_CD02O_CONTACT><BRE_O_CD02O_CONTACT0>&B;</BRE_O_CD02O_CONTACT0><BRE_O_CD02O_CONTACT1>&C;</BRE_O_CD02O_CONTACT1><BRE_O_CD02O_CONTACT2>&D;</BRE_O_CD02O_CONTACT2><BRE_O_CD02O_CONTACT3>&E;</BRE_O_CD02O_CONTACT3><BRE_O_CD02O_CONTACT4>&F;</BRE_O_CD02O_CONTACT4><BRE_O_CD02O_CONTACT5>&G;</BRE_O_CD02O_CONTACT5><BRE_O_CD02O_CONTACT6>&H;</BRE_O_CD02O_CONTACT6><BRE_O_CD02O_CONTACT7>&I;</BRE_O_CD02O_CONTACT7><BRE_O_CD02O_CONTACT8>&J;</BRE_O_CD02O_CONTACT8><BRE_O_CD02O_CONTACT9>&K;</BRE_O_CD02O_CONTACT9></BRE_O_CD02O_DATA>
+
+      OFFSET = 0x0000000000000e53 (3667)
+      LENGTH = 0x000000000000005a (90)
+      VALUE = <BRE_OUT_OUTPUT_STRUCTURE>&A;<BRE_O_EIBRESP>&B;</BRE_O_EIBRESP></BRE_OUT_OUTPUT_STRUCTURE>
+
+      OFFSET = 0x0000000000000ead (3757)
+      LENGTH = 0x000000000000003c (60)
+      VALUE = <readResponse xmlns="http://www.read.com">&A;</readResponse>
+
+      OFFSET = 0x0000000000000ee9 (3817)
+      LENGTH = 0x0000000000000022 (34)
+      VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+
+
+ICM as data: ResponseICM(Response)
+------------
+
+
+Offset: 0x0000000000000000 (0)
+ 6ec4c6c8 c9c3d44c 00000007 00000000   00000000 00000f0b d985a297 9695a285         *>DFHICM<................Response*
+ c9c3d44d d985a297 9695a285 5d000000   00000000 00000000 00000000 0000008e         *ICM(Response)..................þ*
+ 00000000 00000ee9 00000000 00000022   00000000 000006f0 0000000f 0005f028         *.......Z...............0......0.*
+ 008000a0 00d80128 017801e0 024802b0   03180380 03e80450 04b80520 05880000         *.Ø.µ.Q...Ì.\.ç.^...Ø.Y.&.½...h..*
+ 000100a0 000006f0 130c0000 00000000   00000000 00000ec2 00000000 00000eae         *...µ...0...............B.......Þ*
+ 000200d8 00000740 130c0000 00000000   00000000 00000ec2 00000000 00000eae         *...Q... ...............B.......Þ*
+ 13180000 00000000 00000000 00000ec2   00000000 00000e54 00030178 00000790         *...............B.......è...Ì...°*
+ 130c0000 00000000 00000000 00000ec2   00000000 00000eae 13180000 00000000         *...............B.......Þ........*
+
+Offset: 0x0000000000000100 (256)
+ 00000000 00000ec2 00000000 00000e54   13100000 00000000 00000000 00000ec2         *.......B.......è...............B*
+ 00000000 00000c21 0003ffff 00000bb0   130c0000 00000000 00000000 00000ec2         *..........??...^...............B*
+ 00000000 00000eae 13180000 00000000   00000000 00000ec2 00000000 00000e54         *.......Þ...............B.......è*
+ 130d0000 00000000 00000000 00000ec2   00000000 00000e71 000401e0 000007e0         *...............B.......É...\...\*
+ 130c0000 00000000 00000000 00000ec2   00000000 00000eae 13180000 00000000         *...............B.......Þ........*
+ 00000000 00000ec2 00000000 00000e54   13100000 00000000 00000000 00000ec2         *.......B.......è...............B*
+ 00000000 00000c21 13130000 00000000   00000000 00000ec2 00000000 00000c33         *.......................B........*
+ 00040248 00000838 130c0000 00000000   00000000 00000ec2 00000000 00000eae         *...ç...................B.......Þ*
+
+Offset: 0x0000000000000200 (512)
+ 13180000 00000000 00000000 00000ec2   00000000 00000e54 13100000 00000000         *...............B.......è........*
+ 00000000 00000ec2 00000000 00000c21   13140000 00000000 00000000 00000ec2         *.......B.......................B*
+ 00000000 00000c61 000402b0 00000890   130c0000 00000000 00000000 00000ec2         *......./...^...°...............B*
+ 00000000 00000eae 13180000 00000000   00000000 00000ec2 00000000 00000e54         *.......Þ...............B.......è*
+ 13100000 00000000 00000000 00000ec2   00000000 00000c21 13140000 00000000         *...............B................*
+ 00000000 00000ec2 00000000 00000c91   00040318 000008e8 130c0000 00000000         *.......B.......j.......Y........*
+ 00000000 00000ec2 00000000 00000eae   13180000 00000000 00000000 00000ec2         *.......B.......Þ...............B*
+ 00000000 00000e54 13100000 00000000   00000000 00000ec2 00000000 00000c21         *.......è...............B........*
+
+Offset: 0x0000000000000300 (768)
+ 13140000 00000000 00000000 00000ec2   00000000 00000cc1 00040380 00000940         *...............B.......A...Ø... *
+ 130c0000 00000000 00000000 00000ec2   00000000 00000eae 13180000 00000000         *...............B.......Þ........*
+ 00000000 00000ec2 00000000 00000e54   13100000 00000000 00000000 00000ec2         *.......B.......è...............B*
+ 00000000 00000c21 13140000 00000000   00000000 00000ec2 00000000 00000cf1         *.......................B.......1*
+ 000403e8 00000998 130c0000 00000000   00000000 00000ec2 00000000 00000eae         *...Y...q...............B.......Þ*
+ 13180000 00000000 00000000 00000ec2   00000000 00000e54 13100000 00000000         *...............B.......è........*
+ 00000000 00000ec2 00000000 00000c21   13140000 00000000 00000000 00000ec2         *.......B.......................B*
+ 00000000 00000d21 00040450 000009f0   130c0000 00000000 00000000 00000ec2         *...........&...0...............B*
+
+Offset: 0x0000000000000400 (1024)
+ 00000000 00000eae 13180000 00000000   00000000 00000ec2 00000000 00000e54         *.......Þ...............B.......è*
+ 13100000 00000000 00000000 00000ec2   00000000 00000c21 13140000 00000000         *...............B................*
+ 00000000 00000ec2 00000000 00000d51   000404b8 00000a48 130c0000 00000000         *.......B.......é...½...ç........*
+ 00000000 00000ec2 00000000 00000eae   13180000 00000000 00000000 00000ec2         *.......B.......Þ...............B*
+ 00000000 00000e54 13100000 00000000   00000000 00000ec2 00000000 00000c21         *.......è...............B........*
+ 13140000 00000000 00000000 00000ec2   00000000 00000d81 00040520 00000aa0         *...............B.......a.......µ*
+ 130c0000 00000000 00000000 00000ec2   00000000 00000eae 13180000 00000000         *...............B.......Þ........*
+ 00000000 00000ec2 00000000 00000e54   13100000 00000000 00000000 00000ec2         *.......B.......è...............B*
+
+Offset: 0x0000000000000500 (1280)
+ 00000000 00000c21 13140000 00000000   00000000 00000ec2 00000000 00000db1         *.......................B.......£*
+ 00040588 00000af8 130c0000 00000000   00000000 00000ec2 00000000 00000eae         *...h...8...............B.......Þ*
+ 13180000 00000000 00000000 00000ec2   00000000 00000e54 13100000 00000000         *...............B.......è........*
+ 00000000 00000ec2 00000000 00000c21   13140000 00000000 00000000 00000ec2         *.......B.......................B*
+ 00000000 00000de1 00040128 00000b50   130c0000 00000000 00000000 00000ec2         *.......÷.......&...............B*
+ 00000000 00000eae 13180000 00000000   00000000 00000ec2 00000000 00000e54         *.......Þ...............B.......è*
+ 13100000 00000000 00000000 00000ec2   00000000 00000c21 13140000 00000000         *...............B................*
+ 00000000 00000ec2 00000000 00000e11   00000001 00000001 00000000 ffffffff         *.......B....................????*
+
+Offset: 0x0000000000000600 (1536)
+ 00000002 00000002 00000001 00000080   00000003 00000004 00000002 000000a0         *...............Ø...............µ*
+ 00000005 0000000f 00000003 000000d8   00007fff 00000000 00000003 00000128         *...............Q.."?............*
+ 00007fff 00000000 00000004 00000178   00007fff 00000000 00000004 000001e0         *.."?...........Ì.."?...........\*
+ 00007fff 00000000 00000004 00000248   00007fff 00000000 00000004 000002b0         *.."?...........ç.."?...........^*
+ 00007fff 00000000 00000004 00000318   00007fff 00000000 00000004 00000380         *.."?.............."?...........Ø*
+ 00007fff 00000000 00000004 000003e8   00007fff 00000000 00000004 00000450         *.."?...........Y.."?...........&*
+ 00007fff 00000000 00000004 000004b8   00007fff 00000000 00000004 00000520         *.."?...........½.."?............*
+ 00007fff 00000000 00000004 00000588   07000050 00000740 ffffffff 00000c10         *.."?...........h...&... ????....*
+
+Offset: 0x0000000000000700 (1792)
+ 00000000 00000000 02010001 0000030c   00000000 0000008e 00000000 00000000         *.......................þ........*
+ 00000000 00000ef8 00000000 00000eae   00000000 0000003c 00000000 00000ead         *.......8.......Þ...............Ý*
+ 07000050 00000790 ffffffff 00000c08   00000000 00000000 02010001 00000318         *...&...°????....................*
+ 00000000 0000008e 00000000 00000000   00000000 00000ed7 00000000 00000e54         *.......þ...............P.......è*
+ 00000000 0000005a 00000000 00000e53   07000050 000007e0 ffffffff 00000ba8         *.......!.......ë...&...\????...y*
+ 00000000 00000000 02010001 00000310   00000000 0000008a 00000000 00000000         *.......................«........*
+ 00000000 00000e6d 00000000 00000c21   00000000 00000233 00000000 00000c20         *......._........................*
+ 06000058 00000838 ffffffff ffffffff   00000000 00000000 01010005 ff000013         *...ì....????????............?...*
+
+Offset: 0x0000000000000800 (2048)
+ 00130003 00000000 00000000 00000000   00000000 00000ec2 00000000 00000c33         *.......................B........*
+ 00000000 00000c47 ffffffff ffffffff   ffffffff ffffffff 06000058 00000890         *.......å????????????????...ì...°*
+ ffffffff ffffffff 00000000 00000000   01010019 ff000013 00140003 00000000         *????????............?...........*
+ 00000000 00000005 00000000 00000ec2   00000000 00000c61 00000000 00000c76         *...............B......./.......Î*
+ ffffffff ffffffff ffffffff ffffffff   06000058 000008e8 ffffffff ffffffff         *????????????????...ì...Y????????*
+ 00000000 00000000 01010019 ff000013   00140003 00000000 00000000 0000001e         *............?...................*
+ 00000000 00000ec2 00000000 00000c91   00000000 00000ca6 ffffffff ffffffff         *.......B.......j.......w????????*
+ ffffffff ffffffff 06000058 00000940   ffffffff ffffffff 00000000 00000000         *????????...ì... ????????........*
+
+Offset: 0x0000000000000900 (2304)
+ 01010019 ff000013 00140003 00000000   00000000 00000037 00000000 00000ec2         *....?..........................B*
+ 00000000 00000cc1 00000000 00000cd6   ffffffff ffffffff ffffffff ffffffff         *.......A.......O????????????????*
+ 06000058 00000998 ffffffff ffffffff   00000000 00000000 01010002 ff000013         *...ì...q????????............?...*
+ 00140003 00000000 00000000 00000050   00000000 00000ec2 00000000 00000cf1         *...............&.......B.......1*
+ 00000000 00000d06 ffffffff ffffffff   ffffffff ffffffff 06000058 000009f0         *........????????????????...ì...0*
+ ffffffff ffffffff 00000000 00000000   01010006 ff000013 00140003 00000000         *????????............?...........*
+ 00000000 00000052 00000000 00000ec2   00000000 00000d21 00000000 00000d36         *.......ê.......B................*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000a48 ffffffff ffffffff         *????????????????...ì...ç????????*
+
+Offset: 0x0000000000000a00 (2560)
+ 00000000 00000000 01010006 ff000013   00140003 00000000 00000000 00000058         *............?..................ì*
+ 00000000 00000ec2 00000000 00000d51   00000000 00000d66 ffffffff ffffffff         *.......B.......é.......Ã????????*
+ ffffffff ffffffff 06000058 00000aa0   ffffffff ffffffff 00000000 00000000         *????????...ì...µ????????........*
+ 0101000c ff000013 00140003 00000000   00000000 0000005e 00000000 00000ec2         *....?..................;.......B*
+ 00000000 00000d81 00000000 00000d96   ffffffff ffffffff ffffffff ffffffff         *.......a.......o????????????????*
+ 06000058 00000af8 ffffffff ffffffff   00000000 00000000 0101001e ff000013         *...ì...8????????............?...*
+ 00140003 00000000 00000000 0000006a   00000000 00000ec2 00000000 00000db1         *...............¦.......B.......£*
+ 00000000 00000dc6 ffffffff ffffffff   ffffffff ffffffff 06000058 00000b50         *.......F????????????????...ì...&*
+
+Offset: 0x0000000000000b00 (2816)
+ ffffffff ffffffff 00000000 00000000   01010001 ff000013 00140003 00000000         *????????............?...........*
+ 00000000 00000088 00000000 00000ec2   00000000 00000de1 00000000 00000df6         *.......h.......B.......÷.......6*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000ba8 ffffffff ffffffff         *????????????????...ì...y????????*
+ 00000000 00000000 01010001 ff000013   00140003 00000000 00000000 00000089         *............?..................i*
+ 00000000 00000ec2 00000000 00000e11   00000000 00000e26 ffffffff ffffffff         *.......B................????????*
+ ffffffff ffffffff 04000000 00000000   06000058 00000c08 ffffffff ffffffff         *????????...........ì....????????*
+ 00000000 00000000 01070000 ff000013   000d0003 00000000 00000000 0000008a         *............?..................«*
+ 00000000 00000ec2 00000000 00000e71   00000000 00000e7f ffffffff ffffffff         *.......B.......É......."????????*
+
+Offset: 0x0000000000000c00 (3072)
+ ffffffff ffffffff 04000000 00000000   04000000 00000000 05000000 00000000         *????????........................*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc4c1e3   c16e4cc2 d9c56dd6 6dc3c4f0 f2d66dc3         *<BRE_O_CD02O_DATA><BRE_O_CD02O_C*
+ d6d5e3c1 c3e36e50 c15e4c61 c2d9c56d   d66dc3c4 f0f2d66d c3d6d5e3 c1c3e36e         *ONTACT>&A;</BRE_O_CD02O_CONTACT>*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5   e3c1c3e3 f06e50c2 5e4c61c2 d9c56dd6         *<BRE_O_CD02O_CONTACT0>&B;</BRE_O*
+ 6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f06e   4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5         *_CD02O_CONTACT0><BRE_O_CD02O_CON*
+ e3c1c3e3 f16e50c3 5e4c61c2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f16e         *TACT1>&C;</BRE_O_CD02O_CONTACT1>*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5   e3c1c3e3 f26e50c4 5e4c61c2 d9c56dd6         *<BRE_O_CD02O_CONTACT2>&D;</BRE_O*
+ 6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f26e   4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5         *_CD02O_CONTACT2><BRE_O_CD02O_CON*
+
+Offset: 0x0000000000000d00 (3328)
+ e3c1c3e3 f36e50c5 5e4c61c2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f36e         *TACT3>&E;</BRE_O_CD02O_CONTACT3>*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5   e3c1c3e3 f46e50c6 5e4c61c2 d9c56dd6         *<BRE_O_CD02O_CONTACT4>&F;</BRE_O*
+ 6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f46e   4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5         *_CD02O_CONTACT4><BRE_O_CD02O_CON*
+ e3c1c3e3 f56e50c7 5e4c61c2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f56e         *TACT5>&G;</BRE_O_CD02O_CONTACT5>*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5   e3c1c3e3 f66e50c8 5e4c61c2 d9c56dd6         *<BRE_O_CD02O_CONTACT6>&H;</BRE_O*
+ 6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f66e   4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5         *_CD02O_CONTACT6><BRE_O_CD02O_CON*
+ e3c1c3e3 f76e50c9 5e4c61c2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f76e         *TACT7>&I;</BRE_O_CD02O_CONTACT7>*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5   e3c1c3e3 f86e50d1 5e4c61c2 d9c56dd6         *<BRE_O_CD02O_CONTACT8>&J;</BRE_O*
+
+Offset: 0x0000000000000e00 (3584)
+ 6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f86e   4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5         *_CD02O_CONTACT8><BRE_O_CD02O_CON*
+ e3c1c3e3 f96e50d2 5e4c61c2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f96e         *TACT9>&K;</BRE_O_CD02O_CONTACT9>*
+ 4c61c2d9 c56dd66d c3c4f0f2 d66dc4c1   e3c16e4c c2d9c56d d6e4e36d d6e4e3d7         *</BRE_O_CD02O_DATA><BRE_OUT_OUTP*
+ e4e36de2 e3d9e4c3 e3e4d9c5 6e50c15e   4cc2d9c5 6dd66dc5 c9c2d9c5 e2d76e50         *UT_STRUCTURE>&A;<BRE_O_EIBRESP>&*
+ c25e4c61 c2d9c56d d66dc5c9 c2d9c5e2   d76e4c61 c2d9c56d d6e4e36d d6e4e3d7         *B;</BRE_O_EIBRESP></BRE_OUT_OUTP*
+ e4e36de2 e3d9e4c3 e3e4d9c5 6e4c9985   8184d985 a2979695 a28540a7 949395a2         *UT_STRUCTURE><readResponse xmlns*
+ 7e7f88a3 a3977a61 61a6a6a6 4b998581   844b8396 947f6e50 c15e4c61 99858184         *="http://www.read.com">&A;</read*
+ d985a297 9695a285 6e4ce2d6 c1d760c5   d5e57ac2 9684a86e 50c15e4c 61e2d6c1         *Response><SOAP-ENV:Body>&A;</SOA*
+
+Offset: 0x0000000000000f00 (3840)
+ d760c5d5 e57ac296 84a86e      *P-ENV:Body>*
+
+
+Total length of binary data is: 0x0000000000000f0b (3851)
+
+WSBIND generation completed successfully.

@@ -1,0 +1,2822 @@
+Log file from: LS2JS v6.0.00
+WSBIND file: C:\Users\Administrator\workspace\UPDATE\updat.wsbind
+Mode: Provider
+Created: Fri Aug 27 15:47:46 2021
+Product: Enterprise Developer v6.0.00
+-----------------------------
+
+Parameter "BINDING" has value "null".
+Parameter "BUNDLE" has value "null".
+Parameter "CCSID" has value "null".
+Parameter "CHAR-MULTIPLIER" has value "1".
+Parameter "CHAR-OCCURS" has value "ARRAY".
+Parameter "CHAR-USAGE" has value "NATIONAL".
+Parameter "CHAR-VARYING" has value "NO".
+Parameter "CHAR-WHITESPACE" has value "COLLAPSE".
+Parameter "CONTID" has value "null".
+Parameter "DATA-TRUNCATION" has value "DISABLED".
+Parameter "DATETIME" has value "UNUSED".
+Parameter "DEFAULT-CHAR-MAXLENGTH" has value "255".
+Parameter "HTTPMETHODS" has value "null".
+Parameter "HTTPPROXY" has value "null".
+Parameter "HTTPPROXY-USERNAME" has value "null".
+Parameter "HTTPPROXY-PASSWORD" has value "null".
+Parameter "INLINE-MAXOCCURS-LIMIT" has value "1".
+Parameter "JSON-SCHEMA" has value "null".
+Parameter "JSON-SCHEMA-REQUEST" has value "C:\Users\Administrator\workspace\UPDATE\json\updatereq.json".
+Parameter "JSON-SCHEMA-RESPONSE" has value "C:\Users\Administrator\workspace\UPDATE\json\updateresp.json".
+Parameter "JSON-SCHEMA-RESTFUL" has value "null".
+Parameter "JSONTRANSFRM" has value "null".
+Parameter "LANG" has value "COBOL".
+Parameter "LOGFILE" has value "C:\Users\Administrator\workspace\UPDATE\updat.log".
+Parameter "MAPPING-LEVEL" has value "3.0".
+Parameter "MAPPING-OVERRIDES" has value "null".
+Parameter "NAME-TRUNCATION" has value "RIGHT".
+Parameter "OPERATIONS" has value "null".
+Parameter "OPERATION-NAME" has value "UPDTDRVROperation".
+Parameter "PDSMEM" has value "null".
+Parameter "PGMINT" has value "COMMAREA".
+Parameter "PGMNAME" has value "UPDTDRVR".
+Parameter "REQMEM" has value "C:\Users\Administrator\workspace\UPDATE\copybook\UPDTREQ.cpy".
+Parameter "REQUEST-CHANNEL" has value "null".
+Parameter "REQUEST-NAMESPACE" has value "null".
+Parameter "RESPMEM" has value "C:\Users\Administrator\workspace\UPDATE\copybook\UPDTRESP.cpy".
+Parameter "RESPONSE-CHANNEL" has value "null".
+Parameter "RESPONSE-NAMESPACE" has value "null".
+Parameter "SERVICE" has value "null".
+Parameter "SOAPVER" has value "1.1".
+Parameter "SYNCONRETURN" has value "NO".
+Parameter "TRANSACTION" has value "null".
+Parameter "URI" has value "http://localhost:9879/cics/updateaddr".
+Parameter "USERID" has value "null".
+Parameter "VENDOR-CONVERTER-NAME" has value "null".
+Parameter "VENDOR-APP-INTERFACE-LENGTH" has value "null".
+Parameter "VENDOR-META-DATA" has value "null".
+Parameter "WSBIND" has value "C:\Users\Administrator\workspace\UPDATE\updat.wsbind".
+Parameter "WSDL" has value "null".
+Parameter "WSDLCP" has value "UTF-8".
+Parameter "WSDL-NAMESPACE" has value "".
+Parameter "WSDL-SERVICE" has value "null".
+Parameter "WSDL_1.1" has value "null".
+Parameter "WSDL_2.0" has value "null".
+Parameter "XML-ONLY" has value "false".
+Parameter "SSL-TRUSTSTORE" has value "null".
+Parameter "SSL-TRUSTPWD" has value "null".
+Parameter "SSL-KEYSTORE" has value "null".
+Parameter "SSL-KEYPWD" has value "null".
+Parameter "WSRR-SERVER" has value "null".
+Parameter "WSRR-NAME" has value "null".
+Parameter "WSRR-NAMESPACE" has value "null".
+Parameter "WSRR-VERSION" has value "null".
+Parameter "WSRR-USERNAME" has value "null".
+Parameter "WSRR-PASSWORD" has value "null".
+Parameter "WSRR-DESCRIPTION" has value "null".
+Parameter "WSRR-ENCODING" has value "null".
+Parameter "WSRR-LOCATION" has value "null".
+Parameter "WIDE-COMP3" has value "NO".
+
+
+Creating ICM: RequestICM(Request)
+-------------
+
+ style: WRAPPED_DOCUMENT
+ wsdlOperationNS: http://www.updat.com
+ wsdlOperationName: UPDTDRVROperation
+ message type: Request Message
+
+ICM as text: RequestICM(Request)
+------------
+
+ICM Header Section:
+
+  EYECATCHER = >DFHICM<
+  MAPPING LEVEL = 7
+  ICM LENGTH =  0x0000000000000a62 (2658)
+  ICM NAME = RequestICM(Request)
+  SIZE OF STRUCTURE = 0x0000000000000065 (101)
+  XML TEMPLATE
+    OFFSET = 0x0000000000000a40 (2624)
+    LENGTH = 0x0000000000000022 (34)
+    VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+  DATA OFFSET = 0x0000000000000460 (1120)
+
+
+ICM Index Section: Offset of Start of Index Section = 0x0000000000000058 (88)
+
+  NUMBER OF INDEX ENTRIES = 11
+
+  OPTIMIZED INDEX OFFSET = 0x00000000000003a0 (928)
+  DATA TRUNCATION SUPPORTED =  false
+  XSI TYPE IN FIRST TAG =  false
+  OPTIMIZED INDEX AVAILABLE =  true
+  XOP ELIGIBLE =  false
+  RESPONSE MESSAGE =  false
+  REQUEST MESSAGE =  true
+  ATTRIBUTES SIGNIFICANT =  false
+  NAMESPACE SIGNIFICANT =  false
+
+  Index Offset: 0x0000000000000078 (120)
+  Index Offset: 0x0000000000000098 (152)
+  Index Offset: 0x00000000000000d0 (208)
+  Index Offset: 0x0000000000000120 (288)
+  Index Offset: 0x0000000000000170 (368)
+  Index Offset: 0x00000000000001c0 (448)
+  Index Offset: 0x0000000000000210 (528)
+  Index Offset: 0x0000000000000260 (608)
+  Index Offset: 0x00000000000002b0 (688)
+  Index Offset: 0x0000000000000300 (768)
+  Index Offset: 0x0000000000000350 (848)
+
+  Index Entry (Offset within ICM = 0x0000000000000078 (120))
+   POSITION NUMBER = 1
+   XPATH (TEXT = /updat)
+    XPATH PARTS = 1
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+   DATA OFFSET = 0x0000000000000460 (1120)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000098 (152)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000098 (152))
+   POSITION NUMBER = 2
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE)
+    XPATH PARTS = 2
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+   DATA OFFSET = 0x00000000000004b0 (1200)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000d0 (208)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000d0 (208))
+   POSITION NUMBER = 3
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT'
+      offset '0x000000000000084a (2122)'
+      length '19'
+
+   DATA OFFSET = 0x0000000000000500 (1280)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000120 (288)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000120 (288))
+   POSITION NUMBER = 4
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT0)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT0'
+      offset '0x0000000000000878 (2168)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000558 (1368)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000170 (368)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000170 (368))
+   POSITION NUMBER = 5
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT1)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT1'
+      offset '0x00000000000008a8 (2216)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000005b0 (1456)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000001c0 (448)
+
+
+  Index Entry (Offset within ICM = 0x00000000000001c0 (448))
+   POSITION NUMBER = 6
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT2)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT2'
+      offset '0x00000000000008d8 (2264)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000608 (1544)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000210 (528)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000210 (528))
+   POSITION NUMBER = 7
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT3)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT3'
+      offset '0x0000000000000908 (2312)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000660 (1632)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000260 (608)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000260 (608))
+   POSITION NUMBER = 8
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT4)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT4'
+      offset '0x0000000000000938 (2360)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000006b8 (1720)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000002b0 (688)
+
+
+  Index Entry (Offset within ICM = 0x00000000000002b0 (688))
+   POSITION NUMBER = 9
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT5)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT5'
+      offset '0x0000000000000968 (2408)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000710 (1808)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000300 (768)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000300 (768))
+   POSITION NUMBER = 10
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT6)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT6'
+      offset '0x0000000000000998 (2456)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000768 (1896)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000350 (848)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000350 (848))
+   POSITION NUMBER = 11
+   XPATH (TEXT = /updat/BRE_INP_INPUT_STRUCTURE/BRE_I_CD02I_CONTACT7)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'updat'
+      offset '0x0000000000000a12 (2578)'
+      length '5'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_INP_INPUT_STRUCTURE'
+      offset '0x0000000000000831 (2097)'
+      length '23'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000a1f (2591)'
+      length '20'
+     ELEMENT
+      value 'BRE_I_CD02I_CONTACT7'
+      offset '0x00000000000009c8 (2504)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000007c0 (1984)
+   PROBABLE NEXT INDEX ENTRY = unknown
+
+
+  ICM OPTIMIZED INDEX:
+
+   ENTRY NUMBER: 1
+     FIRST CHILD POS = 2
+     LAST CHILD POS = 2
+     NESTING LEVEL = 1
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000078 (120)
+
+   ENTRY NUMBER: 2
+     FIRST CHILD POS = 3
+     LAST CHILD POS = 11
+     NESTING LEVEL = 2
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000098 (152)
+
+   ENTRY NUMBER: 3
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000d0 (208)
+
+   ENTRY NUMBER: 4
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000120 (288)
+
+   ENTRY NUMBER: 5
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000170 (368)
+
+   ENTRY NUMBER: 6
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000001c0 (448)
+
+   ENTRY NUMBER: 7
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000210 (528)
+
+   ENTRY NUMBER: 8
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000260 (608)
+
+   ENTRY NUMBER: 9
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000002b0 (688)
+
+   ENTRY NUMBER: 10
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000300 (768)
+
+   ENTRY NUMBER: 11
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000350 (848)
+
+ICM Data Section:
+Offset Of Start of Data Section = 0x0000000000000460 (1120)
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000460 (1120))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000004b0 (1200)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000820 (2080)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000478 (1144))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000a4f (2639)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000a12 (2578)
+         LENGTH = 0x0000000000000005 (5)
+         VALUE = updat
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x0000000000000065 (101)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000a11 (2577)
+         LENGTH = 0x000000000000002f (47)
+         VALUE = <updat xmlns="http://www.updat.com">&A;</updat>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x00000000000004b0 (1200))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000500 (1280)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000818 (2072)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x00000000000004c8 (1224))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000a35 (2613)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000831 (2097)
+         LENGTH = 0x0000000000000017 (23)
+         VALUE = BRE_INP_INPUT_STRUCTURE
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x0000000000000065 (101)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000830 (2096)
+         LENGTH = 0x00000000000001e1 (481)
+         VALUE = <BRE_INP_INPUT_STRUCTURE><BRE_I_CD02I_CONTACT>&A;</BRE_I_CD02I_CONTACT><BRE_I_CD02I_CONTACT0>&B;</BRE_I_CD02I_CONTACT0><BRE_I_CD02I_CONTACT1>&C;</BRE_I_CD02I_CONTACT1><BRE_I_CD02I_CONTACT2>&D;</BRE_I_CD02I_CONTACT2><BRE_I_CD02I_CONTACT3>&E;</BRE_I_CD02I_CONTACT3><BRE_I_CD02I_CONTACT4>&F;</BRE_I_CD02I_CONTACT4><BRE_I_CD02I_CONTACT5>&G;</BRE_I_CD02I_CONTACT5><BRE_I_CD02I_CONTACT6>&H;</BRE_I_CD02I_CONTACT6><BRE_I_CD02I_CONTACT7>&I;</BRE_I_CD02I_CONTACT7></BRE_INP_INPUT_STRUCTURE>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000500 (1280))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000558 (1368)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000518 (1304))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x000000000000084a (2122)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = BRE_I_CD02I_CONTACT
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000085e (2142)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000558 (1368))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000005b0 (1456)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000570 (1392))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000878 (2168)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT0
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000088d (2189)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000005b0 (1456))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000608 (1544)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000005c8 (1480))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x00000000000008a8 (2216)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT1
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000008bd (2237)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &C;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000001e (30)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000001e (30)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000608 (1544))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000660 (1632)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000620 (1568))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 2
+       EXTENDED LAR = 0 (TOTAL LAR = 2)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x00000000000008d8 (2264)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT2
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000008ed (2285)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &D;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000037 (55)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000037 (55)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000660 (1632))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000006b8 (1720)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000678 (1656))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 6
+       EXTENDED LAR = 0 (TOTAL LAR = 6)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000908 (2312)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT3
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000091d (2333)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &E;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000039 (57)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000039 (57)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000006b8 (1720))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000710 (1808)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000006d0 (1744))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 6
+       EXTENDED LAR = 0 (TOTAL LAR = 6)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000938 (2360)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT4
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000094d (2381)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &F;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000003f (63)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000003f (63)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000710 (1808))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000768 (1896)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000728 (1832))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 30
+       EXTENDED LAR = 0 (TOTAL LAR = 30)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000968 (2408)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT5
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x000000000000097d (2429)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &G;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000045 (69)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000045 (69)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000768 (1896))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000007c0 (1984)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000780 (1920))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000998 (2456)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT6
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000009ad (2477)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &H;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000063 (99)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000063 (99)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000007c0 (1984))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000818 (2072)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000007d8 (2008))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000a1f (2591)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x00000000000009c8 (2504)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_I_CD02I_CONTACT7
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x00000000000009dd (2525)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &I;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000064 (100)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000064 (100)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000818 (2072))
+    RECORD TYPE = 4
+
+  End Repeat (Offset within ICM = 0x0000000000000820 (2080))
+    RECORD TYPE = 4
+
+  End Data Section (Offset within ICM = 0x0000000000000828 (2088))
+    RECORD TYPE = 5
+
+
+ICM Constants Section:
+Offset Of Start of Constants Section = 0x0000000000000830 (2096)
+
+      OFFSET = 0x0000000000000830 (2096)
+      LENGTH = 0x00000000000001e1 (481)
+      VALUE = <BRE_INP_INPUT_STRUCTURE><BRE_I_CD02I_CONTACT>&A;</BRE_I_CD02I_CONTACT><BRE_I_CD02I_CONTACT0>&B;</BRE_I_CD02I_CONTACT0><BRE_I_CD02I_CONTACT1>&C;</BRE_I_CD02I_CONTACT1><BRE_I_CD02I_CONTACT2>&D;</BRE_I_CD02I_CONTACT2><BRE_I_CD02I_CONTACT3>&E;</BRE_I_CD02I_CONTACT3><BRE_I_CD02I_CONTACT4>&F;</BRE_I_CD02I_CONTACT4><BRE_I_CD02I_CONTACT5>&G;</BRE_I_CD02I_CONTACT5><BRE_I_CD02I_CONTACT6>&H;</BRE_I_CD02I_CONTACT6><BRE_I_CD02I_CONTACT7>&I;</BRE_I_CD02I_CONTACT7></BRE_INP_INPUT_STRUCTURE>
+
+      OFFSET = 0x0000000000000a11 (2577)
+      LENGTH = 0x000000000000002f (47)
+      VALUE = <updat xmlns="http://www.updat.com">&A;</updat>
+
+      OFFSET = 0x0000000000000a40 (2624)
+      LENGTH = 0x0000000000000022 (34)
+      VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+
+
+ICM as data: RequestICM(Request)
+------------
+
+
+Offset: 0x0000000000000000 (0)
+ 6ec4c6c8 c9c3d44c 00000007 00000000   00000000 00000a62 d98598a4 85a2a3c9         *>DFHICM<...............ÂRequestI*
+ c3d44dd9 8598a485 a2a35d00 00000000   00000000 00000000 00000000 00000065         *CM(Request)....................Á*
+ 00000000 00000a40 00000000 00000022   00000000 00000460 0000000b 0003a024         *....... ...............-......µ.*
+ 00780098 00d00120 017001c0 02100260   02b00300 03500000 00010098 00000460         *.Ì.q.}...ø.{...-.^...&.....q...-*
+ 14050000 00000000 00000000 00000a1f   00000000 00000a12 000200d0 000004b0         *...........................}...^*
+ 14050000 00000000 00000000 00000a1f   00000000 00000a12 14170000 00000000         *................................*
+ 00000000 00000a1f 00000000 00000831   00030120 00000500 14050000 00000000         *................................*
+ 00000000 00000a1f 00000000 00000a12   14170000 00000000 00000000 00000a1f         *................................*
+
+Offset: 0x0000000000000100 (256)
+ 00000000 00000831 14130000 00000000   00000000 00000a1f 00000000 0000084a         *...............................¢*
+ 00030170 00000558 14050000 00000000   00000000 00000a1f 00000000 00000a12         *...ø...ì........................*
+ 14170000 00000000 00000000 00000a1f   00000000 00000831 14140000 00000000         *................................*
+ 00000000 00000a1f 00000000 00000878   000301c0 000005b0 14050000 00000000         *...............Ì...{...^........*
+ 00000000 00000a1f 00000000 00000a12   14170000 00000000 00000000 00000a1f         *................................*
+ 00000000 00000831 14140000 00000000   00000000 00000a1f 00000000 000008a8         *...............................y*
+ 00030210 00000608 14050000 00000000   00000000 00000a1f 00000000 00000a12         *................................*
+ 14170000 00000000 00000000 00000a1f   00000000 00000831 14140000 00000000         *................................*
+
+Offset: 0x0000000000000200 (512)
+ 00000000 00000a1f 00000000 000008d8   00030260 00000660 14050000 00000000         *...............Q...-...-........*
+ 00000000 00000a1f 00000000 00000a12   14170000 00000000 00000000 00000a1f         *................................*
+ 00000000 00000831 14140000 00000000   00000000 00000a1f 00000000 00000908         *................................*
+ 000302b0 000006b8 14050000 00000000   00000000 00000a1f 00000000 00000a12         *...^...½........................*
+ 14170000 00000000 00000000 00000a1f   00000000 00000831 14140000 00000000         *................................*
+ 00000000 00000a1f 00000000 00000938   00030300 00000710 14050000 00000000         *................................*
+ 00000000 00000a1f 00000000 00000a12   14170000 00000000 00000000 00000a1f         *................................*
+ 00000000 00000831 14140000 00000000   00000000 00000a1f 00000000 00000968         *...............................Ç*
+
+Offset: 0x0000000000000300 (768)
+ 00030350 00000768 14050000 00000000   00000000 00000a1f 00000000 00000a12         *...&...Ç........................*
+ 14170000 00000000 00000000 00000a1f   00000000 00000831 14140000 00000000         *................................*
+ 00000000 00000a1f 00000000 00000998   0003ffff 000007c0 14050000 00000000         *...............q..??...{........*
+ 00000000 00000a1f 00000000 00000a12   14170000 00000000 00000000 00000a1f         *................................*
+ 00000000 00000831 14140000 00000000   00000000 00000a1f 00000000 000009c8         *...............................H*
+ 00000001 00000001 00000000 ffffffff   00000002 00000002 00000001 00000078         *............????...............Ì*
+ 00000003 0000000b 00000002 00000098   00007fff 00000000 00000003 000000d0         *...............q.."?...........}*
+ 00007fff 00000000 00000003 00000120   00007fff 00000000 00000003 00000170         *.."?.............."?...........ø*
+
+Offset: 0x0000000000000400 (1024)
+ 00007fff 00000000 00000003 000001c0   00007fff 00000000 00000003 00000210         *.."?...........{.."?............*
+ 00007fff 00000000 00000003 00000260   00007fff 00000000 00000003 000002b0         *.."?...........-.."?...........^*
+ 00007fff 00000000 00000003 00000300   00007fff 00000000 00000003 00000350         *.."?.............."?...........&*
+ 07000050 000004b0 ffffffff 00000820   00000000 00000000 02010001 00000305         *...&...^????....................*
+ 00000000 00000065 00000000 00000000   00000000 00000a4f 00000000 00000a12         *.......Á...............|........*
+ 00000000 0000002f 00000000 00000a11   07000050 00000500 ffffffff 00000818         *...................&....????....*
+ 00000000 00000000 02010001 00000317   00000000 00000065 00000000 00000000         *.......................Á........*
+ 00000000 00000a35 00000000 00000831   00000000 000001e1 00000000 00000830         *.......................÷........*
+
+Offset: 0x0000000000000500 (1280)
+ 06000058 00000558 ffffffff ffffffff   00000000 00000000 01010005 ff000014         *...ì...ì????????............?...*
+ 00130003 00000000 00000000 00000000   00000000 00000a1f 00000000 0000084a         *...............................¢*
+ 00000000 0000085e ffffffff ffffffff   ffffffff ffffffff 06000058 000005b0         *.......;????????????????...ì...^*
+ ffffffff ffffffff 00000000 00000000   01010019 ff000014 00140003 00000000         *????????............?...........*
+ 00000000 00000005 00000000 00000a1f   00000000 00000878 00000000 0000088d         *.......................Ì.......ý*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000608 ffffffff ffffffff         *????????????????...ì....????????*
+ 00000000 00000000 01010019 ff000014   00140003 00000000 00000000 0000001e         *............?...................*
+ 00000000 00000a1f 00000000 000008a8   00000000 000008bd ffffffff ffffffff         *...............y.......¨????????*
+
+Offset: 0x0000000000000600 (1536)
+ ffffffff ffffffff 06000058 00000660   ffffffff ffffffff 00000000 00000000         *????????...ì...-????????........*
+ 01010002 ff000014 00140003 00000000   00000000 00000037 00000000 00000a1f         *....?...........................*
+ 00000000 000008d8 00000000 000008ed   ffffffff ffffffff ffffffff ffffffff         *.......Q.......Ò????????????????*
+ 06000058 000006b8 ffffffff ffffffff   00000000 00000000 01010006 ff000014         *...ì...½????????............?...*
+ 00140003 00000000 00000000 00000039   00000000 00000a1f 00000000 00000908         *................................*
+ 00000000 0000091d ffffffff ffffffff   ffffffff ffffffff 06000058 00000710         *........????????????????...ì....*
+ ffffffff ffffffff 00000000 00000000   01010006 ff000014 00140003 00000000         *????????............?...........*
+ 00000000 0000003f 00000000 00000a1f   00000000 00000938 00000000 0000094d         *...............................(*
+
+Offset: 0x0000000000000700 (1792)
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000768 ffffffff ffffffff         *????????????????...ì...Ç????????*
+ 00000000 00000000 0101001e ff000014   00140003 00000000 00000000 00000045         *............?..................á*
+ 00000000 00000a1f 00000000 00000968   00000000 0000097d ffffffff ffffffff         *...............Ç.......'????????*
+ ffffffff ffffffff 06000058 000007c0   ffffffff ffffffff 00000000 00000000         *????????...ì...{????????........*
+ 01010001 ff000014 00140003 00000000   00000000 00000063 00000000 00000a1f         *....?..................Ä........*
+ 00000000 00000998 00000000 000009ad   ffffffff ffffffff ffffffff ffffffff         *.......q.......Ý????????????????*
+ 06000058 00000818 ffffffff ffffffff   00000000 00000000 01010001 ff000014         *...ì....????????............?...*
+ 00140003 00000000 00000000 00000064   00000000 00000a1f 00000000 000009c8         *...............À...............H*
+
+Offset: 0x0000000000000800 (2048)
+ 00000000 000009dd ffffffff ffffffff   ffffffff ffffffff 04000000 00000000         *.......ù????????????????........*
+ 04000000 00000000 05000000 00000000   4cc2d9c5 6dc9d5d7 6dc9d5d7 e4e36de2         *................<BRE_INP_INPUT_S*
+ e3d9e4c3 e3e4d9c5 6e4cc2d9 c56dc96d   c3c4f0f2 c96dc3d6 d5e3c1c3 e36e50c1         *TRUCTURE><BRE_I_CD02I_CONTACT>&A*
+ 5e4c61c2 d9c56dc9 6dc3c4f0 f2c96dc3   d6d5e3c1 c3e36e4c c2d9c56d c96dc3c4         *;</BRE_I_CD02I_CONTACT><BRE_I_CD*
+ f0f2c96d c3d6d5e3 c1c3e3f0 6e50c25e   4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6         *02I_CONTACT0>&B;</BRE_I_CD02I_CO*
+ d5e3c1c3 e3f06e4c c2d9c56d c96dc3c4   f0f2c96d c3d6d5e3 c1c3e3f1 6e50c35e         *NTACT0><BRE_I_CD02I_CONTACT1>&C;*
+ 4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6   d5e3c1c3 e3f16e4c c2d9c56d c96dc3c4         *</BRE_I_CD02I_CONTACT1><BRE_I_CD*
+ f0f2c96d c3d6d5e3 c1c3e3f2 6e50c45e   4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6         *02I_CONTACT2>&D;</BRE_I_CD02I_CO*
+
+Offset: 0x0000000000000900 (2304)
+ d5e3c1c3 e3f26e4c c2d9c56d c96dc3c4   f0f2c96d c3d6d5e3 c1c3e3f3 6e50c55e         *NTACT2><BRE_I_CD02I_CONTACT3>&E;*
+ 4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6   d5e3c1c3 e3f36e4c c2d9c56d c96dc3c4         *</BRE_I_CD02I_CONTACT3><BRE_I_CD*
+ f0f2c96d c3d6d5e3 c1c3e3f4 6e50c65e   4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6         *02I_CONTACT4>&F;</BRE_I_CD02I_CO*
+ d5e3c1c3 e3f46e4c c2d9c56d c96dc3c4   f0f2c96d c3d6d5e3 c1c3e3f5 6e50c75e         *NTACT4><BRE_I_CD02I_CONTACT5>&G;*
+ 4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6   d5e3c1c3 e3f56e4c c2d9c56d c96dc3c4         *</BRE_I_CD02I_CONTACT5><BRE_I_CD*
+ f0f2c96d c3d6d5e3 c1c3e3f6 6e50c85e   4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6         *02I_CONTACT6>&H;</BRE_I_CD02I_CO*
+ d5e3c1c3 e3f66e4c c2d9c56d c96dc3c4   f0f2c96d c3d6d5e3 c1c3e3f7 6e50c95e         *NTACT6><BRE_I_CD02I_CONTACT7>&I;*
+ 4c61c2d9 c56dc96d c3c4f0f2 c96dc3d6   d5e3c1c3 e3f76e4c 61c2d9c5 6dc9d5d7         *</BRE_I_CD02I_CONTACT7></BRE_INP*
+
+Offset: 0x0000000000000a00 (2560)
+ 6dc9d5d7 e4e36de2 e3d9e4c3 e3e4d9c5   6e4ca497 8481a340 a7949395 a27e7f88         *_INPUT_STRUCTURE><updat xmlns="h*
+ a3a3977a 6161a6a6 a64ba497 8481a34b   8396947f 6e50c15e 4c61a497 8481a36e         *ttp://www.updat.com">&A;</updat>*
+ 4ce2d6c1 d760c5d5 e57ac296 84a86e50   c15e4c61 e2d6c1d7 60c5d5e5 7ac29684         *<SOAP-ENV:Body>&A;</SOAP-ENV:Bod*
+ a86e      *y>*
+
+
+Total length of binary data is: 0x0000000000000a62 (2658)
+
+Creating ICM: ResponseICM(Response)
+-------------
+
+ style: WRAPPED_DOCUMENT
+ wsdlOperationNS: http://www.updat.com
+ wsdlOperationName: UPDTDRVROperation
+ message type: Response Message
+
+ICM as text: ResponseICM(Response)
+------------
+
+ICM Header Section:
+
+  EYECATCHER = >DFHICM<
+  MAPPING LEVEL = 7
+  ICM LENGTH =  0x0000000000000ffa (4090)
+  ICM NAME = ResponseICM(Response)
+  SIZE OF STRUCTURE = 0x000000000000008f (143)
+  XML TEMPLATE
+    OFFSET = 0x0000000000000fd8 (4056)
+    LENGTH = 0x0000000000000022 (34)
+    VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+  DATA OFFSET = 0x0000000000000750 (1872)
+
+
+ICM Index Section: Offset of Start of Index Section = 0x0000000000000058 (88)
+
+  NUMBER OF INDEX ENTRIES = 16
+
+  OPTIMIZED INDEX OFFSET = 0x0000000000000640 (1600)
+  DATA TRUNCATION SUPPORTED =  false
+  XSI TYPE IN FIRST TAG =  false
+  OPTIMIZED INDEX AVAILABLE =  true
+  XOP ELIGIBLE =  false
+  RESPONSE MESSAGE =  true
+  REQUEST MESSAGE =  false
+  ATTRIBUTES SIGNIFICANT =  false
+  NAMESPACE SIGNIFICANT =  false
+
+  Index Offset: 0x0000000000000080 (128)
+  Index Offset: 0x00000000000000a0 (160)
+  Index Offset: 0x00000000000000d8 (216)
+  Index Offset: 0x0000000000000128 (296)
+  Index Offset: 0x0000000000000178 (376)
+  Index Offset: 0x00000000000001c8 (456)
+  Index Offset: 0x0000000000000230 (560)
+  Index Offset: 0x0000000000000298 (664)
+  Index Offset: 0x0000000000000300 (768)
+  Index Offset: 0x0000000000000368 (872)
+  Index Offset: 0x00000000000003d0 (976)
+  Index Offset: 0x0000000000000438 (1080)
+  Index Offset: 0x00000000000004a0 (1184)
+  Index Offset: 0x0000000000000508 (1288)
+  Index Offset: 0x0000000000000570 (1392)
+  Index Offset: 0x00000000000005d8 (1496)
+
+  Index Entry (Offset within ICM = 0x0000000000000080 (128))
+   POSITION NUMBER = 1
+   XPATH (TEXT = /updatResponse)
+    XPATH PARTS = 1
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+   DATA OFFSET = 0x0000000000000750 (1872)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000a0 (160)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000a0 (160))
+   POSITION NUMBER = 2
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE)
+    XPATH PARTS = 2
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+   DATA OFFSET = 0x00000000000007a0 (1952)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000000d8 (216)
+
+
+  Index Entry (Offset within ICM = 0x00000000000000d8 (216))
+   POSITION NUMBER = 3
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+   DATA OFFSET = 0x00000000000007f0 (2032)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000001c8 (456)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000128 (296))
+   POSITION NUMBER = 4
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_EIBRESP)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_EIBRESP'
+      offset '0x0000000000000f39 (3897)'
+      length '13'
+
+   DATA OFFSET = 0x0000000000000c10 (3088)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000178 (376)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000178 (376))
+   POSITION NUMBER = 5
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/RW_GOBACK_FLAG)
+    XPATH PARTS = 3
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'RW_GOBACK_FLAG'
+      offset '0x0000000000000f5b (3931)'
+      length '14'
+
+   DATA OFFSET = 0x0000000000000c68 (3176)
+   PROBABLE NEXT INDEX ENTRY = unknown
+
+
+  Index Entry (Offset within ICM = 0x00000000000001c8 (456))
+   POSITION NUMBER = 6
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT'
+      offset '0x0000000000000ceb (3307)'
+      length '19'
+
+   DATA OFFSET = 0x0000000000000840 (2112)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000570 (1392)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000230 (560))
+   POSITION NUMBER = 7
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT10)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT10'
+      offset '0x0000000000000d79 (3449)'
+      length '21'
+
+   DATA OFFSET = 0x0000000000000948 (2376)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000298 (664)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000298 (664))
+   POSITION NUMBER = 8
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT11)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT11'
+      offset '0x0000000000000dab (3499)'
+      length '21'
+
+   DATA OFFSET = 0x00000000000009a0 (2464)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000300 (768)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000300 (768))
+   POSITION NUMBER = 9
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT12)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT12'
+      offset '0x0000000000000ddd (3549)'
+      length '21'
+
+   DATA OFFSET = 0x00000000000009f8 (2552)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000368 (872)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000368 (872))
+   POSITION NUMBER = 10
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT13)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT13'
+      offset '0x0000000000000e0f (3599)'
+      length '21'
+
+   DATA OFFSET = 0x0000000000000a50 (2640)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000003d0 (976)
+
+
+  Index Entry (Offset within ICM = 0x00000000000003d0 (976))
+   POSITION NUMBER = 11
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT14)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT14'
+      offset '0x0000000000000e41 (3649)'
+      length '21'
+
+   DATA OFFSET = 0x0000000000000aa8 (2728)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000438 (1080)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000438 (1080))
+   POSITION NUMBER = 12
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT15)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT15'
+      offset '0x0000000000000e73 (3699)'
+      length '21'
+
+   DATA OFFSET = 0x0000000000000b00 (2816)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000004a0 (1184)
+
+
+  Index Entry (Offset within ICM = 0x00000000000004a0 (1184))
+   POSITION NUMBER = 13
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT16)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT16'
+      offset '0x0000000000000ea5 (3749)'
+      length '21'
+
+   DATA OFFSET = 0x0000000000000b58 (2904)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000508 (1288)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000508 (1288))
+   POSITION NUMBER = 14
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT17)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT17'
+      offset '0x0000000000000ed7 (3799)'
+      length '21'
+
+   DATA OFFSET = 0x0000000000000bb0 (2992)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000128 (296)
+
+
+  Index Entry (Offset within ICM = 0x0000000000000570 (1392))
+   POSITION NUMBER = 15
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT8)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT8'
+      offset '0x0000000000000d19 (3353)'
+      length '20'
+
+   DATA OFFSET = 0x0000000000000898 (2200)
+   PROBABLE NEXT INDEX ENTRY = 0x00000000000005d8 (1496)
+
+
+  Index Entry (Offset within ICM = 0x00000000000005d8 (1496))
+   POSITION NUMBER = 16
+   XPATH (TEXT = /updatResponse/BRE_OUT_OUTPUT_STRUCTURE/BRE_O_CD02O_DATA/BRE_O_CD02O_CONTACT9)
+    XPATH PARTS = 4
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'updatResponse'
+      offset '0x0000000000000f9a (3994)'
+      length '13'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_OUT_OUTPUT_STRUCTURE'
+      offset '0x0000000000000f1c (3868)'
+      length '24'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_DATA'
+      offset '0x0000000000000cd9 (3289)'
+      length '16'
+
+     NAMESPACE
+      value 'http://www.updat.com'
+      offset '0x0000000000000faf (4015)'
+      length '20'
+     ELEMENT
+      value 'BRE_O_CD02O_CONTACT9'
+      offset '0x0000000000000d49 (3401)'
+      length '20'
+
+   DATA OFFSET = 0x00000000000008f0 (2288)
+   PROBABLE NEXT INDEX ENTRY = 0x0000000000000230 (560)
+
+
+  ICM OPTIMIZED INDEX:
+
+   ENTRY NUMBER: 1
+     FIRST CHILD POS = 2
+     LAST CHILD POS = 2
+     NESTING LEVEL = 1
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000080 (128)
+
+   ENTRY NUMBER: 2
+     FIRST CHILD POS = 3
+     LAST CHILD POS = 5
+     NESTING LEVEL = 2
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000a0 (160)
+
+   ENTRY NUMBER: 3
+     FIRST CHILD POS = 6
+     LAST CHILD POS = 16
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000000d8 (216)
+
+   ENTRY NUMBER: 4
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000128 (296)
+
+   ENTRY NUMBER: 5
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 3
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000178 (376)
+
+   ENTRY NUMBER: 6
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000001c8 (456)
+
+   ENTRY NUMBER: 7
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000230 (560)
+
+   ENTRY NUMBER: 8
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000298 (664)
+
+   ENTRY NUMBER: 9
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000300 (768)
+
+   ENTRY NUMBER: 10
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000368 (872)
+
+   ENTRY NUMBER: 11
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000003d0 (976)
+
+   ENTRY NUMBER: 12
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000438 (1080)
+
+   ENTRY NUMBER: 13
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000004a0 (1184)
+
+   ENTRY NUMBER: 14
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000508 (1288)
+
+   ENTRY NUMBER: 15
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x0000000000000570 (1392)
+
+   ENTRY NUMBER: 16
+     FIRST CHILD POS = 32767
+     LAST CHILD POS = 0
+     NESTING LEVEL = 4
+     ASSOCIATED INDEX ENTRY OFFSET = 0x00000000000005d8 (1496)
+
+ICM Data Section:
+Offset Of Start of Data Section = 0x0000000000000750 (1872)
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x0000000000000750 (1872))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000007a0 (1952)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000cc8 (3272)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000768 (1896))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000fe7 (4071)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000f9a (3994)
+         LENGTH = 0x000000000000000d (13)
+         VALUE = updatResponse
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000008f (143)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000f99 (3993)
+         LENGTH = 0x000000000000003f (63)
+         VALUE = <updatResponse xmlns="http://www.updat.com">&A;</updatResponse>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x00000000000007a0 (1952))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000007f0 (2032)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000cc0 (3264)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x00000000000007b8 (1976))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000fc5 (4037)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000f1c (3868)
+         LENGTH = 0x0000000000000018 (24)
+         VALUE = BRE_OUT_OUTPUT_STRUCTURE
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000008f (143)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000f1b (3867)
+         LENGTH = 0x000000000000007e (126)
+         VALUE = <BRE_OUT_OUTPUT_STRUCTURE>&A;<BRE_O_EIBRESP>&B;</BRE_O_EIBRESP><RW_GOBACK_FLAG>&C;</RW_GOBACK_FLAG></BRE_OUT_OUTPUT_STRUCTURE>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_FIXED_REPEAT (Offset within ICM = 0x00000000000007f0 (2032))
+    RECORD TYPE = 7
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 80
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000840 (2112)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x0000000000000c08 (3080)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED FIXED REPEAT:
+
+     Fixed Repeat (Offset within ICM = 0x0000000000000808 (2056))
+       RECORD TYPE = 2
+       CONTENT BITS = 1
+          STRUCTURAL CONTENT = true
+          MIXED CONTENT = false
+          IN-LINE VARIABLE REPEAT = false
+          RAW XML CONTENT = false
+          CONTAINS_XSI_TYPE = false
+       OCCURRENCES = 1
+       XML TEMPLATE LOCATION NAME
+         DELEGATED OFFSET = 0x0000000000000f35 (3893)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       STRUCTURE NAME
+         DELEGATED OFFSET = 0x0000000000000cd9 (3289)
+         LENGTH = 0x0000000000000010 (16)
+         VALUE = BRE_O_CD02O_DATA
+       OFFSET OF COUNT FIELD = 0x0000000000000000 (0)
+       SIZE OF STRUCTURE = 0x000000000000008a (138)
+       OFFSET INTO STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       OFFSET OF RAW XML ICM = 0x0000000000000000 (0)
+       XML TEMPLATE
+         OFFSET = 0x0000000000000cd8 (3288)
+         LENGTH = 0x0000000000000243 (579)
+         VALUE = <BRE_O_CD02O_DATA><BRE_O_CD02O_CONTACT>&A;</BRE_O_CD02O_CONTACT><BRE_O_CD02O_CONTACT8>&B;</BRE_O_CD02O_CONTACT8><BRE_O_CD02O_CONTACT9>&C;</BRE_O_CD02O_CONTACT9><BRE_O_CD02O_CONTACT10>&D;</BRE_O_CD02O_CONTACT10><BRE_O_CD02O_CONTACT11>&E;</BRE_O_CD02O_CONTACT11><BRE_O_CD02O_CONTACT12>&F;</BRE_O_CD02O_CONTACT12><BRE_O_CD02O_CONTACT13>&G;</BRE_O_CD02O_CONTACT13><BRE_O_CD02O_CONTACT14>&H;</BRE_O_CD02O_CONTACT14><BRE_O_CD02O_CONTACT15>&I;</BRE_O_CD02O_CONTACT15><BRE_O_CD02O_CONTACT16>&J;</BRE_O_CD02O_CONTACT16><BRE_O_CD02O_CONTACT17>&K;</BRE_O_CD02O_CONTACT17></BRE_O_CD02O_DATA>
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000840 (2112))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000898 (2200)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000858 (2136))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 5
+       EXTENDED LAR = 0 (TOTAL LAR = 5)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000ceb (3307)
+         LENGTH = 0x0000000000000013 (19)
+         VALUE = BRE_O_CD02O_CONTACT
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000cff (3327)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &A;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000000 (0)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000898 (2200))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000008f0 (2288)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000008b0 (2224))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000d19 (3353)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT8
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d2e (3374)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000005 (5)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000008f0 (2288))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000948 (2376)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000908 (2312))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000d49 (3401)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = BRE_O_CD02O_CONTACT9
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d5e (3422)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &C;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000001e (30)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000001e (30)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000948 (2376))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000009a0 (2464)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000960 (2400))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 25
+       EXTENDED LAR = 0 (TOTAL LAR = 25)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000d79 (3449)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT10
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000d8f (3471)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &D;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000037 (55)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000037 (55)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000009a0 (2464))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x00000000000009f8 (2552)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x00000000000009b8 (2488))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 2
+       EXTENDED LAR = 0 (TOTAL LAR = 2)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000dab (3499)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT11
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000dc1 (3521)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &E;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000050 (80)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000050 (80)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x00000000000009f8 (2552))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000a50 (2640)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000a10 (2576))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 6
+       EXTENDED LAR = 0 (TOTAL LAR = 6)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000ddd (3549)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT12
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000df3 (3571)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &F;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000052 (82)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000052 (82)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000a50 (2640))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000aa8 (2728)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000a68 (2664))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 6
+       EXTENDED LAR = 0 (TOTAL LAR = 6)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000e0f (3599)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT13
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000e25 (3621)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &G;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000058 (88)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000058 (88)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000aa8 (2728))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000b00 (2816)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000ac0 (2752))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 12
+       EXTENDED LAR = 0 (TOTAL LAR = 12)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000e41 (3649)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT14
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000e57 (3671)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &H;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000005e (94)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000005e (94)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000b00 (2816))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000b58 (2904)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000b18 (2840))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 30
+       EXTENDED LAR = 0 (TOTAL LAR = 30)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000e73 (3699)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT15
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000e89 (3721)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &I;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000006a (106)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000006a (106)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000b58 (2904))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000bb0 (2992)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000b70 (2928))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000ea5 (3749)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT16
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000ebb (3771)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &J;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000088 (136)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000088 (136)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000bb0 (2992))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000c08 (3080)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000bc8 (3016))
+       RECORD TYPE = 1
+       DATA TYPE = CHAR_ARRAY
+       LAR = 1
+       EXTENDED LAR = 0 (TOTAL LAR = 1)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000ed7 (3799)
+         LENGTH = 0x0000000000000015 (21)
+         VALUE = BRE_O_CD02O_CONTACT17
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000eed (3821)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &K;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x0000000000000089 (137)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x0000000000000089 (137)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000c08 (3080))
+    RECORD TYPE = 4
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000c10 (3088))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000c68 (3176)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000c28 (3112))
+       RECORD TYPE = 1
+       DATA TYPE = INT
+       LAR = 0
+       EXTENDED LAR = 0 (TOTAL LAR = 0)
+       FRACTION DIGITS = -1
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000f39 (3897)
+         LENGTH = 0x000000000000000d (13)
+         VALUE = BRE_O_EIBRESP
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000f47 (3911)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &B;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000008a (138)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000008a (138)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  EXTENDED_DATA_ELEMENT (Offset within ICM = 0x0000000000000c68 (3176))
+    RECORD TYPE = 6
+    NUM ATTRIBUTES = 0
+    RECORD LENGTH = 88
+    OFFSET OF NEXT LOGICAL ENTRY = 0x0000000000000cc0 (3264)
+    OFFSET OF FIRST/NEXT ATTRIBUTE = 0x00000000ffffffff (-1)
+    OFFSET OF END REPEAT ENTRY = 0x00000000ffffffff (-1)
+    SHARED EXPANSION SPACE LENGTH = 8
+    EMBEDDED DATA ELEMENT:
+
+     Data Element (Offset within ICM = 0x0000000000000c80 (3200))
+       RECORD TYPE = 1
+       DATA TYPE = UNSIGNED_ZONED
+       NON-FRACTION DIGITS = 1
+       FRACTION DIGITS = 0
+       WHITE SPACE = COLLAPSE
+       ELEMENT NAMESPACE
+         DELEGATED OFFSET = 0x0000000000000faf (4015)
+         LENGTH = 0x0000000000000014 (20)
+         VALUE = http://www.updat.com
+       ELEMENT LOCAL NAME
+         DELEGATED OFFSET = 0x0000000000000f5b (3931)
+         LENGTH = 0x000000000000000e (14)
+         VALUE = RW_GOBACK_FLAG
+       XML TEMPLATE LOCATION NAME 
+         DELEGATED OFFSET = 0x0000000000000f6a (3946)
+         LENGTH = 0x0000000000000003 (3)
+         VALUE = &C;
+       DEFAULT VALUE LENGTH = UNSPECIFIED
+       FLAGS BYTE:
+           WIDE CHARS = false
+           UTF16-BE = false
+           SIGN LEADING = false
+           SEPARATE CHAR = false
+           NAMED CONTAINER MAPPING = false
+           CONTAINER MAPPING = false
+           VARIABLE MAPPING = false
+           NULL TERMINATED MAPPING = false
+       OFFSET WITHIN STRUCTURE = 0x000000000000008e (142)
+       ABSOLUTE OFFSET WITHIN STRUCTURE = 0x000000000000008e (142)
+    VARIABLE LENGTH BUFFER SPACE LENGTH = 0
+
+  End Repeat (Offset within ICM = 0x0000000000000cc0 (3264))
+    RECORD TYPE = 4
+
+  End Repeat (Offset within ICM = 0x0000000000000cc8 (3272))
+    RECORD TYPE = 4
+
+  End Data Section (Offset within ICM = 0x0000000000000cd0 (3280))
+    RECORD TYPE = 5
+
+
+ICM Constants Section:
+Offset Of Start of Constants Section = 0x0000000000000cd8 (3288)
+
+      OFFSET = 0x0000000000000cd8 (3288)
+      LENGTH = 0x0000000000000243 (579)
+      VALUE = <BRE_O_CD02O_DATA><BRE_O_CD02O_CONTACT>&A;</BRE_O_CD02O_CONTACT><BRE_O_CD02O_CONTACT8>&B;</BRE_O_CD02O_CONTACT8><BRE_O_CD02O_CONTACT9>&C;</BRE_O_CD02O_CONTACT9><BRE_O_CD02O_CONTACT10>&D;</BRE_O_CD02O_CONTACT10><BRE_O_CD02O_CONTACT11>&E;</BRE_O_CD02O_CONTACT11><BRE_O_CD02O_CONTACT12>&F;</BRE_O_CD02O_CONTACT12><BRE_O_CD02O_CONTACT13>&G;</BRE_O_CD02O_CONTACT13><BRE_O_CD02O_CONTACT14>&H;</BRE_O_CD02O_CONTACT14><BRE_O_CD02O_CONTACT15>&I;</BRE_O_CD02O_CONTACT15><BRE_O_CD02O_CONTACT16>&J;</BRE_O_CD02O_CONTACT16><BRE_O_CD02O_CONTACT17>&K;</BRE_O_CD02O_CONTACT17></BRE_O_CD02O_DATA>
+
+      OFFSET = 0x0000000000000f1b (3867)
+      LENGTH = 0x000000000000007e (126)
+      VALUE = <BRE_OUT_OUTPUT_STRUCTURE>&A;<BRE_O_EIBRESP>&B;</BRE_O_EIBRESP><RW_GOBACK_FLAG>&C;</RW_GOBACK_FLAG></BRE_OUT_OUTPUT_STRUCTURE>
+
+      OFFSET = 0x0000000000000f99 (3993)
+      LENGTH = 0x000000000000003f (63)
+      VALUE = <updatResponse xmlns="http://www.updat.com">&A;</updatResponse>
+
+      OFFSET = 0x0000000000000fd8 (4056)
+      LENGTH = 0x0000000000000022 (34)
+      VALUE = <SOAP-ENV:Body>&A;</SOAP-ENV:Body>
+
+
+ICM as data: ResponseICM(Response)
+------------
+
+
+Offset: 0x0000000000000000 (0)
+ 6ec4c6c8 c9c3d44c 00000007 00000000   00000000 00000ffa d985a297 9695a285         *>DFHICM<...............³Response*
+ c9c3d44d d985a297 9695a285 5d000000   00000000 00000000 00000000 0000008f         *ICM(Response)..................±*
+ 00000000 00000fd8 00000000 00000022   00000000 00000750 00000010 00064028         *.......Q...............&...... .*
+ 008000a0 00d80128 017801c8 02300298   03000368 03d00438 04a00508 057005d8         *.Ø.µ.Q...Ì.H...q...Ç.}...µ...ø.Q*
+ 000100a0 00000750 140d0000 00000000   00000000 00000faf 00000000 00000f9a         *...µ...&...............®.......ª*
+ 000200d8 000007a0 140d0000 00000000   00000000 00000faf 00000000 00000f9a         *...Q...µ...............®.......ª*
+ 14180000 00000000 00000000 00000faf   00000000 00000f1c 000301c8 000007f0         *...............®...........H...0*
+ 140d0000 00000000 00000000 00000faf   00000000 00000f9a 14180000 00000000         *...............®.......ª........*
+
+Offset: 0x0000000000000100 (256)
+ 00000000 00000faf 00000000 00000f1c   14100000 00000000 00000000 00000faf         *.......®.......................®*
+ 00000000 00000cd9 00030178 00000c10   140d0000 00000000 00000000 00000faf         *.......R...Ì...................®*
+ 00000000 00000f9a 14180000 00000000   00000000 00000faf 00000000 00000f1c         *.......ª...............®........*
+ 140d0000 00000000 00000000 00000faf   00000000 00000f39 0003ffff 00000c68         *...............®..........??...Ç*
+ 140d0000 00000000 00000000 00000faf   00000000 00000f9a 14180000 00000000         *...............®.......ª........*
+ 00000000 00000faf 00000000 00000f1c   140e0000 00000000 00000000 00000faf         *.......®.......................®*
+ 00000000 00000f5b 00040570 00000840   140d0000 00000000 00000000 00000faf         *.......$...ø... ...............®*
+ 00000000 00000f9a 14180000 00000000   00000000 00000faf 00000000 00000f1c         *.......ª...............®........*
+
+Offset: 0x0000000000000200 (512)
+ 14100000 00000000 00000000 00000faf   00000000 00000cd9 14130000 00000000         *...............®.......R........*
+ 00000000 00000faf 00000000 00000ceb   00040298 00000948 140d0000 00000000         *.......®.......Ô...q...ç........*
+ 00000000 00000faf 00000000 00000f9a   14180000 00000000 00000000 00000faf         *.......®.......ª...............®*
+ 00000000 00000f1c 14100000 00000000   00000000 00000faf 00000000 00000cd9         *.......................®.......R*
+ 14150000 00000000 00000000 00000faf   00000000 00000d79 00040300 000009a0         *...............®.......`.......µ*
+ 140d0000 00000000 00000000 00000faf   00000000 00000f9a 14180000 00000000         *...............®.......ª........*
+ 00000000 00000faf 00000000 00000f1c   14100000 00000000 00000000 00000faf         *.......®.......................®*
+ 00000000 00000cd9 14150000 00000000   00000000 00000faf 00000000 00000dab         *.......R...............®.......¿*
+
+Offset: 0x0000000000000300 (768)
+ 00040368 000009f8 140d0000 00000000   00000000 00000faf 00000000 00000f9a         *...Ç...8...............®.......ª*
+ 14180000 00000000 00000000 00000faf   00000000 00000f1c 14100000 00000000         *...............®................*
+ 00000000 00000faf 00000000 00000cd9   14150000 00000000 00000000 00000faf         *.......®.......R...............®*
+ 00000000 00000ddd 000403d0 00000a50   140d0000 00000000 00000000 00000faf         *.......ù...}...&...............®*
+ 00000000 00000f9a 14180000 00000000   00000000 00000faf 00000000 00000f1c         *.......ª...............®........*
+ 14100000 00000000 00000000 00000faf   00000000 00000cd9 14150000 00000000         *...............®.......R........*
+ 00000000 00000faf 00000000 00000e0f   00040438 00000aa8 140d0000 00000000         *.......®...............y........*
+ 00000000 00000faf 00000000 00000f9a   14180000 00000000 00000000 00000faf         *.......®.......ª...............®*
+
+Offset: 0x0000000000000400 (1024)
+ 00000000 00000f1c 14100000 00000000   00000000 00000faf 00000000 00000cd9         *.......................®.......R*
+ 14150000 00000000 00000000 00000faf   00000000 00000e41 000404a0 00000b00         *...............®...........µ....*
+ 140d0000 00000000 00000000 00000faf   00000000 00000f9a 14180000 00000000         *...............®.......ª........*
+ 00000000 00000faf 00000000 00000f1c   14100000 00000000 00000000 00000faf         *.......®.......................®*
+ 00000000 00000cd9 14150000 00000000   00000000 00000faf 00000000 00000e73         *.......R...............®.......Ë*
+ 00040508 00000b58 140d0000 00000000   00000000 00000faf 00000000 00000f9a         *.......ì...............®.......ª*
+ 14180000 00000000 00000000 00000faf   00000000 00000f1c 14100000 00000000         *...............®................*
+ 00000000 00000faf 00000000 00000cd9   14150000 00000000 00000000 00000faf         *.......®.......R...............®*
+
+Offset: 0x0000000000000500 (1280)
+ 00000000 00000ea5 00040128 00000bb0   140d0000 00000000 00000000 00000faf         *.......v.......^...............®*
+ 00000000 00000f9a 14180000 00000000   00000000 00000faf 00000000 00000f1c         *.......ª...............®........*
+ 14100000 00000000 00000000 00000faf   00000000 00000cd9 14150000 00000000         *...............®.......R........*
+ 00000000 00000faf 00000000 00000ed7   000405d8 00000898 140d0000 00000000         *.......®.......P...Q...q........*
+ 00000000 00000faf 00000000 00000f9a   14180000 00000000 00000000 00000faf         *.......®.......ª...............®*
+ 00000000 00000f1c 14100000 00000000   00000000 00000faf 00000000 00000cd9         *.......................®.......R*
+ 14140000 00000000 00000000 00000faf   00000000 00000d19 00040230 000008f0         *...............®...............0*
+ 140d0000 00000000 00000000 00000faf   00000000 00000f9a 14180000 00000000         *...............®.......ª........*
+
+Offset: 0x0000000000000600 (1536)
+ 00000000 00000faf 00000000 00000f1c   14100000 00000000 00000000 00000faf         *.......®.......................®*
+ 00000000 00000cd9 14140000 00000000   00000000 00000faf 00000000 00000d49         *.......R...............®.......ñ*
+ 00000001 00000001 00000000 ffffffff   00000002 00000002 00000001 00000080         *............????...............Ø*
+ 00000003 00000005 00000002 000000a0   00000006 00000010 00000003 000000d8         *...............µ...............Q*
+ 00007fff 00000000 00000003 00000128   00007fff 00000000 00000003 00000178         *.."?.............."?...........Ì*
+ 00007fff 00000000 00000004 000001c8   00007fff 00000000 00000004 00000230         *.."?...........H.."?............*
+ 00007fff 00000000 00000004 00000298   00007fff 00000000 00000004 00000300         *.."?...........q.."?............*
+ 00007fff 00000000 00000004 00000368   00007fff 00000000 00000004 000003d0         *.."?...........Ç.."?...........}*
+
+Offset: 0x0000000000000700 (1792)
+ 00007fff 00000000 00000004 00000438   00007fff 00000000 00000004 000004a0         *.."?.............."?...........µ*
+ 00007fff 00000000 00000004 00000508   00007fff 00000000 00000004 00000570         *.."?.............."?...........ø*
+ 00007fff 00000000 00000004 000005d8   07000050 000007a0 ffffffff 00000cc8         *.."?...........Q...&...µ????...H*
+ 00000000 00000000 02010001 0000030d   00000000 0000008f 00000000 00000000         *.......................±........*
+ 00000000 00000fe7 00000000 00000f9a   00000000 0000003f 00000000 00000f99         *.......X.......ª...............r*
+ 07000050 000007f0 ffffffff 00000cc0   00000000 00000000 02010001 00000318         *...&...0????...{................*
+ 00000000 0000008f 00000000 00000000   00000000 00000fc5 00000000 00000f1c         *.......±...............E........*
+ 00000000 0000007e 00000000 00000f1b   07000050 00000840 ffffffff 00000c08         *.......=...........&... ????....*
+
+Offset: 0x0000000000000800 (2048)
+ 00000000 00000000 02010001 00000310   00000000 0000008a 00000000 00000000         *.......................«........*
+ 00000000 00000f35 00000000 00000cd9   00000000 00000243 00000000 00000cd8         *...............R.......ä.......Q*
+ 06000058 00000898 ffffffff ffffffff   00000000 00000000 01010005 ff000014         *...ì...q????????............?...*
+ 00130003 00000000 00000000 00000000   00000000 00000faf 00000000 00000ceb         *.......................®.......Ô*
+ 00000000 00000cff ffffffff ffffffff   ffffffff ffffffff 06000058 000008f0         *.......?????????????????...ì...0*
+ ffffffff ffffffff 00000000 00000000   01010019 ff000014 00140003 00000000         *????????............?...........*
+ 00000000 00000005 00000000 00000faf   00000000 00000d19 00000000 00000d2e         *...............®................*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000948 ffffffff ffffffff         *????????????????...ì...ç????????*
+
+Offset: 0x0000000000000900 (2304)
+ 00000000 00000000 01010019 ff000014   00140003 00000000 00000000 0000001e         *............?...................*
+ 00000000 00000faf 00000000 00000d49   00000000 00000d5e ffffffff ffffffff         *.......®.......ñ.......;????????*
+ ffffffff ffffffff 06000058 000009a0   ffffffff ffffffff 00000000 00000000         *????????...ì...µ????????........*
+ 01010019 ff000014 00150003 00000000   00000000 00000037 00000000 00000faf         *....?..........................®*
+ 00000000 00000d79 00000000 00000d8f   ffffffff ffffffff ffffffff ffffffff         *.......`.......±????????????????*
+ 06000058 000009f8 ffffffff ffffffff   00000000 00000000 01010002 ff000014         *...ì...8????????............?...*
+ 00150003 00000000 00000000 00000050   00000000 00000faf 00000000 00000dab         *...............&.......®.......¿*
+ 00000000 00000dc1 ffffffff ffffffff   ffffffff ffffffff 06000058 00000a50         *.......A????????????????...ì...&*
+
+Offset: 0x0000000000000a00 (2560)
+ ffffffff ffffffff 00000000 00000000   01010006 ff000014 00150003 00000000         *????????............?...........*
+ 00000000 00000052 00000000 00000faf   00000000 00000ddd 00000000 00000df3         *.......ê.......®.......ù.......3*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000aa8 ffffffff ffffffff         *????????????????...ì...y????????*
+ 00000000 00000000 01010006 ff000014   00150003 00000000 00000000 00000058         *............?..................ì*
+ 00000000 00000faf 00000000 00000e0f   00000000 00000e25 ffffffff ffffffff         *.......®................????????*
+ ffffffff ffffffff 06000058 00000b00   ffffffff ffffffff 00000000 00000000         *????????...ì....????????........*
+ 0101000c ff000014 00150003 00000000   00000000 0000005e 00000000 00000faf         *....?..................;.......®*
+ 00000000 00000e41 00000000 00000e57   ffffffff ffffffff ffffffff ffffffff         *...............ï????????????????*
+
+Offset: 0x0000000000000b00 (2816)
+ 06000058 00000b58 ffffffff ffffffff   00000000 00000000 0101001e ff000014         *...ì...ì????????............?...*
+ 00150003 00000000 00000000 0000006a   00000000 00000faf 00000000 00000e73         *...............¦.......®.......Ë*
+ 00000000 00000e89 ffffffff ffffffff   ffffffff ffffffff 06000058 00000bb0         *.......i????????????????...ì...^*
+ ffffffff ffffffff 00000000 00000000   01010001 ff000014 00150003 00000000         *????????............?...........*
+ 00000000 00000088 00000000 00000faf   00000000 00000ea5 00000000 00000ebb         *.......h.......®.......v.......]*
+ ffffffff ffffffff ffffffff ffffffff   06000058 00000c08 ffffffff ffffffff         *????????????????...ì....????????*
+ 00000000 00000000 01010001 ff000014   00150003 00000000 00000000 00000089         *............?..................i*
+ 00000000 00000faf 00000000 00000ed7   00000000 00000eed ffffffff ffffffff         *.......®.......P.......Ò????????*
+
+Offset: 0x0000000000000c00 (3072)
+ ffffffff ffffffff 04000000 00000000   06000058 00000c68 ffffffff ffffffff         *????????...........ì...Ç????????*
+ 00000000 00000000 01070000 ff000014   000d0003 00000000 00000000 0000008a         *............?..................«*
+ 00000000 00000faf 00000000 00000f39   00000000 00000f47 ffffffff ffffffff         *.......®...............å????????*
+ ffffffff ffffffff 06000058 00000cc0   ffffffff ffffffff 00000000 00000000         *????????...ì...{????????........*
+ 01130001 00000014 000e0003 00000000   00000000 0000008e 00000000 00000faf         *.......................þ.......®*
+ 00000000 00000f5b 00000000 00000f6a   ffffffff ffffffff ffffffff ffffffff         *.......$.......¦????????????????*
+ 04000000 00000000 04000000 00000000   05000000 00000000 4cc2d9c5 6dd66dc3         *........................<BRE_O_C*
+ c4f0f2d6 6dc4c1e3 c16e4cc2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e36e50         *D02O_DATA><BRE_O_CD02O_CONTACT>&*
+
+Offset: 0x0000000000000d00 (3328)
+ c15e4c61 c2d9c56d d66dc3c4 f0f2d66d   c3d6d5e3 c1c3e36e 4cc2d9c5 6dd66dc3         *A;</BRE_O_CD02O_CONTACT><BRE_O_C*
+ c4f0f2d6 6dc3d6d5 e3c1c3e3 f86e50c2   5e4c61c2 d9c56dd6 6dc3c4f0 f2d66dc3         *D02O_CONTACT8>&B;</BRE_O_CD02O_C*
+ d6d5e3c1 c3e3f86e 4cc2d9c5 6dd66dc3   c4f0f2d6 6dc3d6d5 e3c1c3e3 f96e50c3         *ONTACT8><BRE_O_CD02O_CONTACT9>&C*
+ 5e4c61c2 d9c56dd6 6dc3c4f0 f2d66dc3   d6d5e3c1 c3e3f96e 4cc2d9c5 6dd66dc3         *;</BRE_O_CD02O_CONTACT9><BRE_O_C*
+ c4f0f2d6 6dc3d6d5 e3c1c3e3 f1f06e50   c45e4c61 c2d9c56d d66dc3c4 f0f2d66d         *D02O_CONTACT10>&D;</BRE_O_CD02O_*
+ c3d6d5e3 c1c3e3f1 f06e4cc2 d9c56dd6   6dc3c4f0 f2d66dc3 d6d5e3c1 c3e3f1f1         *CONTACT10><BRE_O_CD02O_CONTACT11*
+ 6e50c55e 4c61c2d9 c56dd66d c3c4f0f2   d66dc3d6 d5e3c1c3 e3f1f16e 4cc2d9c5         *>&E;</BRE_O_CD02O_CONTACT11><BRE*
+ 6dd66dc3 c4f0f2d6 6dc3d6d5 e3c1c3e3   f1f26e50 c65e4c61 c2d9c56d d66dc3c4         *_O_CD02O_CONTACT12>&F;</BRE_O_CD*
+
+Offset: 0x0000000000000e00 (3584)
+ f0f2d66d c3d6d5e3 c1c3e3f1 f26e4cc2   d9c56dd6 6dc3c4f0 f2d66dc3 d6d5e3c1         *02O_CONTACT12><BRE_O_CD02O_CONTA*
+ c3e3f1f3 6e50c75e 4c61c2d9 c56dd66d   c3c4f0f2 d66dc3d6 d5e3c1c3 e3f1f36e         *CT13>&G;</BRE_O_CD02O_CONTACT13>*
+ 4cc2d9c5 6dd66dc3 c4f0f2d6 6dc3d6d5   e3c1c3e3 f1f46e50 c85e4c61 c2d9c56d         *<BRE_O_CD02O_CONTACT14>&H;</BRE_*
+ d66dc3c4 f0f2d66d c3d6d5e3 c1c3e3f1   f46e4cc2 d9c56dd6 6dc3c4f0 f2d66dc3         *O_CD02O_CONTACT14><BRE_O_CD02O_C*
+ d6d5e3c1 c3e3f1f5 6e50c95e 4c61c2d9   c56dd66d c3c4f0f2 d66dc3d6 d5e3c1c3         *ONTACT15>&I;</BRE_O_CD02O_CONTAC*
+ e3f1f56e 4cc2d9c5 6dd66dc3 c4f0f2d6   6dc3d6d5 e3c1c3e3 f1f66e50 d15e4c61         *T15><BRE_O_CD02O_CONTACT16>&J;</*
+ c2d9c56d d66dc3c4 f0f2d66d c3d6d5e3   c1c3e3f1 f66e4cc2 d9c56dd6 6dc3c4f0         *BRE_O_CD02O_CONTACT16><BRE_O_CD0*
+ f2d66dc3 d6d5e3c1 c3e3f1f7 6e50d25e   4c61c2d9 c56dd66d c3c4f0f2 d66dc3d6         *2O_CONTACT17>&K;</BRE_O_CD02O_CO*
+
+Offset: 0x0000000000000f00 (3840)
+ d5e3c1c3 e3f1f76e 4c61c2d9 c56dd66d   c3c4f0f2 d66dc4c1 e3c16e4c c2d9c56d         *NTACT17></BRE_O_CD02O_DATA><BRE_*
+ d6e4e36d d6e4e3d7 e4e36de2 e3d9e4c3   e3e4d9c5 6e50c15e 4cc2d9c5 6dd66dc5         *OUT_OUTPUT_STRUCTURE>&A;<BRE_O_E*
+ c9c2d9c5 e2d76e50 c25e4c61 c2d9c56d   d66dc5c9 c2d9c5e2 d76e4cd9 e66dc7d6         *IBRESP>&B;</BRE_O_EIBRESP><RW_GO*
+ c2c1c3d2 6dc6d3c1 c76e50c3 5e4c61d9   e66dc7d6 c2c1c3d2 6dc6d3c1 c76e4c61         *BACK_FLAG>&C;</RW_GOBACK_FLAG></*
+ c2d9c56d d6e4e36d d6e4e3d7 e4e36de2   e3d9e4c3 e3e4d9c5 6e4ca497 8481a3d9         *BRE_OUT_OUTPUT_STRUCTURE><updatR*
+ 85a29796 95a28540 a7949395 a27e7f88   a3a3977a 6161a6a6 a64ba497 8481a34b         *esponse xmlns="http://www.updat.*
+ 8396947f 6e50c15e 4c61a497 8481a3d9   85a29796 95a2856e 4ce2d6c1 d760c5d5         *com">&A;</updatResponse><SOAP-EN*
+ e57ac296 84a86e50 c15e4c61 e2d6c1d7   60c5d5e5 7ac29684 a86e      *V:Body>&A;</SOAP-ENV:Body>*
+
+
+Total length of binary data is: 0x0000000000000ffa (4090)
+
+WSBIND generation completed successfully.
