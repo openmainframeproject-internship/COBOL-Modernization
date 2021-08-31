@@ -19,5 +19,5 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 9 Status Report | Debugging and Other stuff | [week9_report.md](week9_report.md) |
 | Week 10 Status Report | Creation of ACCOUNTS Project |[week10_report.md](week10_report.md) |
 | Week 11 Status Report | Issue resolution and UI creation |[week11_report.md](week11_report.md) |
-| Week 12 Status Report | | |
+| Week 12 Status Report | Adding ED projects to the repo|[week12_report.md](week12_report.md) |
 | Week 13 Status Report | | |
