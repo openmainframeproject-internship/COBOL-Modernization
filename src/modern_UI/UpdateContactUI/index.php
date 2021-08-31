@@ -1,5 +1,10 @@
 <?php
+
+# Start the session
 session_start();
+
+# If form is submitted, collect uid and password, build the curl request, execute it, decode the response
+# If flag is positive, store data in session variables and move to home.php, else show error
 if(isset($_POST['but_submit'])){
 
     $uid = $_POST['txt_uid'];
@@ -36,7 +41,9 @@ if(isset($_POST['but_submit'])){
 	$username = $decoded->signonResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_BANK_USERID_NA;
         $_SESSION['uid'] = $userid;
 	$_SESSION['uname'] = $username;
-        header('Location: home.php');
+	echo "<script>
+		alert(' Welcome $username! ');
+		window.location.href='home.php'; </script>";
     }else{	
 	$errmsg = $decoded->UVResponse->BRE_OUT_OUTPUT_STRUCTURE->BRE_O_WS_ERROR_MSG;
         echo '<script>alert("' . $errmsg . '")</script>';
@@ -46,23 +53,13 @@ if(isset($_POST['but_submit'])){
 
 <!doctype html>
 <html>
+<head>
+<link rel="stylesheet" href="style.css">
 <style>
-/* Container */
-
-body{
-background-color: #04048c;
-opacity: 1;
-background-image:  linear-gradient(#0862be 0.8px, transparent 0.8px), linear-gradient(to right, #0862be 0.8px, #04048c 0.8px);
-background-size: 16px 16px;
-}
-.container{
-    width:60%;
-    margin:0 auto;
-}
-
 /* Login */
 #div_login{
     border: 1px solid gray;
+    background-color: #04048c;
     border-radius: 3px;
     width: 700px;
     height: 270px;
@@ -70,34 +67,12 @@ background-size: 16px 16px;
     margin: 0 auto;
 }
 
-#div_login h1{
-    margin-top: 0px;
-    font-weight: normal;
-    padding: 10px;
-    background-color: cornflowerblue;
-    color: white;
-    font-family: sans-serif;
-}
-
-#div_login div{
-    clear: both;
-    margin-top: 10px;
-    padding: 5px;
-}
-
 #div_login .textbox{
     width: 96%;
     padding: 7px;
 }
-
-#div_login input[type=submit]{
-    padding: 7px;
-    width: 100px;
-    background-color: lightseagreen;
-    border: 0px;
-    color: white;
-}
 </style>
+</head>
 <div class="container">
     <form method="post" action="">
         <div id="div_login">
@@ -115,5 +90,3 @@ background-size: 16px 16px;
     </form>
 </div>
 </html>
-
-
