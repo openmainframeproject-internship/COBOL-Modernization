@@ -20,4 +20,4 @@ Status Report Template: https://github.com/openmainframeproject-internship/resou
 | Week 10 Status Report | Creation of ACCOUNTS Project |[week10_report.md](week10_report.md) |
 | Week 11 Status Report | Issue resolution and UI creation |[week11_report.md](week11_report.md) |
 | Week 12 Status Report | Adding ED projects to the repo|[week12_report.md](week12_report.md) |
-| Week 13 Status Report | | |
+| Week 13 Status Report | Completion of Update Contact Service |[week13_report.md](week13_report.md) |
