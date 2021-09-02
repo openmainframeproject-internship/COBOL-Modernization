@@ -1,6 +1,7 @@
 package com.example.accountbalanceui.ui.login;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.accountbalanceui.BalanceActivity;
 import com.example.accountbalanceui.R;
 import com.example.accountbalanceui.databinding.ActivityLoginBinding;
 
@@ -119,9 +121,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
-        String welcome = getString(R.string.welcome) + model.getDisplayName();
+        String welcome = getString(R.string.welcome) + model.getDisplayName() + " !";
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(LoginActivity.this, BalanceActivity.class);
+        intent.putExtra("uid", model.getUid());
+        intent.putExtra("uname", model.getDisplayName());
+        startActivity(intent);
     }
 
     private void showLoginFailed(String errorString) {
