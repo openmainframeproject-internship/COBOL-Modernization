@@ -1,0 +1,21 @@
+{
+  "$schema" : "http:\/\/json-schema.org\/draft-04\/schema#",
+  "title" : "balnce",
+  "description" : "Micro Focus Enterprise Developer - This generated JSON schema document is provided 'as is' and without any warranties of any kind, and may be used by licensee solely for the purposes of describing a REST API. Micro Focus shall not be responsible for and hereby disclaims any liabilities that may result from licensee's use of or modifications to this generated JSON schema document.",
+  "type" : "object",
+  "properties" : 
+  {
+    "balnce" : 
+    {
+      "type" : "object",
+      "properties" : 
+      {
+        "CUST_ID" : 
+        {
+          "type" : "string",
+          "maxLength" : 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "$schema" : "http:\/\/json-schema.org\/draft-04\/schema#",
+  "title" : "balnce",
+  "description" : "Micro Focus Enterprise Developer - This generated JSON schema document is provided 'as is' and without any warranties of any kind, and may be used by licensee solely for the purposes of describing a REST API. Micro Focus shall not be responsible for and hereby disclaims any liabilities that may result from licensee's use of or modifications to this generated JSON schema document.",
+  "type" : "object",
+  "properties" : 
+  {
+    "balnceResponse" : 
+    {
+      "type" : "object",
+      "properties" : 
+      {
+        "BALANCE_OUT" : 
+        {
+          "type" : "object",
+          "properties" : 
+          {
+            "OUT03_DATA" : 
+            {
+              "type" : "object",
+              "properties" : 
+              {
+                "OUT03I_DATA" : 
+                {
+                  "type" : "object",
+                  "properties" : 
+                  {
+                    "OUT03I_CONTACT_ID" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 5
+                    }
+                  }
+                },
+                "OUT03O_DATA" : 
+                {
+                  "type" : "object",
+                  "properties" : 
+                  {
+                    "OUT03O_ACC1" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DSC1" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 15
+                    },
+                    "OUT03O_BAL1" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DTE1" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 10
+                    },
+                    "OUT03O_TXN1" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 1
+                    },
+                    "OUT03O_ACC2" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DSC2" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 15
+                    },
+                    "OUT03O_BAL2" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DTE2" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 10
+                    },
+                    "OUT03O_TXN2" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 1
+                    },
+                    "OUT03O_ACC3" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DSC3" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 15
+                    },
+                    "OUT03O_BAL3" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DTE3" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 10
+                    },
+                    "OUT03O_TXN3" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 1
+                    },
+                    "OUT03O_ACC4" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DSC4" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 15
+                    },
+                    "OUT03O_BAL4" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DTE4" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 10
+                    },
+                    "OUT03O_TXN4" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 1
+                    },
+                    "OUT03O_ACC5" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DSC5" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 15
+                    },
+                    "OUT03O_BAL5" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DTE5" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 10
+                    },
+                    "OUT03O_TXN5" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 1
+                    },
+                    "OUT03O_ACC6" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DSC6" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 15
+                    },
+                    "OUT03O_BAL6" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 9
+                    },
+                    "OUT03O_DTE6" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 10
+                    },
+                    "OUT03O_TXN6" : 
+                    {
+                      "type" : "string",
+                      "maxLength" : 1
+                    }
+                  }
+                },
+                "OUT03O_DATA_R" : 
+                {
+                  "type" : "object",
+                  "properties" : 
+                  {
+                    "OUT03O_ACC_INFO" : 
+                    {
+                      "type" : "array",
+                      "minItems" : 0,
+                      "maxItems" : 6,
+                      "items" : 
+                      {
+                        "type" : "object",
+                        "properties" : 
+                        {
+                          "OUT03O_ACC_NO" : 
+                          {
+                            "type" : "string",
+                            "maxLength" : 9
+                          },
+                          "OUT03O_ACC_DESC" : 
+                          {
+                            "type" : "string",
+                            "maxLength" : 15
+                          },
+                          "OUT03O_ACC_BAL" : 
+                          {
+                            "type" : "string",
+                            "maxLength" : 9
+                          },
+                          "OUT03O_DTE" : 
+                          {
+                            "type" : "string",
+                            "maxLength" : 10
+                          },
+                          "OUT03O_TXN" : 
+                          {
+                            "type" : "string",
+                            "maxLength" : 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
