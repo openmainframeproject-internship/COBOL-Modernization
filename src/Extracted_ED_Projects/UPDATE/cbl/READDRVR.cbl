@@ -1,3 +1,14 @@
+000100*****************************************************************
+000200*                                                               *
+000300*   Copyright (C) 1998-2021 Micro Focus. All Rights Reserved.   *
+000400*   This demonstration program is provided for use by users     *
+000500*   of Micro Focus products and may be used, modified and       *
+000600*   distributed as part of your application provided that       *
+000700*   you properly acknowledge the copyright of Micro Focus       *
+000800*   in this material.                                           *
+000900*                                                               *
+001000*****************************************************************
+
        IDENTIFICATION DIVISION.
        PROGRAM-ID. READDRVR.
 
@@ -20,15 +31,6 @@
            03 BRE-O-CD02O-CONTACT9 PIC X(1).
          02 BRE-O-EIBRESP PIC S9(8) USAGE IS BINARY.
 
-       01 HTTP-HEADER   PIC X(13) VALUE 'Authorisation'.
-       01 HTTP-HEADER-VALUE   PIC X(64) VALUE SPACES.
-       01 HEADER-ACAO.
-           02 FILLER      PIC X(16) VALUE 'Access-Control-A'.
-           02 FILLER      PIC X(11) VALUE 'llow-Origin'.
-       01 HEADER-ACAO-LENGTH PIC S9(08) COMP VALUE 27.
-       01 VALUE-ACAO PIC X(01) VALUE '*'.
-       01 VALUE-ACAO-LENGTH PIC S9(08) COMP VALUE 01.
-       
        LINKAGE SECTION.
 
        COPY 'READREQ'.
@@ -50,13 +52,5 @@
 
            MOVE BRE-OUT-OUTPUT-STRUCTURE2 TO BRE-OUT-OUTPUT-STRUCTURE
 
-           EXEC CICS WEB WRITE
-              HTTPHEADER (HEADER-ACAO)
-              NAMELENGTH (HEADER-ACAO-LENGTH)
-              VALUE      (VALUE-ACAO)
-              VALUELENGTH (VALUE-ACAO-LENGTH)
-              NOHANDLE
-           END-EXEC.
-           
            EXEC CICS RETURN
            END-EXEC.

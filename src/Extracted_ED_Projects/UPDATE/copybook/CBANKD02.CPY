@@ -1,8 +1,13 @@
-000100***************************************************************** cbankd02
-000200*                                                               * cbankd02
-000300*  Copyright(C) 1998-2021 Micro Focus. All Rights Reserved.     * cbankd02
-000400*                                                               * cbankd02
-000500***************************************************************** cbankd02
+000100*****************************************************************
+000200*                                                               *
+000300*   Copyright (C) 1998-2021 Micro Focus. All Rights Reserved.   *
+000400*   This demonstration program is provided for use by users     *
+000500*   of Micro Focus products and may be used, modified and       *
+000600*   distributed as part of your application provided that       *
+000700*   you properly acknowledge the copyright of Micro Focus       *
+000800*   in this material.                                           *
+000900*                                                               *
+001000*****************************************************************
 000600                                                                  cbankd02
 000700***************************************************************** cbankd02
 000800* CBANKD02.CPY                                                  * cbankd02

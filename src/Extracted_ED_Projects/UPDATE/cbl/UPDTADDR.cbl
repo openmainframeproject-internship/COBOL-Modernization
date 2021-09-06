@@ -53,22 +53,10 @@
 005000                  WS-COMMAREA-LENGTH.                             dbank02p
        COPY 'UPDTREQ'.
        COPY 'UPDTRESP'.
-000100***************************************************************** centry
-000100*                                                               * centry
-000200*  Copyright(C) 1998-2010 Micro Focus. All Rights Reserved.     * centry
-000300*                                                               * centry
-000400***************************************************************** centry
 
-000700***************************************************************** centry
-000700* CENTRY.CPY (CICS Version)                                     * centry
-000800*---------------------------------------------------------------* centry
-000900* This copybook is used to provide an entry point for modules   * centry
-001000* so that they may be insensitive to their environment.         * centry
-001100* There are different versions for CICS, IMS and INET.          * centry
-001200***************************************************************** centry
 001300 PROCEDURE DIVISION USING BRE-INP-INPUT-STRUCTURE                 centry
                                 BRE-OUT-OUTPUT-STRUCTURE.
-001600* $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm     centry
+
 001600     PERFORM BRE-COPY-INPUT-DATA-0
            .
            PERFORM WRITE-PROCESSING
@@ -123,7 +111,7 @@
            .                                                            dbank02p
 016900     MOVE CD02I-CONTACT-SEND-EMAIL TO BCS-REC-SEND-EMAIL
            .                                                            dbank02p
-      *299
+
 017000     EXEC CICS REWRITE FILE('BNKCUST')                            dbank02p
 017100                       FROM(WS-BNKCUST-REC)                       dbank02p
 017200                       LENGTH(LENGTH OF WS-BNKCUST-REC)           dbank02p
