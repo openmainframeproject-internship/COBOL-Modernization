@@ -1,9 +1,13 @@
-000100***************************************************************** cbankdat
-000200*                                                               * cbankdat
-000300*  Copyright(C) 1998-2021 Micro Focus. All Rights Reserved.     * cbankdat
-000400*                                                               * cbankdat
-000500***************************************************************** cbankdat
-000600*    yes a another change                                         cbankdat
+000100*****************************************************************
+000200*                                                               *
+000300*   Copyright (C) 1998-2021 Micro Focus. All Rights Reserved.   *
+000400*   This demonstration program is provided for use by users     *
+000500*   of Micro Focus products and may be used, modified and       *
+000600*   distributed as part of your application provided that       *
+000700*   you properly acknowledge the copyright of Micro Focus       *
+000800*   in this material.                                           *
+000900*                                                               *
+001000*****************************************************************
 000700***************************************************************** cbankdat
 000800* CBANKDAT.CPY                                                  * cbankdat
 000900*---------------------------------------------------------------* cbankdat

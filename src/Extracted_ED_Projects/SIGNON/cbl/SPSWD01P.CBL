@@ -53,7 +53,9 @@
 005300       OCCURS 1 TO 4096 TIMES                                     spswd01p
 005400         DEPENDING ON WS-COMMAREA-LENGTH.                         spswd01p
 005500                                                                  spswd01p
-005600 COPY CENTRY.                                                     spswd01p
+005600* COPY CENTRY.                                                    spswd01p
+001400 PROCEDURE DIVISION.                                              centry
+001500                                                                  centry
 005700***************************************************************** spswd01p
 005800* Move the passed data to our area                              * spswd01p
 005900***************************************************************** spswd01p
@@ -97,7 +99,12 @@
 009700***************************************************************** spswd01p
 009800* Return to our caller                                          * spswd01p
 009900***************************************************************** spswd01p
-010000 COPY CRETURN.                                                    spswd01p
+010000* COPY CRETURN.                                                   spswd01p
+001400     EXEC CICS RETURN                                             creturn
+001500     END-EXEC.                                                    creturn
+001600     GOBACK.                                                      creturn
+001700                                                                  creturn
+
 010100                                                                  spswd01p
 010200***************************************************************** spswd01p
 010300* SIGNON Process                                                * spswd01p
